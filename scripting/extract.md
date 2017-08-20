@@ -30,7 +30,7 @@ I.grabText(target)
 ### Example(s)
 
 ###### HTML
-```HTML
+```xml
 <div id="message">Welcome</div>
 <div id="secret">Batman</div>
 <div>
