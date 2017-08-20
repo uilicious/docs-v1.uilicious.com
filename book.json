@@ -5,7 +5,8 @@
   "plugins": [
     "custom-favicon",
     "toggle-chapters",
-    "youtube"
+    "youtube",
+    "prism", "-highlight"
   ],
   "pluginsConfig" : {
     "favicon": "favicon.png"
