@@ -12,6 +12,8 @@ This helps you to create modular tests that can be easily reused and swapped out
 
 Runs another test.
 
+> WARNING! <br> All tests run in the same scope. This means that variables with the same name in different tests will override each other.
+
 #### Usage
 ````javascript
 TEST.run(path)
