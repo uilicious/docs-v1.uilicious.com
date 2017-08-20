@@ -41,9 +41,9 @@
 * [Configuration](scripting/config.md)
 
 ### Command Line Interface
-* [Introduction](cli/introduction.md)
-* [Installation](cli/installation.md)
-* [Usages](cli/installation.md)
+* [Introduction](cli/intro.md#command-line-interface)
+* [Installation](cli/intro.md#installation)
+* [Running a test](cli/intro.md#running-a-test)
 
 <!--### Best Practices-->
 <!--* Resuable tests-->
