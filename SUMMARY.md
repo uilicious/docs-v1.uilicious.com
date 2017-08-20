@@ -1,7 +1,7 @@
 # Summary
 
-### Getting Started
 * [Welcome!](README.md)
+<!--### Getting Started-->
 <!--* [Creating your first script](creating_your_first_test.md)-->
 
 ---

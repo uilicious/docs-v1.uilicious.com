@@ -38,7 +38,7 @@ I.fill(field, value)
 ##### Parameters
 | Parameter | Type | Remarks|
 |----------|------|--------|
-| field | string | Search phrase for the field |
+| field | string | Keyword to identify the field. <br> The associated label, placeholder, adjacent text, and can be used to identify a field. <br>  CSS selectors can also be used, *but is not recommended as it makes the tests harder to keep up to date.* |
 | value | string | Value to fill into the field |
 
 #### Example(s)
@@ -69,8 +69,8 @@ I.select(list, option)
 ##### Parameters
 | Parameter | Type | Remarks|
 |----------|------|--------|
-| list | string | (Optional) Search phrase for the option list. |
-| option | string | Search phrase for the option to select |
+| list | string | (Optional) Keyword to identify the options list |
+| option | string | Keyword to identify the option to select |
 
 #### Example(s)
 
@@ -194,8 +194,8 @@ I.deselect(list, option)
 ##### Parameters
 | Parameter | Type | Remarks|
 |-----------|------|--------|
-| list (optional) | string | Text to identify the option list |
-| option | string | Text to identify the option to select |
+| list (optional) | string | Keyword to identify the options list |
+| option | string | Keyword to identify the option to deselect |
 
 ---
 
@@ -211,7 +211,7 @@ I.upload(field, pathToFile)
 ##### Parameters
 | Parameter | Type | Remarks|
 |-----------|------|--------|
-| field | string | Search phrase for the file upload field |
+| field | string | Keyword to identify the file upload field |
 | pathToFile | string | Path to the file to upload |
 
 #### Example(s)

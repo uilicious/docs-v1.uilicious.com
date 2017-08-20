@@ -47,24 +47,14 @@ I.see(target)
 ##### Parameters
 | Parameter | Type | Remarks|
 |-----------|------|--------|
-| target | string | ... |
+| target | string | Text content that is expected to be visible |
 
 #### Example(s)
 
-##### By text
 ```javascript
 I.see("Welcome back, Bruce");
 ```
 Asserts that the text "Welcome back, Bruce" is seen on the page.   
-
-##### By CSS selectors
-```javascript
-I.see("#welcome-message")
-```
-
-```javascript
-I.see(".welcome-message")
-```
 
 ---
 
@@ -82,26 +72,14 @@ I.dontSee(target)
 ##### Parameters
 | Parameter | Type | Remarks|
 |-----------|------|--------|
-| target | string |  ... |
+| target | string | Text content that is expected to be NOT visible. |
 
 #### Example(s)
-
-##### By text
 
 ```javascript
 I.dontSee("Loading...");
 ```
 Asserts that the text "Loading..." is seen on the page.   
-
-##### By CSS selectors
-
-```javascript
-I.dontSee("#progress-bar")
-```
-
-```javascript
-I.dontSee(".progress-bar")
-```
 
 ---
 
@@ -201,7 +179,7 @@ I.filled(field, value)
 
 | Parameter | Type | Remarks|
 |-----------|------|--------|
-| field | string |  |
+| field | string | Keyword to identify the field. <br> The associated label, placeholder, adjacent text, and name can be used to identify a field. <br>  CSS selectors can also be used, *but is not recommended as it makes the tests harder to keep up to date.* |
 | value | string | Value that the field is expected to have |
 
 #### Example(s)
@@ -228,8 +206,8 @@ I.selected(list, option)
 
 | Parameter | Type | Remarks|
 |-----------|------|--------|
-| list | string |  |
-| option | string | Option that is expected to be selected |
+| list | string | Keyword to identify the options list |
+| option | string | Keyword to identify the option to be selected |
 
 ---
 
@@ -251,7 +229,7 @@ I.deselected(list, option)
 
 | Parameter | Type | Remarks|
 |-----------|------|--------|
-| list | string |  |
-| option | string | Option that is expected to be NOT selected |
+| list | string | Keyword to identify the options list |
+| option | string | Keyword to identify the option that expected to be NOT selected |
 
 

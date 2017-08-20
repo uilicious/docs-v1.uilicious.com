@@ -4,7 +4,7 @@ Basic commands are used to automate basic interactions with web applications, su
 
 These are the most essential commands you need for testing most of your web application:
 
-* `I.goTo` - Navigate to a URL
-* `I.click` - Click on something
-* `I.fill` - Fill a text input
-* `I.see` - Assert that something is seen, typically, a message.
+* [`I.goTo`](/scripting/navigation.md#igoto) - Navigate to a URL
+* [`I.click`](/scripting/mouse.md#iclick) - Click on something
+* [`I.fill`](/scripting/form_input.md#ifill) - Fill a text input
+* [`I.see`](/scripting/assertion.md#isee) - Assert that something is seen, typically, a message.

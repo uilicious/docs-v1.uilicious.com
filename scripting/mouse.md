@@ -32,7 +32,7 @@ I.click(target);
 
 | Parameter | Type | Remarks|
 |----------|------|--------|
-| target | string | Text that represents the element to click |
+| target | string | Keyword to identify the element to click |
 
 #### Example(s)
 

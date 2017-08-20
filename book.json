@@ -2,7 +2,10 @@
   "title": "UI-licious Documentation" ,
   "description": "Guide on how to use UI-licious",
   "author": "Uilicious Private Limited",
-  "plugins": ["custom-favicon"],
+  "plugins": [
+    "custom-favicon",
+    "youtube"
+  ],
   "pluginsConfig" : {
     "favicon": "favicon.png"
   }
