@@ -56,6 +56,15 @@
 
 ---
 
-* Release Notes
+* [Release Notes](release_notes.md) 
+    * [Studio / Test Engine](release_notes.md#studio--test-engine) 
+        *[1.4.0](release_notes.md)
+        *[1.3.0](release_notes.md)
+        *[1.2.0](release_notes.md)
+        *[1.1.0](release_notes.md)
+        *[1.0.0](release_notes.md)
+    * [Command Line Interface](release_notes.md#command-line-interface) 
+  
+
 
 
