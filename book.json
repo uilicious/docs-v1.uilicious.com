@@ -12,7 +12,7 @@
   "pluginsConfig" : {
     "favicon": "favicon.png",
     "ga": {
-      "token": "UA-85473608-1"
+      "token": "UA-85473608-2"
     }
   }
 }
