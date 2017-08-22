@@ -18,7 +18,7 @@
 New Commands:
 * Refresh a page: `I.refreshPage`
 * Scrolling a page: `I.scrollBy`, `I.scrollTo`, `I.scrollToTop`, `I.scrollToBottom`
-* You might be able to play "UI-licious Plays "Twitch Plays Pokemon"" with these shortcuts to press arrow keys: `I.pressUp`, `I.pressDown`, `I.pressLeft`, `I.pressRight`
+* &uarr; &uarr; &darr; &darr; &larr; &rarr; &rarr; &larr; `B` `A` <br>Shortcuts to press arrow keys: `I.pressUp`, `I.pressDown`, `I.pressLeft`, `I.pressRight`
 
 New Configurations:
 * You can set the max duration to attempt a command before raising an error with the `TEST.commandTimeout` setting. 
