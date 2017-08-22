@@ -4,7 +4,7 @@
 
 ### 1.4.0
 
-*Released on __ August 2017*
+*Released on 21 August 2017*
 
 #### Breaking Changes
 * When `I.click` opens a page in a new tab, the browser will be automatically switched to it.
