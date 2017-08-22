@@ -6,9 +6,13 @@
     "custom-favicon",
     "toggle-chapters",
     "youtube",
-    "prism", "-highlight"
+    "prism", "-highlight",
+    "ga"
   ],
   "pluginsConfig" : {
-    "favicon": "favicon.png"
+    "favicon": "favicon.png",
+    "ga": {
+      "token": "UA-85473608-1"
+    }
   }
 }
