@@ -2,6 +2,15 @@
 
 ## Studio / Test Engine 
 
+### 1.4.2
+*Released on 9 September 2017*
+* Improved CSS selector support for `I.fill` command
+
+### 1.4.1
+*Released on 25 August 2017*
+* Improved `I.select` command - Better identification of target element with option parameter alone 
+* Improved support for testing within `<frame>` elements
+
 ### 1.4.0
 
 *Released on 21 August 2017*
