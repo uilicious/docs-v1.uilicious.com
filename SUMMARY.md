@@ -34,10 +34,12 @@
     * [Utility](scripting/utility.md)
         * [I.wait](scripting/utility.md#iwait)
 * [Advanced Commands](scripting/advanced_commands.md)
+    * [Using Javascript](scripting/javascript.md)
     * [Extract](scripting/extract.md)
         * [I.grabText](scripting/extract.md#igrabtext)
     * [Sequence](scripting/sequence.md)
         * [TEST.run](scripting/sequence.md#testrun)
+    <!--* Conditional Control Flow (Coming soon)-->
 * [Configuration](scripting/config.md)
 
 ### Command Line Interface
