@@ -212,7 +212,7 @@ I.upload(field, pathToFile)
 | Parameter | Type | Remarks|
 |-----------|------|--------|
 | field | string | Keyword to identify the file upload field |
-| pathToFile | string | Path to the file to upload |
+| pathToFile | string | Path to the file to upload. <br> **Currently, only absolute paths from the project root are supported.** |
 
 #### Example(s)
 

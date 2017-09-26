@@ -23,7 +23,7 @@ TEST.run(path)
 
 | Parameter | Type | Remarks|
 |----------|------|--------|
-| path | string | Path to the test to run |
+| path | string | Path to the test to run. <br> **Currently, only absolute paths from the project root are supported.** |
 
 
 #### Example(s)
