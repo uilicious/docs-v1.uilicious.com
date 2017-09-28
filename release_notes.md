@@ -2,6 +2,11 @@
 
 ## Studio / Test Engine 
 
+### 1.4.3
+*Released on 28 September 2017*
+* Improved `I.upload` command to better handle hidden `<input type=file>` fields
+* Improved `I.press` command to support active elements within `<iframe>` and `<frame>` elements
+
 ### 1.4.2
 *Released on 9 September 2017*
 * Improved CSS selector support for `I.fill` command
