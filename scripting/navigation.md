@@ -21,7 +21,10 @@ search:
 
 Navigate to a URL.
 
-You can use an absolute URL ("http://mystore.com/shoes") or a relative URL ("/shoes").
+You can use an absolute URL like `http://mystore.com/shoes` or a relative URL like `/shoes`.
+
+If your website uses Basic HTTP Authentication, add the username and password to your url like this:
+`https://username:password@mystore.com`
 
 #### Usage
 ```javascript
@@ -40,6 +43,14 @@ I.goTo(url);
 
 ```javascript
 I.goTo("https://mystore.com/shoes");
+```
+
+Go to https://mystore.com/shoes.
+
+##### Absolute URL with Basic HTTP Authentication
+
+```javascript
+I.goTo("https://username:password@mystore.com/shoes");
 ```
 
 Go to https://mystore.com/shoes.
