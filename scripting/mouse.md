@@ -32,7 +32,7 @@ I.click(target);
 
 | Parameter | Type | Remarks|
 |----------|------|--------|
-| target | string | Keyword to identify the element to click |
+| target | string | Keyword to identify the element to click. <br> This is case-insensitive. |
 
 #### Example(s)
 
@@ -42,6 +42,31 @@ I.click(target);
 I.click("Log In")
 ```
 Click on an element with the text "Log In".
+
+##### Click on element using its tooltip 
+
+If the tooltip of the element is given using the `title` attribute, you can click on the element using its tooltip. 
+
+Here, we will use this plus button with the tooltip "Add" for illustration:
+
+{% raw %}
+<div style='margin-left: 16px; margin-bottom: 16px'>
+    <button title="Add"><i class="fa fa-plus"></i></button>
+</div>
+{% endraw %}
+
+```xhtml
+<!-- Button with the tooltip "Add"-->
+<button title="Add">
+    <!-- Icon -->
+    <i class="fa fa-plus"></i>
+</button>
+```
+
+You can click on the button using its tooltip like this:
+```javascript
+I.click("Add");
+```
 
 ##### Click on element by CSS selectors
 
@@ -55,8 +80,10 @@ I.click(".login-btn")
 ```
 Click on an element with its `class` property set to `login-btn`.
 
-##### Click on element by XPATH
-> Not recommended.
+
+
+<!--##### Click on element by XPATH-->
+
 
 ---
 
