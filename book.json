@@ -1,18 +1,25 @@
 {
-  "title": "UI-licious Documentation" ,
+  "title": "UI-licious Documentation",
   "description": "Guide on how to use UI-licious",
   "author": "Uilicious Private Limited",
   "plugins": [
     "custom-favicon",
     "toggle-chapters",
     "youtube",
-    "prism", "-highlight",
-    "ga"
+    "prism",
+    "-highlight",
+    "ga",
+    "addcssjs"
   ],
-  "pluginsConfig" : {
+  "pluginsConfig": {
     "favicon": "favicon.png",
     "ga": {
       "token": "UA-85473608-2"
+    },
+    "addcssjs": {
+      "css": [
+        "css/font-awesome-4.7.0/font-awesome.min.css"
+      ]
     }
   }
 }
