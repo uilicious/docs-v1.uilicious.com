@@ -40,6 +40,7 @@
     * [Sequence](scripting/sequence.md)
         * [TEST.run](scripting/sequence.md#testrun)
     <!--* Conditional Control Flow (Coming soon)-->
+* [List of Commands](scripting/list_of_commands.md)
 * [Configuration](scripting/config.md)
 
 ### Command Line Interface
