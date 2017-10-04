@@ -1,8 +1,12 @@
 ---
 search:
     keywords: [
-        'assertion',
-        'see', 'dontsee', 'amat', 'filled', 'selected', 'deselected'
+        'assert', 'assertion',
+        'see', 'dontsee', 'notsee', 
+        'amat', 
+        'filled', 
+        'selected', 
+        'deselected'
     ]
 ---
 
