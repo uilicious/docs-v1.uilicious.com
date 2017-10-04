@@ -55,7 +55,7 @@ Here, we will use this plus button with the tooltip "Add" for illustration:
 </div>
 {% endraw %}
 
-```xhtml
+```xml
 <!-- Button with the tooltip "Add"-->
 <button title="Add">
     <!-- Icon -->
