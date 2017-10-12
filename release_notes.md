@@ -2,6 +2,17 @@
 
 ## Studio / Test Engine 
 
+### 1.5.0
+*Released on 11 October 2017*
+
+#### Highlights
+
+##### 🚀 New Features:
+* **Scheduled tests**: You can schedule tests to run automatically, and send email alerts when there's an error.
+
+##### 💪 Enhancements:
+* Test runs now show you the total time taken when the test completes.
+
 ### 1.4.3
 *Released on 28 September 2017*
 * Improved `I.upload` command to better handle hidden `<input type=file>` fields
