@@ -12,7 +12,7 @@
     "addcssjs"
   ],
   "pluginsConfig": {
-    "favicon": "favicon.png",
+    "favicon": "favicon-32.png",
     "ga": {
       "token": "UA-85473608-2"
     },
