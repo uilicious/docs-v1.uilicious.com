@@ -5,8 +5,6 @@
 ### 1.5.0
 *Released on 11 October 2017*
 
-#### Highlights
-
 ##### 🚀 New Features:
 * **Scheduled tests**: You can schedule tests to run automatically, and send email alerts when there's an error.
 
