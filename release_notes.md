@@ -11,7 +11,8 @@
 * **Scheduled tests**: You can schedule tests to run automatically, and send email alerts when there's an error.
 
 ##### 💪 Enhancements:
-* Test runs now show you the total time taken when the test completes.
+* Reports now show you the total time taken for the entire tests.
+* Changes to the color scheme to improve contrast and visibility.
 
 ### 1.4.3
 *Released on 28 September 2017*
