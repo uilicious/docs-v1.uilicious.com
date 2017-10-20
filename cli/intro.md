@@ -47,12 +47,12 @@ In this project, called "Little Pet Store", we have created these scripts:
    |-- ... 
 ```
 
-You can the `login` script from the command line like this:
+You can test the `login` script from the command line like this:
 ```bash
 uilicious-cli -u john -p supersecretpassword run "Little Pet Store" "login"
 ```
 
-You can the `profile/change name` script from the command line like this:
+You can test the `profile/change name` script from the command line like this:
 ```bash
 uilicious-cli -u john -p supersecretpassword run "Little Pet Store" "profile/change name"
 ```
