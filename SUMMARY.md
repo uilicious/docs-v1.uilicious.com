@@ -47,6 +47,8 @@
 * [Introduction](cli/intro.md#command-line-interface)
 * [Installation](cli/intro.md#installation)
 * [Running a test](cli/intro.md#running-a-test)
+* [Import test script](cli/intro.md#import-test-scripts)
+* [Export test script](cli/intro.md#export-test-script)
 
 <!--### Best Practices-->
 <!--* Resuable tests-->
