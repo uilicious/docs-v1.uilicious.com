@@ -56,3 +56,26 @@ You can test the `profile/change name` script from the command line like this:
 ```bash
 uilicious-cli -u john -p supersecretpassword run "Little Pet Store" "profile/change name"
 ```
+## Import Test Script(s)
+
+Use the `import` command to import test script(s) of a project .
+```bash
+uilicious-cli -u <username> -p <password> import <project_name> <script_save_to_dir>
+```
+#### Example(s)
+ 
+In this project, called "Little Pet Store", we have created these scripts:
+```
+-- Little Pet Store
+   |-- profile
+       |-- change name
+       |--  ...
+   |-- login
+   |-- ... 
+```
+
+You can import all the test scripts from the command line like this:
+```bash
+uilicious-cli -u john -p supersecretpassword import "Little Pet Store" "/home/user/testScripts/"
+```
+Once you run the following command, go to `/home/user/testScripts/` and you will find the test scripts under `Little Pet Store` folder
