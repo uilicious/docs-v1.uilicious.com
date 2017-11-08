@@ -92,9 +92,9 @@ Once you run the following command, go to the project folder and you will see th
 
 ## Export Test Script
 
-Use the `export` command to export test script(s) of a project .
+Use the `export` command to export everything from a project .
 ```bash
-uilicious-cli -u <username> -p <password> export <project_name> <script_folder> <save_to_local_directory>
+uilicious-cli -u <username> -p <password> export <project_name> <save_to_local_directory>
 ```
 #### Example(s)
  
@@ -108,8 +108,8 @@ In this project, called "Little Pet Store" have these scripts:
    |-- ... 
 ```
 
-To export test scripts under the profile folder, the command line would be like this:
+To export all test scripts including folders from this project, the command line would be like this:
 ```bash
-uilicious-cli -u john -p supersecretpassword export "Little Pet Store" "profile" "/home/user/testScripts/"
+uilicious-cli -u john -p supersecretpassword export "Little Pet Store" "/home/user/testScripts/"
 ```
-Once you run the following command, go to `/home/user/testScripts/` and you will find the exported test scripts .
+Once you run the following command, go to `/home/user/testScripts/` and you will find the exported test scripts as shown above.
