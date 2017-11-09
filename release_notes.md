@@ -2,6 +2,20 @@
 
 ## Studio / Test Engine 
 
+### 1.5.1
+*Released on 9 November 2017*
+
+##### 💪 Enhancements:
+* Editor Tab:
+	* Improved resolutions dropdown in Run pane - group resolutions by device class, and label resolutions by common screen size names
+	* Display folder path in Script pane title bar
+	* New tests/files/folders will be created as siblings to the currently selected test/file.
+    
+##### 🐞 Fixes
+* Editor Tab:
+	* Fixed: Script pane does not automatically display the new test after creation, when test is created by clicking on the "Create Test" button on the blank Script pane.
+	* Fixed: Tests get overridden when the switching between tests while a test is being saved
+
 ### 1.5.0
 *Released on 11 October 2017*
 
