@@ -9,7 +9,8 @@
 * Editor Tab:
 	* Improved resolutions dropdown in Run pane - group resolutions by device class, and label resolutions by common screen size names
 	* Display folder path in Script pane title bar
-	* New tests/files/folders will be created as siblings to the currently selected test/file. 
+	* New tests/files/folders will be created as siblings to the currently selected test/file on the Directory pane.
+	* When a folder is selected on the Directory pane, the Script pane will not navigate away to a blank page.
     
 ##### 🐞 Fixes
 * Editor Tab:
