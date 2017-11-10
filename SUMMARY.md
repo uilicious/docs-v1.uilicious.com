@@ -45,10 +45,10 @@
 
 ### Command Line Interface
 * [Introduction](cli/intro.md#command-line-interface)
-* [Installation](cli/intro.md#installation)
-* [Running a test](cli/intro.md#running-a-test)
-* [Import test script](cli/intro.md#import-test-scripts)
-* [Export test script](cli/intro.md#export-test-script)
+* [Installation](cli/installation.md)
+* [Running a test](cli/run_test.md)
+* [Import test script](cli/import_test.md)
+* [Export test script](cli/export_test.md)
 
 <!--### Best Practices-->
 <!--* Resuable tests-->
