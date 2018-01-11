@@ -1,6 +1,17 @@
 # Release Notes
 
-## Studio / Test Engine 
+## Studio / Test Engine
+
+### 2018.1
+*Released on 3 Jan 2018*
+
+##### 🚀 New Features:
+* Documentation Tab: Now you can view this documentation site with UI-licious Studio with your tests side-by-side
+
+##### 💪 Enhancements:
+* Internal changes to improve the performance of the application and test engine.
+* Prettier web reports for your scheduled tests.
+* You can specify the full path when creating or moving a file or folder. All intermediate folders to the destination path will be automatically created.
 
 ### 1.5.1
 *Released on 9 November 2017*
