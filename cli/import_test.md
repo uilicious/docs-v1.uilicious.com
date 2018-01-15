@@ -31,3 +31,19 @@ Once you run the following command, go to the project folder and you will see th
    |-- test_2
    |-- ... 
 ```
+
+#### Verbose
+
+If you want to see the import details you can enable the verbose mode using :
+
+```bash
+uilicious-cli -u john -p supersecretpassword import "Little Pet Store" "/home/user/name_of_test_directory/" --verbose
+```
+
+#### Overwrite
+
+By default CLI toolchain will not overwrite your test script while importing. If you want to overwrite the test script you can do so using the following command
+
+```bash
+uilicious-cli -u john -p supersecretpassword import "Little Pet Store" "/home/user/name_of_test_directory/" --overwrite "y"
+```
