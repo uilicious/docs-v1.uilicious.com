@@ -40,7 +40,7 @@ If you want to see the import details you can enable the verbose mode using :
 uilicious-cli -u john -p supersecretpassword import "Little Pet Store" "/home/user/name_of_test_directory/" --verbose
 ```
 
-#### Overwrite
+#### Overwrite test scripts
 
 By default CLI toolchain will not overwrite your test script while importing. If you want to overwrite the test script you can do so using the following command
 
