@@ -32,7 +32,7 @@ Once you run the following command, go to the project folder and you will see th
    |-- ... 
 ```
 
-#### Verbose
+#### Verbosity
 
 If you want to see the import details you can enable the verbose mode using :
 

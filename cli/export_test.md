@@ -21,3 +21,11 @@ To export all test scripts including folders from this project, the command line
 uilicious-cli -u john -p supersecretpassword export "Little Pet Store" "/home/user/testScripts/"
 ```
 Once you run the following command, go to `/home/user/testScripts/` and you will find the exported test scripts as shown above.
+
+#### Verbosity
+
+If you want to see the export details you can enable the verbose mode using :
+
+```bash
+uilicious-cli -u john -p supersecretpassword export "Little Pet Store" "/home/user/location_to_save_tests/" --verbose
+```
