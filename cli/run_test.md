@@ -59,13 +59,12 @@ uilicious-cli -u john -p supersecretpassword run "Little Pet Store" "login" --da
 Uilicious CLI tool chain promises to make your UI testing much easier even if you are in local development environment. No additional testing server is required to set up in order to test your project UI.
 This CLI tool chain comes with a powerful feature that can create a secure introspectable tunnels to the localhost and the test will be run against that public url. The entire process is handled by CLI Tool Chain , all you need to do is follow the bellow command:
 
-use the following optional commands to fits your testing needs `--dataObject` , `--ngrokPort` and `--ngrokParam`
+use the following optional commands to fits your testing needs `--ngrokPort` and `--ngrokParam`
 ```bash
-uilicious-cli -u <username> -p <password> run <project_name> <script_path> --dataObject <json_data_object> --ngrokPort <localhost_port> --ngrokParam <test_script_url_param_name>
+uilicious-cli -u <username> -p <password> run <project_name> <script_path> --ngrokPort <localhost_port> --ngrokParam <DATA_object_url_property>
 ```
-`--dataObject` contains a JSON object properties that to be passed into the test-script <br>
 `--ngrokPort`  localhost port number where the project is running <br>
-`--ngrokParam` is the `--dataObject` property that to be overridden
+`--ngrokParam` is the `DATA` object property that to be overridden
 
 #### Example(s)
 Let's say you have the test script as bellow : <br>
@@ -73,6 +72,12 @@ Let's say you have the test script as bellow : <br>
 `I.see("google");`
 
 Now you can pass value for `DATA.url` as bellow :
+
+```bash
+uilicious-cli -u john -p supersecretpassword run "Little Pet Store" "login" --ngrokPort 8080 --ngrokParam 'url'
+```
+##### More example 
+It is also possible to use both `DATA` object and `NGROK` together in that case `--dataObject` url parameter will be overridden by `NGROK`
 
 ```bash
 uilicious-cli -u john -p supersecretpassword run "Little Pet Store" "login" --dataObject '{"url":"https://www.example-ngrok-url.com"}' --ngrokPort 8080 --ngrokParam 'url'
