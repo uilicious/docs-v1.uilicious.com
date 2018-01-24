@@ -47,6 +47,8 @@
 * [Introduction](cli/intro.md#command-line-interface)
 * [Installation](cli/installation.md)
 * [Running a test](cli/run_test.md)
+* [Testing on localhost](cli/ngrok.md)
+* [Set test data during test runs](cli/test_data.md)
 * [Import test script](cli/import_test.md)
 * [Export test script](cli/export_test.md)
 
@@ -61,15 +63,15 @@
 
 ---
 
-* [Release Notes](release_notes.md) 
-    * [Studio / Test Engine](release_notes.md#studio--test-engine) 
+* [Release Notes](release_notes.md)
+    * [Studio / Test Engine](release_notes.md#studio--test-engine)
         *[1.4.0](release_notes.md)
         *[1.3.0](release_notes.md)
         *[1.2.0](release_notes.md)
         *[1.1.0](release_notes.md)
         *[1.0.0](release_notes.md)
-    * [Command Line Interface](release_notes.md#command-line-interface) 
-  
+    * [Command Line Interface](release_notes.md#command-line-interface)
+
 
 
 
