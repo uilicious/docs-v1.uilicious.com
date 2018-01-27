@@ -21,12 +21,15 @@
     },
     "addcssjs": {
       "css": [
-        "css/font-awesome-4.7.0/font-awesome.min.css"
+        "css/font-awesome-4.7.0/font-awesome.min.css",
+        "css/uilicious-docs.css"
       ]
     },
     "docSearch": {
       "apiKey" : "45b9d5010a70b491c1cfce027b189846",
-      "index" : "uilicious"
+      "index" : "uilicious",
+      "logo" : "logo-2.png",
+      "brandUrl" : "https://uilicious.com/"
     }
   }
 }
