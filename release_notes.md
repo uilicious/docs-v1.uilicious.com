@@ -2,7 +2,19 @@
 
 ## Studio / Test Engine
 
-### 2018.1
+### 2.1.1
+*Released on 27 Jan 2018*
+
+##### 🐞 Fixes
+* Fixed: Editor tab - Test report window could not be resized
+
+### 2.1.0
+*Released on 23 Jan 2018*
+
+##### 🚀 New Features:
+* Added friendly reminders to ask you to pay us for our work. 😉
+
+### 2.0.0
 *Released on 3 Jan 2018*
 
 ##### 🚀 New Features:
@@ -22,7 +34,7 @@
 	* Display folder path in Script pane title bar
 	* New tests/files/folders will be created as siblings to the currently selected test/file on the Directory pane.
 	* When a folder is selected on the Directory pane, the Script pane will not navigate away to a blank page.
-    
+
 ##### 🐞 Fixes
 * Editor Tab:
 	* Fixed: Script pane does not automatically display the new test after creation, when test is created by clicking on the "Create Test" button on the blank Script pane.
@@ -49,7 +61,7 @@
 
 ### 1.4.1
 *Released on 25 August 2017*
-* Improved `I.select` command - Better identification of target element with option parameter alone 
+* Improved `I.select` command - Better identification of target element with option parameter alone
 * Improved support for testing within `<frame>` elements
 
 ### 1.4.0
@@ -61,7 +73,7 @@
     * If you are using `I.switchTab` to switch tabs after `I.click`, you can remove `I.switchTab`, or *(not recommended)* add `TEST.autoSwitchTab = false` or `TEST.autoSwitchTabOff()` to the start of your test scripts to disable this behavior.
 
 #### Highlights
-* You can set the max duration to attempt a command before raising an error with the `TEST.commandTimeout` setting.  
+* You can set the max duration to attempt a command before raising an error with the `TEST.commandTimeout` setting.
 
 ##### New
 
@@ -71,10 +83,10 @@ New Commands:
 * &uarr; &uarr; &darr; &darr; &larr; &rarr; &larr; &rarr; `B` `A` <br>Shortcuts to press arrow keys: `I.pressUp`, `I.pressDown`, `I.pressLeft`, `I.pressRight`
 
 New Configurations:
-* You can set the max duration to attempt a command before raising an error with the `TEST.commandTimeout` setting. 
+* You can set the max duration to attempt a command before raising an error with the `TEST.commandTimeout` setting.
 * You can enable / disable automatic screenshots taken during test runs with the `TEST.autoScreenshot` flag.
 * You can enable / disable automatic tab switching when new tab is open with the `TEST.autoSwitchTab` flag.
-    
+
 ##### Enhancements
 * Condensed the project directory, so you can see more.
 * Asset optimizations to improve load time
@@ -88,17 +100,17 @@ New Configurations:
 
 *Released on 21 June 2017*
 
-* Added support for testing [Web Components](https://www.webcomponents.org/)! [Polymer](https://www.polymer-project.org/) is now a supported framework. Woohoo! 
+* Added support for testing [Web Components](https://www.webcomponents.org/)! [Polymer](https://www.polymer-project.org/) is now a supported framework. Woohoo!
 * Added [`I.grabText`](/scripting/extract.md#igrabtext) command to read a text from an element in a web page to use as an input variable for subsequent test commands:
 ```javascript
 // example usage:
 I.see("Thank you for ordering from UI-licious pizza. Your order number is"); // you have finished ordering pizza
 var orderId = I.grabText("#orderId"); // read the text from the #orderId element on the webpage
-I.goTo("/orders"); // go to your order history page 
+I.goTo("/orders"); // go to your order history page
 I.click(orderId);
 ```
 * Added CSS class selector and XPATH support for [`I.click`](/scripting/mouse.md#iclick) command
-    * It is recommended that you use these sparingly, because it would make your tests harder to maintain.    
+    * It is recommended that you use these sparingly, because it would make your tests harder to maintain.
 
 
 * Fixed: `I.press` support on Firefox
@@ -151,7 +163,7 @@ I.goTo("/toys"); // this will navigate to https://petstore.com/store/toys
 		* Autoscroll to selected steps
 		* Select steps using up/down arrow keys
 	* Add mobile resolutions to test run configurations
-	
+
 ### 1.0.0
 
 *Released on 8 Feb 2017*
