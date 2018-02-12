@@ -245,10 +245,11 @@
 .book-summary > a, /*logo*/
 #book-search-input,
 .book-summary > nav {
-
     width: 300px;
-    border-right: 1px solid rgba(0, 0, 0, .07);
+}
 
+.book.with-summary .book-body{
+    border-left: 1px solid rgba(0,0,0,0.07);
 }
 
 #book-search-input {
