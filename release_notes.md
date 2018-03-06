@@ -2,6 +2,39 @@
 
 ## Studio / Test Engine
 
+### 2.1.6
+*Released on 6 Mar 2018*
+
+##### 🚀 New Features:
+* Added cookie management commands
+
+##### 🐞 Fixes
+* Fixed: Jobs being ran and crashing when their tests get moved or deleted.
+
+### 2.1.5
+*Released on 20 Feb 2018*
+
+##### 🚀 New Features:
+* Added `SAMPLE.id` method for generating sample data for random base58 strings.
+
+### 2.1.4
+*Released on 12 Feb 2018*
+
+##### 🐞 Fixes
+* Fixed: Unable to retrieve job status sometimes.
+
+### 2.1.3
+*Released on 11 Feb 2018*
+
+##### 🐞 Fixes
+* Fixed: Cannot open "Create Project" dialog
+
+### 2.1.2
+*Released on 6 Feb 2018*
+
+##### 💪 Enhancements:
+* Friendly reminders to ask you to pay us for our work. 😉
+
 ### 2.1.1
 *Released on 27 Jan 2018*
 
@@ -12,7 +45,7 @@
 *Released on 23 Jan 2018*
 
 ##### 🚀 New Features:
-* Added friendly reminders to ask you to pay us for our work. 😉
+* You can now automatically pay us for our work. 😉
 
 ### 2.0.0
 *Released on 3 Jan 2018*
