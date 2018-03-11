@@ -35,10 +35,11 @@
         * [I.wait](scripting/utility.md#iwait)
 * [Advanced Commands](scripting/advanced_commands.md)
     * [Using Javascript](scripting/javascript.md)
-    * [Extract](scripting/extract.md)
-        * [I.grabText](scripting/extract.md#igrabtext)
     * [Sequence](scripting/sequence.md)
         * [TEST.run](scripting/sequence.md#testrun)
+    * [Extract](scripting/extract.md)
+        * [I.grabText](scripting/extract.md#igrabtext)
+    * [Cookies](scripting/cookies.md)
     <!--* Conditional Control Flow (Coming soon)-->
 * [List of Commands](scripting/list_of_commands.md)
 * [Configuration](scripting/config.md)
