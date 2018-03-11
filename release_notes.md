@@ -6,7 +6,7 @@
 *Released on 6 Mar 2018*
 
 ##### 🚀 New Features:
-* Added cookie management commands
+* 🍪🍪🍪 You can now set and assert [cookies](/scripting/cookies.md).
 
 ##### 🐞 Fixes
 * Fixed: Jobs being ran and crashing when their tests get moved or deleted.

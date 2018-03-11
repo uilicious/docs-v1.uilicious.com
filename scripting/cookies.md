@@ -1,6 +1,6 @@
 # Cookies
 
-You may use these commands for manipulating and asserting cookies.
+You may use these commands for setting and asserting cookies.
 
 ## List of commands
 
