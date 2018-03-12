@@ -2,6 +2,22 @@
 
 ## Studio / Test Engine
 
+### 2.1.8
+*Released on 12 Mar 2018*
+
+##### 🐞 Fixes
+* Fix bug that prevented jobs from running.
+
+##### Others:
+* Capped maximum run time of tests to 1 day. Tests running longer than that will time out. If you have tests running for such a long time, you should split them into smaller tests.
+* Improve performance of retrieving test run results.
+
+### 2.1.7
+*Released on 9 Mar 2018*
+
+##### 🐞 Fixes
+* Fixed bug that caused application to crash when polling for the status of pending jobs.
+
 ### 2.1.6
 *Released on 6 Mar 2018*
 
