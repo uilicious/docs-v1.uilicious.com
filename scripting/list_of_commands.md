@@ -22,12 +22,13 @@
 
 | Command | Description |
 |---------|-------------|
-| [`I.press`](keyboard.md#ipress) | Press a key or a string of keys |
+| [`I.type`](keyboard.md#itype--ipress) <br> [`I.press`](keyboard.md#itype--ipress) | Press a key or a string of keys |
 | [`I.pressEnter`](keyboard.md#ipressenter) | Press the `Enter` key |
 | [`I.pressUp`](keyboard.md#ipressup) | Press the ↑ key |
 | [`I.pressDown`](keyboard.md#ipressdown) | Press the ↓ key |
 | [`I.pressLeft`](keyboard.md#ipressleft) | Press the ← key |
 | [`I.pressRight`](keyboard.md#ipressright) | Press the → key |
+| [`I.pressTab`](keyboard.md#ipresstab) | Press the `Tab` key |
 
 #### Form Input Commands
 

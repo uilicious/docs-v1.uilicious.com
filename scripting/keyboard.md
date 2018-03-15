@@ -11,24 +11,23 @@ These commands trigger a keypress on the keyboard.
 
 | Command | Description|
 |---------|------------|
-| [`I.press`](#iclick) | Press a key or a string of keys |
+| [`I.type`](#itype--ipress) <br> [`I.press`](#itype--ipress) | Press a key or a string of keys |
 | [`I.pressEnter`](#ipressenter) | Press the `Enter` key |
 | [`I.pressUp`](#ipressup) | Press the &uarr; key |
 | [`I.pressDown`](#ipressdown) | Press the &darr; key |
 | [`I.pressLeft`](#ipressleft) | Press the &larr; key |
 | [`I.pressRight`](#ipressright) | Press the &rarr; key |
+| [`I.pressTab`](#ipresstab) | Press the `Tab` key |
 
 ---
 
-## I.press
-
-> Short form of I.pressKey
+## I.type / I.press
 
 Press a key or a string of keys
 
-
 #### Usage
 ```javascript
+I.type(key)
 I.press(key)
 ```
 
@@ -36,6 +35,12 @@ I.press(key)
 | Parameter | Type | Remarks |
 |-----------|------|---------|
 | key | string | Key to press|
+
+##### Example
+```javascript
+I.type("Hello")
+I.press("?")
+```
 
 ---
 
@@ -100,4 +105,17 @@ This is same as using the command `I.press("ArrowRight")`.
 #### Usage
 ```javascript
 I.pressRight()
+```
+
+---
+
+## I.pressTab
+
+Press the &rarr; key.
+
+This is same as using the command `I.press("Tab")`.
+
+#### Usage
+```javascript
+I.pressTab()
 ```

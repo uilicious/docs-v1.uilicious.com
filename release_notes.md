@@ -2,6 +2,17 @@
 
 ## Studio / Test Engine
 
+### 2.1.9
+*Released on 15 Mar 2018*
+
+##### 💪 Enhancements:
+* `I.fill` and `I.click` commands can now target elements by `aria-label`
+* You can now target input fields by their current value when using `I.fill`
+* Added XPATH support for `I.fill`
+* `I.see` and `I.click` now applies to the value and placeholder of textual input fields too
+* You can use `I.type` in place of `I.press` for keyboard inputs
+* Added `I.pressTab` command
+
 ### 2.1.8
 *Released on 12 Mar 2018*
 

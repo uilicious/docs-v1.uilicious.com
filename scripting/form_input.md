@@ -38,7 +38,7 @@ I.fill(field, value)
 ##### Parameters
 | Parameter | Type | Remarks|
 |----------|------|--------|
-| field | string | Keyword to identify the field. <br> The associated label, placeholder, adjacent text, and can be used to identify a field. <br>  CSS selectors can also be used, *but is not recommended as it makes the tests harder to keep up to date.* |
+| field | string | Keyword to identify the field. <br> The associated label, aria-label, placeholder, adjacent text, and current value can be used to identify a field. <br>  CSS selectors can also be used, *but is not recommended as it makes the tests harder to keep up to date.* |
 | value | string | Value to fill into the field |
 
 #### Example(s)
@@ -74,7 +74,7 @@ I.select(list, option)
 
 #### Example(s)
 
-##### Select a dropdown 
+##### Select a dropdown
 
 Here, we will use this "Number" dropdown list for illustration.
 
@@ -228,8 +228,8 @@ Here, we will use this "Photo" file upload field for illustration.
 
 ###### Project structure
 
-> Added the files to upload into your project. 
-  
+> Added the files to upload into your project.
+
 In our project, we have created a 'photos' directory and uploaded 'cat.png' and 'dog.png'.
 ```
 -- [myproject]
@@ -243,4 +243,4 @@ In our project, we have created a 'photos' directory and uploaded 'cat.png' and 
 ```javascript
 I.upload('Photo', 'photos/cat.png');
 ```
-This uploads the "photos/cat.png" to the "Photos" file upload field. 
+This uploads the "photos/cat.png" to the "Photos" file upload field.
