@@ -80,4 +80,11 @@
 |---------|-------------|
 | [`TEST.run`](sequence.md#testrun) | Runs another test |
 
-
+#### Cookie management
+| Command | Description|
+|---------|------------|
+| [`UI.COOKIE.set`](cookies.md#uicookieset) | Set a cookie on the current page |
+| [`UI.COOKIE.isSet`](cookies.md#uicookieisset) | Assert the presence of a cookie |
+| [`UI.COOKIE.isEqual`](cookies.md#uicookieisEqual) | Assert the value of a cookie  |
+| [`UI.COOKIE.delete`](cookies.md#uicookiedelete) | Delete a cookie |
+| [`UI.COOKIE.deleteAll`](cookies.md#uicookiedeleteAll) | Delete all cookies |
