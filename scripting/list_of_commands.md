@@ -74,6 +74,12 @@
 |---------|-------------|
 | [`I.grabText`](extract.md#igrabtext) | Extract text from the page |
 
+#### Generate sample data
+
+| Command | Description |
+|---------|-------------|
+| [`SAMPLE.id`](sample.md#sampleid) | Generates a random string useful for IDs and passwords |
+
 #### Sequence Commands
 
 | Command | Description |

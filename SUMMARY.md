@@ -33,6 +33,8 @@
         * [I.deselected](scripting/assertion.md#ideselected)
     * [Utility](scripting/utility.md)
         * [I.wait](scripting/utility.md#iwait)
+    * [Generate sample data](scripting/sample.md)
+        * [SAMPLE.id](scripting/sample.md#sampleid)
 * [Advanced Commands](scripting/advanced_commands.md)
     * [Using Javascript](scripting/javascript.md)
     * [Sequence](scripting/sequence.md)
