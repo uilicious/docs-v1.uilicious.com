@@ -5,6 +5,9 @@
 ### 2.1.9
 *Released on 15 Mar 2018*
 
+##### 🚀 New Features:
+* You can now run tests on Microsoft Edge!
+
 ##### 💪 Enhancements:
 * `I.fill` and `I.click` commands can now target elements by `aria-label`
 * You can now target input fields by their current value when using `I.fill`
