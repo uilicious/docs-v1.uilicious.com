@@ -36,7 +36,7 @@
 |---------|-------------|
 | [`I.fill`](keyboard.md#ifill) | Fill a text field with a value |
 | [`I.select`](keyboard.md#iselect) | Select a dropdown / checkbox / radio button |
-| [`I.delect`](keyboard.md#ideselect) | Deselect a checkbox |
+| [`I.deselect`](keyboard.md#ideselect) | Deselect a checkbox |
 | [`I.upload`](keyboard.md#iupload) | Upload a file to a file field |
 
 #### Assertion Commands
