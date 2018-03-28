@@ -2,6 +2,15 @@
 
 ## Studio / Test Engine
 
+### 2.1.10
+*Released on 02 Apr 2018*
+
+##### 🚀 New Features:
+* You can use webhooks to get notifications about the status of your jobs on your own Slack / Telegram channels.
+
+##### 💪 Enhancements:
+* You can now download all the images of a test run from the Editor.
+
 ### 2.1.9
 *Released on 15 Mar 2018*
 
@@ -251,6 +260,24 @@ I.goTo("/toys"); // this will navigate to https://petstore.com/store/toys
 ---
 
 ## Command Line Interface
+
+## Release Candidate
+* Download and save test run images using `--save` param with `run` command.
+
+## 1.5.8
+* Automated patch version bump to 1.5.8 (prior to npm publish)
+
+## 1.5.7
+* Fixed : Exit an error process with an error code 1
+
+## 1.5.6
+* Enhancement : simplifying `overwrite` param for `import` operation
+
+## 1.5.5
+* Enhancement  : Update version number and fix version command so that it grabs the version number from package.json
+
+## 1.5.4
+* New Feature : Import image files into the workspace directory 
 
 ## 1.2.12
 * Show summary of test run errors in test run report.
