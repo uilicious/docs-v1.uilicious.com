@@ -2,13 +2,14 @@
 
 ## Studio / Test Engine
 
-### Release Candidate
-*Released on 03 Apr 2018*
+### 2.1.10
+*Released on 02 Apr 2018*
 
 ##### 🚀 New Features:
-* Test run monitoring using Webhook (Slack, Telegram and others)
-* Download test run images
+* You can use webhooks to get notifications about the status of your jobs on your own Slack / Telegram channels.
 
+##### 💪 Enhancements:
+* You can now download all the images of a test run from the Editor.
 
 ### 2.1.9
 *Released on 15 Mar 2018*
