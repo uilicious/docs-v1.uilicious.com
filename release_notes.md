@@ -2,6 +2,16 @@
 
 ## Studio / Test Engine
 
+### 2.1.12
+*Released on 12 Apr 2018*
+
+##### 💪 Enhancements:
+* Improved design for configuring webhook notification
+
+##### 🐞 Fixes
+* Webhook notifications was triggering for every test run even when notification is set to send on errors only.
+* Unable to disable webhook notification when editing job.
+
 ### 2.1.11
 *Released on 05 Apr 2018*
 
