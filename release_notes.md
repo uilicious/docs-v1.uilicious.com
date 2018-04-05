@@ -2,6 +2,12 @@
 
 ## Studio / Test Engine
 
+### 2.1.11
+*Released on 05 Apr 2018*
+
+##### 💪 Enhancements:
+* Advanced options for scheduling jobs (Pro plan only).
+
 ### 2.1.10
 *Released on 02 Apr 2018*
 
