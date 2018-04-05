@@ -86,6 +86,12 @@
 |---------|-------------|
 | [`TEST.run`](sequence.md#testrun) | Runs another test |
 
+#### Execute Javascript
+
+| Command | Description |
+|---------|-------------|
+| [`UI.execute`](executing-javascript.md#uiexecute) | Executes Javascript on the browser |
+
 #### Cookie management
 | Command | Description|
 |---------|------------|
