@@ -1,6 +1,8 @@
-# Using Javascript
+# Using Javascript in Tests
 
 UI-licious is built on Javascript, so you can go crazy with variables, functions, loops and conditionals!
+
+You can use this to build more complex tests.
 
 ```javascript
 // function to click on a button for n times.
