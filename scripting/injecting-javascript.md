@@ -29,17 +29,9 @@ The return value of the script.
 You can pass the script to execute as a function, and provide the arguments for the function as such:
 
 ```javascript
-var value = UI.execute(function (x) { 
-	return Math.pow(x,2); // squares the value
-}, 3); // value is 9
-```
-
-If the function takes in more than one argument, you can provide the arguments as an array.
-
-```javascript
-var value = UI.execute(function (a, b) {
-	return a + b;
-}, [1, 2]); // value is 3
+var value = UI.execute(function () { 
+	return 42
+}); // value is 42
 ```
 
 ##### Executing Javascript as string
@@ -47,7 +39,7 @@ var value = UI.execute(function (a, b) {
 You can pass the script to execute as a string.
 
 ```javascript
-var value = UI.execute("return 1+2"); // value is 3
+var value = UI.execute("return 1 + 2"); // value is 3
 ```
 
 ```javascript
@@ -82,16 +74,26 @@ var title = "Hello world"
 UI.execute(function (title) { 
 	// Runs in the browser's context
 	document.title = title // Hooray, this will work!
-}, [title]); 
+}, title); 
+```
+
+If the function takes in more than one argument, you can provide the arguments as an array.
+
+```javascript
+var value = UI.execute(function (a, b) {
+	return a + b;
+}, [1, 2]); // value is 3
 ```
 
 ##### When errors occur
+
+When an error is thrown during the execution of the script, the command results in a test failure, and the value return will be `undefined`.
 
 ```javascript
 var value = UI.execute("throw 'The meaning of life, the universe, and everything.'"); // value is `undefined`
 ```
 
-When an error is thrown during the execution of the script, the command results in a test failure, and the value return will be `undefined`.
+
 
 
 
