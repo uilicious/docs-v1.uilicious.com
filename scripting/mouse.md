@@ -21,7 +21,12 @@ search:
 
 Click on an element.
 
-> If the click opens a page in a new tab, the browser will automatically be switched to the new tab.
+For image / icon elements, we'd strongly recommend that setting an `aria-label` for the target element, use `I.click` using the label. This will also help make your application more friendly to humans using accessibility tools.
+
+If the click triggers a page load, note that the time taken to execute the command will include the time taken to load the page.
+
+If the click opens a page in a new tab, the browser will automatically be switched to the new tab.
+
 
 #### Usage
 ```javascript
@@ -36,16 +41,16 @@ I.click(target);
 
 #### Example(s)
 
-##### Click on element by text content
+##### Click on element with text
 
 ```javascript
 I.click("Log In")
 ```
 Click on an element with the text "Log In".
 
-##### Click on element using its tooltip 
+##### Click on images / icons using `aria-label` or `title`
 
-If the tooltip of the element is given using the `title` attribute, you can click on the element using its tooltip. 
+Image / icon elements can be clicked on using the `aria-label` or `title` attribute set on the element. We'd strongly recommend setting both, because `aria-label` also makes your application more friendly to humans using accessibility tools, and `title` gives your element a helpful tooltip for visual users.
 
 Here, we will use this plus button with the tooltip "Add" for illustration:
 
@@ -68,7 +73,7 @@ You can click on the button using its tooltip like this:
 I.click("Add");
 ```
 
-##### Click on element by CSS selectors
+##### Click on element using CSS selectors
 
 ```javascript
 I.click("#login-btn")
