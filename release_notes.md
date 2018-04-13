@@ -2,6 +2,12 @@
 
 ## Studio / Test Engine
 
+### 2.1.13
+*Released on 13 Apr 2018*
+
+##### 🚀 New Features:
+*  New command `UI.execute` to execute javascript on the browser.
+
 ### 2.1.12
 *Released on 12 Apr 2018*
 
