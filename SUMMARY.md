@@ -30,6 +30,11 @@
     * [I.filled](scripting/assertion.md#ifilled)
     * [I.selected](scripting/assertion.md#iselected)
     * [I.deselected](scripting/assertion.md#ideselected)
+  * [Alerts](scripting/alerts.md)
+    * [I.seeAlert](scripting/alerts.md#iseealert)
+    * [I.acceptAlert](scripting/alerts.md#iacceptalert)
+    * [I.cancelAlert](scripting/alerts.md#icancelalert)
+    * [I.fillAlert](scripting/alerts.md#ifillalert)
   * [Utility](scripting/utility.md)
     * [I.wait](scripting/utility.md#iwait)
   * [Generate sample data](scripting/sample.md)
@@ -55,8 +60,6 @@
 * [Set test data during test runs](cli/test_data.md)
 * [Import test script](cli/import_test.md)
 * [Export test script](cli/export_test.md)
-
----
 
 ## Roadmap / Changes
 
