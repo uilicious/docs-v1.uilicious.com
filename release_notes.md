@@ -283,11 +283,8 @@ I.goTo("/toys"); // this will navigate to https://petstore.com/store/toys
 
 ## Command Line Interface
 
-## Release Candidate
-* Download and save test run images using `--save` param with `run` command.
-
 ## 1.5.8
-* Automated patch version bump to 1.5.8 (prior to npm publish)
+* Automated patch version bump
 
 ## 1.5.7
 * Fixed : Exit an error process with an error code 1
