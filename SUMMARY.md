@@ -58,6 +58,9 @@
 
 ---
 
+## Roadmap / Changes
+
+* [Roadmap](https://trello.com/b/G80eoZU3)
 * [Release Notes](release_notes.md)
   * [Studio / Test Engine](release_notes.md#studio--test-engine)
   * [Command Line Interface](release_notes.md#command-line-interface)
