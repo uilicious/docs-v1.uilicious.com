@@ -2,6 +2,12 @@
 
 ## Studio / Test Engine
 
+### 2.1.14-RC
+*Released on 8 May 2018*
+
+##### 🚀 New Features:
+*  New commands to assert, accept, cancel, and fill **alert/confirm/prompt** dialogs.
+
 ### 2.1.13
 *Released on 13 Apr 2018*
 
