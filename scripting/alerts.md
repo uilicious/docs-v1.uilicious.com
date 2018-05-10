@@ -32,7 +32,7 @@ I.seeAlert(text)
 UI.execute("alert('hello   world')") // opens an alert with the message "Hello world"
 I.seeAlert() // pass
 I.seeAlert("hello world") // pass
-I.seeAlert("lorem") // fails
+I.seeAlert("lorem") // fail
 ```
 
 ## `I.acceptAlert`
@@ -57,15 +57,25 @@ I.cancelAlert()
 
 ## `I.fillAlert`
 
+Fill the text box on the alert.
+
+> Only applicable to **prompt** dialogs.
+
 #### Usage
 ```
-I.fillAlert(text)
+I.fillAlert(value)
 ```
 
 | Parameter | Type | Remarks |
 |----------|------|--------|
-| text | string | Text to fill into the prompt's text box |
+| value | string | Text to fill into the prompt's text box |
 
+### Example(s)
 
-
+```
+UI.execute("prompt('What's your name?')") // open a prompt dialog
+I.fillAlert("Jane") // fill in the prompt dialog with "Jane"
+I.acceptAlert() // press "Ok"
+```
+This fills in the text box in the alert with "Jane", and presses the "Ok" button.
 
