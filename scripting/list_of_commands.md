@@ -39,28 +39,35 @@
 | [`I.deselect`](keyboard.md#ideselect) | Deselect a checkbox |
 | [`I.upload`](keyboard.md#iupload) | Upload a file to a file field |
 
-#### Assertion Commands
-
-##### General assertion commands
+#### General assertion commands
 
 | Command | Description |
 |---------|-------------|
 | [`I.see`](assertion.md#isee) | Assert that an text or element is visible |
 | [`I.dontSee`](assertion.md#idontSee) | Assert that an text or element is NOT visible |
 
-##### URL assertion commands
+#### URL assertion commands
 
 | Command | Description |
 |---------|-------------|
 | [`I.amAt`](assertion.md#iamAt) | Assert that the browser is at a specific URL |
 
-##### Form input assertion commands
+#### Form input assertion commands
 
 | Command | Description |
 |---------|-------------|
 | [`I.filled`](assertion.md#ifilled) | Assert that the form is filled with a specific value |
 | [`I.selected`](assertion.md#iselected) | Assert that a dropdown option, checkbox, or radio button is selected |
 | [`I.deselected`](assertion.md#ideselected) | Assert that a dropdown option, checkbox, or radio button is NOT selected |
+
+#### Alert commands
+
+| Command | Description|
+|---------|------------|
+| [`I.seeAlert`](alerts.md#iseealert) | Assert that an alert is displayed, and/or that an expected message is displayed on the alert. |
+| [`I.acceptAlert`](alerts.md#iacceptalert) | Press the "Ok" button on the alert |
+| [`I.cancelAlert`](alerts.md#icancelalert) | Press the "Cancel" button on the alert |
+| [`I.fillAlert`](alerts.md#ifillalert) | Fill the text box on the alert |
 
 #### Utility Commands
 
