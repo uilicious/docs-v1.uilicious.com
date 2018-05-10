@@ -29,7 +29,7 @@ I.seeAlert(text)
 #### Example(s)
 
 ```
-UI.execute("alert('hello   world')") // opens an alert with the message "Hello world"
+UI.execute("alert('hello    world')") // opens an alert with the message "Hello world"
 I.seeAlert() // pass
 I.seeAlert("hello world") // pass
 I.seeAlert("lorem") // fail
