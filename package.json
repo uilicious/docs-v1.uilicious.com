@@ -1,0 +1,22 @@
+{
+  "name": "uilicious-docs",
+  "version": "1.0.0",
+  "description": "Guide and documentation on how to use UI-licious",
+  "scripts": {
+    "install": "gitbook install",
+    "build": "gitbook build",
+    "serve": "gitbook serve"
+  },
+  "author": "UILICIOUS PRIVATE LIMITED",
+  "license": "ISC",
+  "dependencies": {
+    "gitbook-cli": "=2.3.2",
+    "gitbook-plugin-addcssjs": "^1.0.2",
+    "gitbook-plugin-custom-favicon": "0.0.4",
+    "gitbook-plugin-docsearch": "^1.1.3",
+    "gitbook-plugin-ga": "^1.0.1",
+    "gitbook-plugin-prism": "^2.3.0",
+    "gitbook-plugin-toggle-chapters": "0.0.3",
+    "gitbook-plugin-youtube": "^1.1.0"
+  }
+}
