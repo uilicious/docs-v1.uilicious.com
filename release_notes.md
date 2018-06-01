@@ -5,10 +5,12 @@
 > For feedback and suggestions, drop us a line at [support@uilicious.com](mailto:support@uilicious.com).
 
 **How we update our version numbers:**
-<Major>.<Minor>.<Patch>
-* Major: There are breaking changes
-* Minor: There are new features
-* Patch: There are enhancements and bug fixes only.
+
+&lt;Major&gt;.&lt;Minor&gt;.&lt;Patch&gt;
+
+* Major: Contains breaking changes
+* Minor: Contains new features
+* Patch: Contains enhancements and bug fixes only.
 
 ## Studio / Test Engine
 
