@@ -4,25 +4,32 @@
 
 > For feedback and suggestions, drop us a line at [support@uilicious.com](mailto:support@uilicious.com).
 
+**How we update our version numbers:**
+<Major>.<Minor>.<Patch>
+* Major: There are breaking changes
+* Minor: There are new features
+* Patch: There are enhancements and bug fixes only.
+
 ## Studio / Test Engine
 
-### 2.1.17
+### 2.4.0
 *Released on 31 May 2018*
 
 ##### 🚀 New Features:
-* Add `I.count` and `I.seeCount` to count elements and assert count of elements.
+* Add `I.count` and `I.getCount` to count elements and assert count of elements.
 
 ##### 💪 Enhancements:
-* You can now download test run screenshots as an animated GIF.
+* You can now download test run screenshots as an animated GIF for up to 100 steps.
 * You can now set multiple email address for the job notification emails.
 * Better reports for the Editor Tab
   * Improved design
   * There's now URL and page title information for each step
+* Added last 3 steps until first error in error reports sent to Webhooks.
 
 ##### 🐞 Fixes
 * `I.deselect` and `I.deselected` wasn't working
 
-### 2.1.16
+### 2.3.1
 *Released on 18 May 2018*
 
 ##### 💪 Enhancements:
@@ -31,18 +38,22 @@
 ##### 🐞 Fixes
 * Some XPATH expressions didn't work
 * SSL certificate checks on Firefox was not skipped
+* When jobs fail due to network errors, automatically retry the job.
 
-### 2.1.15
+### 2.3.0
 *Released on 8 May 2018*
 
 ##### 🚀 New Features:
 * You can limit search scope by using `UI.context` or providing a `context` option in test commands.
 
-### 2.1.14
+### 2.2.0
 *Released on 22 Apr 2018*
 
 ##### 🚀 New Features:
 *  New commands to assert, accept, cancel, and fill **alert/confirm/prompt** dialogs.
+
+##### 🐞 Fixes
+* Unable to set timezone for job schedule sometimes.
 
 ### 2.1.13
 *Released on 13 Apr 2018*
