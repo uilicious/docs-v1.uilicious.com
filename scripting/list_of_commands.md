@@ -45,6 +45,7 @@
 |---------|-------------|
 | [`I.see`](assertion.md#isee) | Assert that an text or element is visible |
 | [`I.dontSee`](assertion.md#idontSee) | Assert that an text or element is NOT visible |
+| [`I.count`](assertion.md#icount) | Assert the number of occurances for a text or element |
 
 #### URL assertion commands
 
@@ -79,7 +80,8 @@
 
 | Command | Description |
 |---------|-------------|
-| [`I.grabText`](extract.md#igrabtext) | Extract text from the page |
+| [`I.getCount`](extract.md#igetcount) | Get the number of occurances of a text or element |
+| [`I.getText`](extract.md#igettext) | Get text content from an element |
 
 #### Generate sample data
 

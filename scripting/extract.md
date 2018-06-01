@@ -9,16 +9,54 @@ These commands allow you to extract parts of the page, which you may then use as
 
 ## List of commands
 
+| Command | Description|
+|---------|------------|
+| [`I.getCount`](#igetcount) |  Get the number of occurances of a text or element |
+| [`I.getText`](#igettext) |  Get the text content of an element |
+
 ---
+## `I.getCount`
 
-## `I.grabText`
-
-Extract text from the page.
+Get the number of occurances of a text or element
 
 #### Usage
 
 ```javascript
-I.grabText(target)
+I.getCount(target)
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|-----------|------|--------|
+| target | string | The text or element to find |
+
+### Example(s)
+
+```javascript
+var count = I.getCount("Add to cart")
+```
+
+Sets the variable `count` to the number occurances of the text "Add to cart".
+
+```javascript
+var count = I.getCount(".product")
+```
+
+Sets the variable `count` to the number occurances of the element with the CSS class "product".
+
+---
+
+## `I.getText`
+
+Get the text content of an element
+
+Aliases: `I.grabText` (legacy)
+
+#### Usage
+
+```javascript
+I.getText(target)
 ```
 
 ##### Parameters
@@ -42,10 +80,10 @@ I.grabText(target)
 ###### Script
 ```javascript
 // Extract text from elements
-var message = I.grabText("#message"); // extracts "Welcome"
-var secret = I.grabText("#secret"); // extracts "Batman"
+var message = I.getText("#message"); // extracts "Welcome"
+var secret = I.getText("#secret"); // extracts "Batman"
 
 // Use the extracted text in later commands
 // For example, enter "Welcome Batman" to the "Secret Message" text field
-I.fill("Secret Message", message + ' ' + secret); 
+I.fill("Secret Message", message + ' ' + secret);
 ```

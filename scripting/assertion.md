@@ -2,10 +2,10 @@
 search:
     keywords: [
         'assert', 'assertion',
-        'see', 'dontsee', 'notsee', 
-        'amat', 
-        'filled', 
-        'selected', 
+        'see', 'dontsee', 'notsee',
+        'amat',
+        'filled',
+        'selected',
         'deselected'
     ]
 ---
@@ -23,6 +23,7 @@ If the assertion fail, the command results in an error.
 |---------|------------|
 | [`I.see`](#isee) |  Assert that an text or element is visible |
 | [`I.dontSee`](#idontsee) |  Assert that an text or element is NOT visible |
+| [`I.count`](#icount) |  Assert the number of occurances for a text or element |
 
 ##### URL assertions commands
 | Command | Description|
@@ -51,20 +52,20 @@ I.see(target)
 ##### Parameters
 | Parameter | Type | Remarks|
 |-----------|------|--------|
-| target | string | Text content that is expected to be visible |
+| target | string | Text or element to find |
 
 #### Example(s)
 
 ```javascript
 I.see("Welcome back, Bruce");
 ```
-Asserts that the text "Welcome back, Bruce" is seen on the page.   
+Asserts that the text "Welcome back, Bruce" is seen on the page.
 
 ---
 
 ## `I.dontSee`
 
-Assert that an text or element is NOT visible
+Assert that an text or element is **NOT** visible
 
 > Ignores casing and white-spaces. This behavior is not configurable at the moment.
 
@@ -76,14 +77,40 @@ I.dontSee(target)
 ##### Parameters
 | Parameter | Type | Remarks|
 |-----------|------|--------|
-| target | string | Text content that is expected to be NOT visible. |
+| target | string | Text or element to find |
+
+---
+
+## `I.count`
+
+Assert the number of occurances for a text or element
+
+Aliases: `I.seeCount`
+
+> Ignores casing and white-spaces. This behavior is not configurable at the moment.
+
+#### Usage
+
+```javascript
+I.count(target, n)
+```
+##### Parameters
+| Parameter | Type | Remarks|
+|-----------|------|--------|
+| target | string | Text or element to find |
+| n | number | Text content that is expected to be NOT visible. |
 
 #### Example(s)
 
 ```javascript
-I.dontSee("Loading...");
+I.count("Add to cart", 20);
 ```
-Asserts that the text "Loading..." is seen on the page.   
+Asserts that there's 20 occurances of the text "Add to cart".
+
+```javascript
+I.count(".product", 20);
+```
+Asserts that there's 20 occurances of the element with the "product" CSS class.
 
 ---
 

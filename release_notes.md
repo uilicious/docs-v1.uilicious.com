@@ -18,7 +18,13 @@
 *Released on 31 May 2018*
 
 ##### 🚀 New Features:
-* Add `I.count` and `I.getCount` to count elements and assert count of elements.
+* Add `I.count` and `I.getCount` to count elements and assert count of text and elements.
+    ```
+    Example:
+    I.goTo("https://store.com/alcohol");
+    I.count("beer", 99); // searchs for 99 occurances of "beer"
+    var n = I.getCount("beer"); // gets the number of occurances of "beer" on the page as a variable
+    ```
 
 ##### 💪 Enhancements:
 * You can now download test run screenshots as an animated GIF for up to 100 steps.
