@@ -23,7 +23,7 @@ Navigate to a URL.
 
 You can use an absolute URL like `http://mystore.com/shoes` or a relative URL like `/shoes`.
 
-If your website uses Basic HTTP Authentication, add the username and password to your url like this:
+> If there is Basic HTTP Authentication on the page, add the username and password to your url like this:
 `https://username:password@mystore.com`
 
 #### Usage
@@ -57,7 +57,7 @@ Go to https://mystore.com/shoes.
 
 ##### Relative URL
 
- 
+
 
 ```javascript
 I.goTo("/shoes");
@@ -75,7 +75,7 @@ The following table shows where the browser will be navigated to depending on th
 
 ##### Query string
 
- 
+
 
 ```javascript
 I.goTo("?color=blue")
@@ -121,9 +121,9 @@ I.refreshPage()
 
 ##`I.switchTab`
 
-Switch to the next tab. 
+Switch to the next tab.
 
-If the browser is currently on the last tab, then this command will switch to the first tab.  
+If the browser is currently on the last tab, then this command will switch to the first tab.
 
 #### Usage
 ```javascript
