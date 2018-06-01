@@ -1,9 +1,45 @@
 # Release Notes
 
+> To see what's coming up, check out our [roadmap](https://trello.com/b/G80eoZU3/ui-licious-development-roadmap).
+
+> For feedback and suggestions, drop us a line at [support@uilicious.com](mailto:support@uilicious.com).
+
 ## Studio / Test Engine
 
-### 2.1.14-RC
+### 2.1.17
+*Released on 31 May 2018*
+
+##### 🚀 New Features:
+* Add `I.count` and `I.seeCount` to count elements and assert count of elements.
+
+##### 💪 Enhancements:
+* You can now download test run screenshots as an animated GIF.
+* You can now set multiple email address for the job notification emails.
+* Better reports for the Editor Tab
+  * Improved design
+  * There's now URL and page title information for each step
+
+##### 🐞 Fixes
+* `I.deselect` and `I.deselected` wasn't working
+
+### 2.1.16
+*Released on 18 May 2018*
+
+##### 💪 Enhancements:
+* (On-premise only) You can download debugging logs for test runs.
+
+##### 🐞 Fixes
+* Some XPATH expressions didn't work
+* SSL certificate checks on Firefox was not skipped
+
+### 2.1.15
 *Released on 8 May 2018*
+
+##### 🚀 New Features:
+* You can limit search scope by using `UI.context` or providing a `context` option in test commands.
+
+### 2.1.14
+*Released on 22 Apr 2018*
 
 ##### 🚀 New Features:
 *  New commands to assert, accept, cancel, and fill **alert/confirm/prompt** dialogs.
@@ -302,7 +338,7 @@ I.goTo("/toys"); // this will navigate to https://petstore.com/store/toys
 * Enhancement  : Update version number and fix version command so that it grabs the version number from package.json
 
 ## 1.5.4
-* New Feature : Import image files into the workspace directory 
+* New Feature : Import image files into the workspace directory
 
 ## 1.2.12
 * Show summary of test run errors in test run report.
