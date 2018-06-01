@@ -1,12 +1,59 @@
 # Release Notes
 
+> To see what's coming up, check out our [roadmap](https://trello.com/b/G80eoZU3/ui-licious-development-roadmap).
+
+> For feedback and suggestions, drop us a line at [support@uilicious.com](mailto:support@uilicious.com).
+
+**How we update our version numbers:**
+<Major>.<Minor>.<Patch>
+* Major: There are breaking changes
+* Minor: There are new features
+* Patch: There are enhancements and bug fixes only.
+
 ## Studio / Test Engine
 
-### 2.1.14-RC
+### 2.4.0
+*Released on 31 May 2018*
+
+##### 🚀 New Features:
+* Add `I.count` and `I.getCount` to count elements and assert count of elements.
+
+##### 💪 Enhancements:
+* You can now download test run screenshots as an animated GIF for up to 100 steps.
+* You can now set multiple email address for the job notification emails.
+* Better reports for the Editor Tab
+  * Improved design
+  * There's now URL and page title information for each step
+* Added last 3 steps until first error in error reports sent to Webhooks.
+
+##### 🐞 Fixes
+* `I.deselect` and `I.deselected` wasn't working
+
+### 2.3.1
+*Released on 18 May 2018*
+
+##### 💪 Enhancements:
+* (On-premise only) You can download debugging logs for test runs.
+
+##### 🐞 Fixes
+* Some XPATH expressions didn't work
+* SSL certificate checks on Firefox was not skipped
+* When jobs fail due to network errors, automatically retry the job.
+
+### 2.3.0
 *Released on 8 May 2018*
 
 ##### 🚀 New Features:
+* You can limit search scope by using `UI.context` or providing a `context` option in test commands.
+
+### 2.2.0
+*Released on 22 Apr 2018*
+
+##### 🚀 New Features:
 *  New commands to assert, accept, cancel, and fill **alert/confirm/prompt** dialogs.
+
+##### 🐞 Fixes
+* Unable to set timezone for job schedule sometimes.
 
 ### 2.1.13
 *Released on 13 Apr 2018*
@@ -302,7 +349,7 @@ I.goTo("/toys"); // this will navigate to https://petstore.com/store/toys
 * Enhancement  : Update version number and fix version command so that it grabs the version number from package.json
 
 ## 1.5.4
-* New Feature : Import image files into the workspace directory 
+* New Feature : Import image files into the workspace directory
 
 ## 1.2.12
 * Show summary of test run errors in test run report.
