@@ -54,6 +54,10 @@ This command fills "bruce@waynecorp.com" into the "Email" field.
 
 Select a dropdown, checkbox, or radio button.
 
+> **This -ONLY- works on native HTML5 elements.** <br>
+> <br>
+> For custom elements, use `I.click` as a fallback. <br>
+
 #### Usage
 
 Select an `option`:
