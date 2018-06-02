@@ -10,7 +10,7 @@
 
 * Major: Contains breaking changes
 * Minor: Contains new features
-* Patch: Contains enhancements and bug fixes only.
+* Patch: Contains enhancements and bug fixes only
 
 ## Studio / Test Engine
 
@@ -27,12 +27,17 @@
     ```
 
 ##### 💪 Enhancements:
-* You can now download test run screenshots as an animated GIF for up to 100 steps.
-* You can now set multiple email address for the job notification emails.
+
 * Better reports for the Editor Tab
-  * Improved design
+  * Improved design - nicer preview window, better layout for mobile resolution tests
   * There's now URL and page title information for each step
-* Added last 3 steps until first error in error reports sent to Webhooks.
+  * You can now download test run screenshots as an animated GIF for up to 100 steps.
+* Scheduled jobs:
+    * You can now set multiple email address for the job notification emails.
+    * Added last 3 steps until first error in error reports sent to Webhooks.
+* Test engine:
+    * `aria-labelledby` is now evaluated when searching for elements
+    * Search expression will now match all variants of single-quotes and double-quotes.
 
 ##### 🐞 Fixes
 * `I.deselect` and `I.deselected` wasn't working
