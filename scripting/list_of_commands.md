@@ -12,7 +12,7 @@
 
 | Command | Description |
 |---------|-------------|
-| [`I.click`](mouse.md#iclick) | Click on an element |
+| [`I.click`](mouse.md#iclick--idoubleclick) <br> [`I.doubleClick`](mouse.md#iclick--idoubleclick) | Click or double click on an element |
 | [`I.scrollBy`](mouse.md#iscrollby) | Scrolls the page horizontally and vertically by a given number of pixels. |
 | [`I.scrollTo`](mouse.md#iscrollto) | Scrolls to a coordinate on the page |
 | [`I.scrollToTop`](mouse.md#iscrolltotop) | Scroll to the top of the page |

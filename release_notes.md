@@ -14,8 +14,19 @@
 
 ## Studio / Test Engine
 
+### 2.5.0
+*Released on 4 Jun 2018*
+
+##### 🚀 New Features:
+* Added `I.doubleClick` command
+
+##### 🐞 Fixes
+* Fixed `I.amAt` - clean up extra `/` characters before asserting path to prevent incorrect failed assertions
+* Fixed `I.filled` - fails to catch errors
+* Screenshot does not automatically center target elements for selection commands.
+
 ### 2.4.0
-*Released on 31 May 2018*
+*Released on 1 Jun 2018*
 
 ##### 🚀 New Features:
 * Add `I.count` and `I.getCount` to count elements and assert count of text and elements.

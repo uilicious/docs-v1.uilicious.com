@@ -9,7 +9,7 @@ search:
 
 | Command | Description|
 |---------|------------|
-| [`I.click`](#iclick) | Click on an element  |
+| [`I.click`](#iclick--idoubleclick) <br> [`I.doubleClick`](#iclick--idoubleclick) | Click or double click on an element  |
 | [`I.scrollBy`](#iscrollby) | Scrolls the page horizontally and vertically by a given number of pixels |
 | [`I.scrollTo`](#iscrollto) | Scroll to a given coordinate on the page  |
 | [`I.scrollToTop`](#iscrolltotop) | Scroll to the top of the page  |
@@ -17,9 +17,9 @@ search:
 
 ---
 
-##`I.click`
+## `I.click` / `I.doubleclick`
 
-Click on an element.
+Click or double click on an element.
 
 For image / icon elements, we'd strongly recommend that setting an `aria-label` for the target element, use `I.click` using the label. This will also help make your application more friendly to humans using accessibility tools.
 
@@ -31,6 +31,7 @@ If the click opens a page in a new tab, the browser will automatically be switch
 #### Usage
 ```javascript
 I.click(target);
+I.doubleClick(target);
 ```
 
 ##### Parameters
@@ -78,7 +79,7 @@ I.click("Add");
 ```javascript
 I.click("#login-btn")
 ```
-Click on an element with its `id` property set to `login-btn`. 
+Click on an element with its `id` property set to `login-btn`.
 
 ```javascript
 I.click(".login-btn")
@@ -106,7 +107,7 @@ I.scrollBy(x,y);
 | Parameter | Type | Remarks|
 |----------|------|--------|
 | x | number | Number of pixels to scroll right by. Use a negative number to scroll left instead. |
-| y | number | Number of pixels to scroll down by. Use a negative number to scroll up instead. | 
+| y | number | Number of pixels to scroll down by. Use a negative number to scroll up instead. |
 
 #### Example(s)
 
@@ -121,7 +122,7 @@ Scrolls the page 200 pixels to the right, and 500 pixels up.
 ##`I.scrollTo`
 
 Scrolls the given coordinate of the page.
- 
+
 If the page is sufficiently tall and wide, the page will be scrolled until the given coordinate is at the top left corner of the screen.
 
 #### Usage
@@ -162,7 +163,7 @@ I.scrollToTop();
 
 Scroll to the bottom of the page.
 
->For infinite scrolling pages, this command will simply scroll to the end of the rendered content. 
+>For infinite scrolling pages, this command will simply scroll to the end of the rendered content.
 
 #### Usage
 ```javascript
