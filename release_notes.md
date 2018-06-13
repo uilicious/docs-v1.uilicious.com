@@ -14,6 +14,19 @@
 
 ## Studio / Test Engine
 
+### 2.5.2
+*Released on 13 Jun 2018*
+
+##### 🐞 Fixes
+* Fixed error that happens when cancelling rename file action from title bar in the Editor
+* Block very edge case race condition where a file will override another
+
+### 2.5.1
+*Released on 8 Jun 2018*
+
+##### 💪 Enhancements:
+* `I.amAt` - Now supports partial matching of paths and handles RegExp.
+
 ### 2.5.0
 *Released on 4 Jun 2018*
 
