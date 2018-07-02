@@ -13,6 +13,17 @@
 * Patch: Contains enhancements and bug fixes only
 
 ## Studio / Test Engine
+### 2.5.3
+*Released on 2 Jul 2018*
+
+##### 🚀 New Features:
+* You can now select from which region you want to run your test for certain plans 
+    * Available Regions : Singapore, Frankfurt, California, Taiwan, Japan
+    * Support browsers : Chrome, Firefox
+* Preview of Safari browser (for limited users only)
+
+##### 🐞 Fixes
+* Error test run notification report was missing ❗ from email subject
 
 ### 2.5.2
 *Released on 13 Jun 2018*
