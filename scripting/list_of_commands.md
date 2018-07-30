@@ -8,6 +8,29 @@
 | [`I.refreshPage`](navigation.md#irefreshpage) | Refresh a page |
 | [`I.switchTab`](navigation.md#iswitchtab) | Switch Tab |
 
+#### URL assertion commands
+
+| Command | Description |
+|---------|-------------|
+| [`I.amAt`](navigation.md#iamAt) | Assert that the browser is at a specific URL |
+
+#### Form Input Commands
+
+| Command | Description |
+|---------|-------------|
+| [`I.fill`](form_input.md#ifill) | Fill a text field with a value |
+| [`I.select`](form_input.md#iselect) | Select a dropdown / checkbox / radio button |
+| [`I.deselect`](form_input.md#ideselect) | Deselect a checkbox |
+| [`I.upload`](form_input.md#iupload) | Upload a file to a file field |
+
+#### Form input assertion commands
+
+| Command | Description |
+|---------|-------------|
+| [`I.filled`](form_input.md#ifilled) | Assert that the form is filled with a specific value |
+| [`I.selected`](form_input.md#iselected) | Assert that a dropdown option, checkbox, or radio button is selected |
+| [`I.deselected`](form_input.md#ideselected) | Assert that a dropdown option, checkbox, or radio button is NOT selected |
+
 #### Mouse Commands
 
 | Command | Description |
@@ -30,15 +53,6 @@
 | [`I.pressRight`](keyboard.md#ipressright) | Press the → key |
 | [`I.pressTab`](keyboard.md#ipresstab) | Press the `Tab` key |
 
-#### Form Input Commands
-
-| Command | Description |
-|---------|-------------|
-| [`I.fill`](keyboard.md#ifill) | Fill a text field with a value |
-| [`I.select`](keyboard.md#iselect) | Select a dropdown / checkbox / radio button |
-| [`I.deselect`](keyboard.md#ideselect) | Deselect a checkbox |
-| [`I.upload`](keyboard.md#iupload) | Upload a file to a file field |
-
 #### General assertion commands
 
 | Command | Description |
@@ -46,20 +60,6 @@
 | [`I.see`](assertion.md#isee) | Assert that an text or element is visible |
 | [`I.dontSee`](assertion.md#idontSee) | Assert that an text or element is NOT visible |
 | [`I.count`](assertion.md#icount) | Assert the number of occurances for a text or element |
-
-#### URL assertion commands
-
-| Command | Description |
-|---------|-------------|
-| [`I.amAt`](assertion.md#iamAt) | Assert that the browser is at a specific URL |
-
-#### Form input assertion commands
-
-| Command | Description |
-|---------|-------------|
-| [`I.filled`](assertion.md#ifilled) | Assert that the form is filled with a specific value |
-| [`I.selected`](assertion.md#iselected) | Assert that a dropdown option, checkbox, or radio button is selected |
-| [`I.deselected`](assertion.md#ideselected) | Assert that a dropdown option, checkbox, or radio button is NOT selected |
 
 #### Alert commands
 
