@@ -12,18 +12,66 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
-## Studio / Test Engine
-### 2.5.3
+### 2.6.5
+*Released on 30 Jul 2018*
+
+##### 💪 Enhancements:
+* `UI.context` can now handle and target within multiple `context` matches
+* Added `I.see.signpost` for more explicit hints to the test engine to resolve similar matches using a related element
+
+### 2.6.4
+*Released on 20 Jul 2018*
+
+##### 🐞 Fixes
+* (Firefox) Fixed bug typing space characters
+
+### 2.6.3
+*Released on 19 Jul 2018*
+
+##### 💪 Enhancements:
+* You can now use relative paths for `TEST.run`
+
+### 2.6.2
+*Released on 16 Jul 2018*
+
+##### 🐞 Fixes
+* Fixed bug typing special characters
+
+### 2.6.2
+*Released on 13 Jul 2018*
+
+##### 💪 Enhancements:
+* Added workaround to perform keyboard actions on input fields that override values on `input` event causing characters to be erased
+
+### 2.6.1
+*Released on 12 Jul 2018*
+
+##### 💪 Enhancements:
+* Added `I.clickXY` command to click on an element using (x,y) coordinates
+
+### 2.6.0
 *Released on 2 Jul 2018*
 
 ##### 🚀 New Features:
-* You can now select from which region you want to run your test for certain plans 
+* (Beta) You can now select from which region you want to run your test for certain plans  (for Pro users only)
     * Available Regions : Singapore, Frankfurt, California, Taiwan, Japan
     * Support browsers : Chrome, Firefox
-* Preview of Safari browser (for limited users only)
+* (Beta) You can now run test on Safari (for Pro users only)
 
 ##### 🐞 Fixes
 * Error test run notification report was missing ❗ from email subject
+
+### 2.5.4
+*Released on 1 Jul 2018*
+
+##### 💪 Enhancements:
+* Improve `I.select` so that it can handle hidden checkboxes that is styled using an associated label that is visible
+
+### 2.5.3
+*Released on 28 Jun 2018*
+
+##### 🐞 Fixes
+* (Firefox) Fixed bug in getting element from browser
 
 ### 2.5.2
 *Released on 13 Jun 2018*
