@@ -5,15 +5,19 @@ search:
 
 # Navigation commands
 
-
-
 ## List of commands
 
+#### Page navigation commands
 | Command | Description|
 |---------|------------|
 | [`I.goTo`](#igoto) | Navigate to a URL |
 | [`I.refreshPage`](#irefreshpage) | Refresh the page |
 | [`I.switchTab`](#iswitchtab) | Switch to the next tab |
+
+#### Page assertion commands
+| Command | Description|
+|---------|------------|
+| [`I.amAt`](#iamAt) |  Assert that the browser is at a specific URL |
 
 ---
 
@@ -103,6 +107,89 @@ The following table shows where the browser will be navigated to depending on th
 |----------|------|
 | https://mystore.com/shoes | https://mystore.com/shoes#sale |
 | https://mystore.com/shoes#new | https://mystore.com/shoes#sale
+
+---
+
+## `I.amAt`
+
+Asserts that the browser is at a specific URL.
+
+You can use an absolute URL or a relative URL.
+
+#### Usage
+
+```javascript
+I.amAt(url)
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|-----------|------|--------|
+| url | string | URL to check against |
+
+#### Example(s)
+
+##### Absolute URL
+
+```javascript
+I.amAt("http://mystore.com")
+```
+
+Matches the following:
+* http://mystore.com
+
+Does not match:
+* https://mystore.com
+
+##### Without protocol
+
+```javascript
+I.amAt("://mystore.com")
+```
+
+Matches the following:
+* http://mystore.com
+* https://mystore.com
+
+##### Relative URL
+
+```javascript
+I.amAt("/shoes")
+```
+
+Matches the following:
+* http://storeA.com/shoes
+* http://storeB.com/shoes
+
+##### Query string
+
+```javascript
+I.amAt("?color=blue")
+```
+
+Matches the following:
+* http://mystore.com/shoes?color=blue
+* http://mystore.com/bag?color=blue
+
+Does not matches:
+* http://mystore.com/shoes
+* http://mystore.com/bag?color=red
+
+##### Hash
+
+```javascript
+I.amAt("#sale")
+```
+
+Matches the following:
+* http://mystore.com/shoes#sale
+* http://mystore.com/bag#sale
+
+Does not matches:
+* http://mystore.com/shoes
+* http://mystore.com/bag#new
+
 
 ---
 

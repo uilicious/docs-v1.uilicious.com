@@ -1,60 +1,77 @@
 # Summary
 
-## UI-licious Docs
+## What's UI-licious
 
 * [Welcome!](README.md)
 
-## Scripting
+----
 
-* [Basic Commands](scripting/basic_commands.md)
-  * [Navigation](scripting/navigation.md)
+## Reference
+
+* [List of commands](scripting/list_of_commands.md)
+* [Configuration](scripting/config.md)
+
+----
+
+## Basic Commands
+
+* [The essentials](scripting/basic_commands.md)
+* [Page navigation](scripting/navigation.md)
     * [I.goTo](scripting/navigation.md#igoto)
+    * [I.amAt](scripting/navigation.md#iamat)
     * [I.refreshPage](scripting/navigation.md#irefreshpage)
     * [I.switchTab](scripting/navigation.md#iswitchtab)
-  * [Mouse](scripting/mouse.md)
+* [Form actions](scripting/form_input.md)
+    * [I.fill](scripting/form_input.md#ifill)
+    * [I.filled](scripting/form_input.md#ifilled)
+    * [I.select](scripting/form_input.md#iselect)
+    * [I.selected](scripting/form_input.md#iselected)
+    * [I.deselect](scripting/form_input.md#ideselect)
+    * [I.deselected](scripting/form_input.md#ideselected)
+    * [I.upload](scripting/form_input.md#iupload)
+* [Mouse actions](scripting/mouse.md)
     * [I.click](scripting/mouse.md#iclick--idoubleclick)
     * [I.doubleClick](scripting/mouse.md#iclick--idoubleclick)
     * [I.scrollBy](scripting/mouse.md#iscrollby)
     * [I.scrollTo](scripting/mouse.md#iscrollto)
     * [I.scrollToTop](scripting/mouse.md#iscrolltotop)
     * [I.scrollToBottom](scripting/mouse.md#iscrolltobottom)
-  * [Keyboard](scripting/keyboard.md)
-  * [Form Input](scripting/form_input.md)
-    * [I.fill](scripting/form_input.md#ifill)
-    * [I.select](scripting/form_input.md#iselect)
-    * [I.deselect](scripting/form_input.md#ideselect)
-    * [I.upload](scripting/form_input.md#iupload)
-  * [Assertion](scripting/assertion.md)
+* [Keyboard actions](scripting/keyboard.md)
+* [Validate page content](scripting/assertion.md)
     * [I.see](scripting/assertion.md#isee)
     * [I.dontSee](scripting/assertion.md#idontsee)
     * [I.count](scripting/assertion.md#icount)
-    * [I.amAt](scripting/assertion.md#iamat)
-    * [I.filled](scripting/assertion.md#ifilled)
-    * [I.selected](scripting/assertion.md#iselected)
-    * [I.deselected](scripting/assertion.md#ideselected)
-  * [Alerts](scripting/alerts.md)
+* [Alerts](scripting/alerts.md)
     * [I.seeAlert](scripting/alerts.md#iseealert)
     * [I.acceptAlert](scripting/alerts.md#iacceptalert)
     * [I.cancelAlert](scripting/alerts.md#icancelalert)
     * [I.fillAlert](scripting/alerts.md#ifillalert)
-  * [Utility](scripting/utility.md)
-    * [I.wait](scripting/utility.md#iwait)
-  * [Generate sample data](scripting/sample.md)
-    * [SAMPLE.id](scripting/sample.md#sampleid)
-* [Advanced Commands](scripting/advanced_commands.md)
-  * [Using Javascript in Tests](scripting/javascript.md)
-  * [Executing Javascript on the Browser](scripting/executing-javascript.md)
-    * [UI.execute](scripting/executing-javascript.md#uiexecute)
-  * [Sequence](scripting/sequence.md)
+* [Chaining tests](scripting/sequence.md)
     * [TEST.run](scripting/sequence.md#testrun)
-  * [Extract](scripting/extract.md)
+* [Generate sample data](scripting/sample.md)
+    * [SAMPLE.id](scripting/sample.md#sampleid)
+* [Utility](scripting/utility.md)
+    * [I.wait](scripting/utility.md#iwait)
+
+## Advanced Commands
+
+* [Advanced Commands](scripting/advanced_commands.md)
+* [Using Javascript](scripting/javascript.md)
+* [Executing Javascript on the Browser](scripting/executing-javascript.md)
+    * [UI.execute](scripting/executing-javascript.md#uiexecute)
+* [Extract page content](scripting/extract.md)
     * [I.getCount](scripting/extract.md#igetcount)
     * [I.getText](scripting/extract.md#igettext)
-  * [Cookies](scripting/cookies.md)
-* [List of Commands](scripting/list_of_commands.md)
-* [Configuration](scripting/config.md)
+* [Cookies](scripting/cookies.md)
+    * [UI.COOKIE.set](scripting/cookies.md#uicookieset)
+    * [UI.COOKIE.isSet](scripting/cookies.md#uicookieisset)
+    * [UI.COOKIE.isEqual](scripting/cookies.md#uicookieisequal)
+    * [UI.COOKIE.delete](scripting/cookies.md#uicookiedelete)
+    * [UI.COOKIE.deleteAll](scripting/cookies.md#uicookiedeleteall)
 
-## Command Line Interface
+----
+
+## Using the CLI
 
 * [Introduction](cli/intro.md#command-line-interface)
 * [Installation](cli/installation.md)
@@ -63,6 +80,8 @@
 * [Set test data during test runs](cli/test_data.md)
 * [Import test script](cli/import_test.md)
 * [Export test script](cli/export_test.md)
+
+---
 
 ## Roadmap / Changes
 

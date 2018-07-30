@@ -1,17 +1,10 @@
----
-search:
-    keywords: [
-        'forminput',
-        'textfield', 'datefield', 'checkbox', 'radiobutton', 'dropdown', 'file',
-        'fill', 'select', 'deselect', 'upload'
-    ]
----
-
 # Form input commands
 
-These are a list of commands for interacting with standard form input fields.
+These commands are used to set values for form input and validate form inputs.
 
 ## List of commands
+
+##### Input commands
 
 | Command | Description|
 |---------|------------|
@@ -19,6 +12,13 @@ These are a list of commands for interacting with standard form input fields.
 | [`I.select`](#iselect) | Select a dropdown option, checkbox, or radio button |
 | [`I.deselect`](#ideselect) | Deselect a checkbox |
 | [`I.upload`](#iupload) | Upload a file |
+
+##### Assertion / Validation commands
+| Command | Description|
+|---------|------------|
+| [`I.filled`](#ifilled) |  Assert that the form is filled with a specific value |
+| [`I.selected`](#iselected) |  Assert that a dropdown option, checkbox, or radio button is selected |
+| [`I.deselected`](#ideselected) |  Assert that a dropdown option, checkbox, or radio button is NOT selected |
 
 ---
 
@@ -47,6 +47,27 @@ I.fill(field, value)
 I.fill("Email", "bruce@waynecorp.com");
 ```
 This command fills "bruce@waynecorp.com" into the "Email" field.
+
+---
+
+## `I.filled`
+
+Asserts that the form is filled with a specific value
+
+#### Usage
+
+```javascript
+I.filled(field, value)
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|-----------|------|--------|
+| field | string | Keyword to identify the field. <br> The associated label, placeholder, adjacent text, and name can be used to identify a field. <br>  CSS selectors can also be used, *but is not recommended as it makes the tests harder to keep up to date.* |
+| value | string | Value that the field is expected to have |
+
+#### Example(s)
 
 ---
 
@@ -180,6 +201,29 @@ This selects the option "Cat".
 
 ---
 
+## `I.selected`
+
+Asserts that a dropdown option, checkbox, or radio button is selected
+
+#### Usage
+
+```javascript
+I.selected(option)
+```
+
+```javascript
+I.selected(list, option)
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|-----------|------|--------|
+| list | string | Keyword to identify the options list |
+| option | string | Keyword to identify the option to be selected |
+
+---
+
 ## `I.deselect`
 
 Deselect a checkbox.
@@ -200,6 +244,29 @@ I.deselect(list, option)
 |-----------|------|--------|
 | list (optional) | string | Keyword to identify the options list |
 | option | string | Keyword to identify the option to deselect |
+
+---
+
+## `I.deselected`
+
+Asserts that a dropdown option, checkbox, or radio button is NOT selected
+
+#### Usage
+
+```javascript
+I.deselected(option)
+```
+
+```javascript
+I.deselected(list, option)
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|-----------|------|--------|
+| list | string | Keyword to identify the options list |
+| option | string | Keyword to identify the option that expected to be NOT selected |
 
 ---
 
