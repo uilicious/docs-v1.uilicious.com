@@ -1,6 +1,6 @@
 # List of commands
 
-#### Navigation Commands
+#### Navigation commands
 
 | Command | Description |
 |---------|-------------|
@@ -14,7 +14,7 @@
 |---------|-------------|
 | [`I.amAt`](navigation.md#iamAt) | Assert that the browser is at a specific URL |
 
-#### Form Input Commands
+#### Form input commands
 
 | Command | Description |
 |---------|-------------|
@@ -23,7 +23,7 @@
 | [`I.deselect`](form_input.md#ideselect) | Deselect a checkbox |
 | [`I.upload`](form_input.md#iupload) | Upload a file to a file field |
 
-#### Form input assertion commands
+#### Form assertion commands
 
 | Command | Description |
 |---------|-------------|
@@ -31,7 +31,7 @@
 | [`I.selected`](form_input.md#iselected) | Assert that a dropdown option, checkbox, or radio button is selected |
 | [`I.deselected`](form_input.md#ideselected) | Assert that a dropdown option, checkbox, or radio button is NOT selected |
 
-#### Mouse Commands
+#### Mouse commands
 
 | Command | Description |
 |---------|-------------|
@@ -41,7 +41,7 @@
 | [`I.scrollToTop`](mouse.md#iscrolltotop) | Scroll to the top of the page |
 | [`I.scrollToBottom`](mouse.md#iscrolltobottom) | Scroll to the bottom of the page |
 
-#### Keyboard Commands
+#### Keyboard commands
 
 | Command | Description |
 |---------|-------------|
@@ -53,13 +53,20 @@
 | [`I.pressRight`](keyboard.md#ipressright) | Press the → key |
 | [`I.pressTab`](keyboard.md#ipresstab) | Press the `Tab` key |
 
-#### General assertion commands
+#### Validate page content
 
 | Command | Description |
 |---------|-------------|
 | [`I.see`](assertion.md#isee) | Assert that an text or element is visible |
 | [`I.dontSee`](assertion.md#idontSee) | Assert that an text or element is NOT visible |
 | [`I.count`](assertion.md#icount) | Assert the number of occurances for a text or element |
+
+#### Page content extraction commands
+
+| Command | Description |
+|---------|-------------|
+| [`I.getCount`](extract.md#igetcount) | Get the number of occurances of a text or element |
+| [`I.getText`](extract.md#igettext) | Get text content from an element |
 
 #### Alert commands
 
@@ -70,18 +77,11 @@
 | [`I.cancelAlert`](alerts.md#icancelalert) | Press the "Cancel" button on the alert |
 | [`I.fillAlert`](alerts.md#ifillalert) | Fill the text box on the alert |
 
-#### Utility Commands
+#### Utility commands
 
 | Command | Description |
 |---------|-------------|
 | [`I.wait`](utility.md#iwait) | Wait for a given amount of time |
-
-#### Extraction Commands
-
-| Command | Description |
-|---------|-------------|
-| [`I.getCount`](extract.md#igetcount) | Get the number of occurances of a text or element |
-| [`I.getText`](extract.md#igettext) | Get text content from an element |
 
 #### Generate sample data
 
@@ -89,7 +89,7 @@
 |---------|-------------|
 | [`SAMPLE.id`](sample.md#sampleid) | Generates a random string useful for IDs and passwords |
 
-#### Sequence Commands
+#### Sequence commands
 
 | Command | Description |
 |---------|-------------|
