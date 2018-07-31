@@ -12,6 +12,12 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+### 2.6.6
+*Released on 31 Jul 2018*
+
+##### 🐞 Fixes
+* (Firefox) Fixed bug with `I.click` not working
+
 ### 2.6.5
 *Released on 30 Jul 2018*
 
