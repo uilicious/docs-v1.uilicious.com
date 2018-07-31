@@ -95,6 +95,12 @@
 |---------|-------------|
 | [`TEST.run`](sequence.md#testrun) | Runs another test |
 
+#### Limiting test scope
+
+| Command | Description|
+|---------|------------|
+| [`UI.context`](ui_context.md#uicontext) | Limit the test to run on specific parts of a page |
+
 #### Execute Javascript
 
 | Command | Description |
