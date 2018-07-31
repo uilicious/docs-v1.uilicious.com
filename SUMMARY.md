@@ -1,19 +1,19 @@
 # Summary
 
-## What's UI-licious
+## Introduction
 
-* [Welcome!](README.md)
+* [What's UI-licious?](README.md)
 
 ----
 
-## Reference
+## Quick Reference
 
 * [List of commands](scripting/list_of_commands.md)
 * [Configuration](scripting/config.md)
 
 ----
 
-## Basic Commands
+## Basic Test Commands
 
 * [The essentials](scripting/basic_commands.md)
 * [Page navigation](scripting/navigation.md)
@@ -53,7 +53,7 @@
 * [Utility](scripting/utility.md)
     * [I.wait](scripting/utility.md#iwait)
 
-## Advanced Commands
+## Advanced Test Commands
 
 * [Advanced Commands](scripting/advanced_commands.md)
 * [Using Javascript](scripting/javascript.md)
