@@ -16,7 +16,7 @@
 *Released on 14 Aug 2018*
 
 ##### 🐞 Fixes
-* (All browsers) Fix `I.doubleClick`
+* (Chrome, Safari, Edge, IE) Fix `I.doubleClick`
 * (Firefox) Fixed bug with `I.click` not working for some elements
 * (IE) Fix bug with handling XPATH selector
 
