@@ -12,6 +12,20 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+### 2.6.8
+*Released on 14 Aug 2018*
+
+##### 🐞 Fixes
+* (All browsers) Fix `I.doubleClick`
+* (Firefox) Fixed bug with `I.click` not working for some elements
+* (IE) Fix bug with handling XPATH selector
+
+### 2.6.7
+*Released on 10 Aug 2018*
+
+##### 🐞 Fixes
+* (Firefox) Fixed bug with `I.click` not working on elements within iframes
+
 ### 2.6.6
 *Released on 31 Jul 2018*
 
