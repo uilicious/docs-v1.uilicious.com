@@ -4,13 +4,68 @@
 
 > For feedback and suggestions, drop us a line at [support@uilicious.com](mailto:support@uilicious.com).
 
-**How we update our version numbers:**
+**How the version numbers mean:**
 
 &lt;Major&gt;.&lt;Minor&gt;.&lt;Patch&gt;
 
 * Major: Contains breaking changes
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
+
+### 2.9.0
+*Released on 20 Sept 2018*
+
+##### 🚀 New Features:
+
+* Test Engine: 
+  * You can take full page screenshots with these new configuration and commands:
+    * Add `TEST.fullScreenshot` configuration option to set screenshots to be taken as full page screenshots. Set `TEST.fullScreenshot = true` to enable full page screenshots for all subsequent commands. Note that this slows down testing time significantly, you should use it only when necessary.
+    * Add `TEST.takeFullScreenshot()` command to take a full page screenshot
+* Studio:
+  * You can now download test run reports as JSON and CSV. 
+* (For Enterprise On-Premise):
+  * Added views to monitor running tests, all tests, and all scheduled jobs system-wide.
+
+##### 💪 Enhancement:
+* Studio - Editor View: 
+  * You can now share reports of tests ran from the Editor view by grabbing the URL of report.
+  * Where `I.fill` is performed on the screen is now highlighted
+* Studio - Monitoring View:
+  * You can now set the `User Agent` in jobs. This setting currently only works for tests running on Chrome.
+  * Added pagination for list of tests ran for a scheduled job to view reports for test ran further back.
+  
+##### 🐞 Fixes
+* Studio - Editor View:
+  * Editor wasn't loading new tests immediately after creation.
+
+### 2.8.0
+*Released on 6 Sept 2018
+
+##### Highlights:
+* Studio - Editor View: 
+  * Where `I.click` are performed on the screen is now highlighted. However, screenshots for `I.click` now shows the screen before the click is performed, instead of the screen after the click is performed. If you need to view the screen after the click is performed, simply add another command after `I.click` such as `I.see` to capture the screen after.
+
+##### 🚀 New Features:
+* Studio - Editor View:
+  * "Autosave" switch to enable / disable autosaving of your test scripts. 
+
+##### 💪 Enhancement:
+* Studio - Editor View: 
+  * Added a warning if you try to leave the Editor with unsaved changes to prevent accidental loss of work.
+  * For each step in the test report, we've added a "View Test" link so that you can jump to the script for that step.
+  * 
+
+### 2.7.0
+*Released on 29 Aug 2018*
+
+##### 🚀 New Features:
+* Test Engine:
+  * Added supported for `User-Agent` settings for tests ran on Chrome. You can now set `User-Agent` from the advanced run configuration in "Run" pane in the Studio Editor.
+  * New commands for custom logging to support custom functions `TEST.log.info`, `TEST.log.pass`, `TEST.log.fail`.
+
+##### 💪 Enhancement:
+* Studio:
+  * We've changed our chat and ticketing system from Zendesk to Intercom for a better experience in supporting you. :)
 
 ### 2.6.8
 *Released on 14 Aug 2018*
