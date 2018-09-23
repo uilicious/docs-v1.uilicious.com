@@ -73,7 +73,7 @@ I.count(target, n)
 | Parameter | Type | Remarks|
 |-----------|------|--------|
 | target | string | Text or element to find |
-| n | number | Text content that is expected to be NOT visible. |
+| n | number | Number of occurance expected |
 
 #### Example(s)
 
