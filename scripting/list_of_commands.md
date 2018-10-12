@@ -95,6 +95,19 @@
 |---------|-------------|
 | [`TEST.run`](sequence.md#testrun) | Runs another test |
 
+#### Screenshot commands
+
+| Command | Description |
+|---------|-------------|
+| [`TEST.takeFullScreenshot`](screenshot.md#testtakefullscreenshot) | Take a full page screenshot (Safari & IE only) |
+
+#### Reporting commands
+| Command | Description |
+|---------|-------------|
+| [`TEST.log.info`](logging.md#testloginfo) | Log a message to report |
+| [`TEST.log.pass`](logging.md#testlogpass) | Log a message to report with `pass` status |
+| [`TEST.log.fail`](logging.md#testlogfail) | Log a message to report with `fail` status |
+
 #### Limiting test scope
 
 | Command | Description|
@@ -115,3 +128,5 @@
 | [`UI.COOKIE.isEqual`](cookies.md#uicookieisEqual) | Assert the value of a cookie  |
 | [`UI.COOKIE.delete`](cookies.md#uicookiedelete) | Delete a cookie |
 | [`UI.COOKIE.deleteAll`](cookies.md#uicookiedeleteAll) | Delete all cookies |
+
+
