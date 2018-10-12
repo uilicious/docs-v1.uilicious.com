@@ -273,3 +273,53 @@
 body {
     overflow-y: hidden; /* prevent double scroll-bar */
 }
+
+
+/* Code */
+
+.markdown-section code {
+    color: #1ebe70;
+    background-color: #fdfdfd;
+}
+
+.markdown-section code::before{
+    content: ""
+}
+
+.markdown-section code::after{
+    content: ""
+}
+
+.markdown-section h1 code{
+    background-color: transparent;
+    color: inherit;
+}
+
+.markdown-section h2 code{
+    background-color: transparent;
+    color: inherit;
+}
+
+.markdown-section h3 code{
+    background-color: transparent;
+    color: inherit;
+}
+
+.markdown-section h4 code{
+    background-color: transparent;
+    color: inherit;
+}
+
+.markdown-section h5 code{
+    background-color: transparent;
+    color: inherit;
+}
+
+.markdown-section h6 code{
+    background-color: transparent;
+    color: inherit;
+}
+
+.markdown-section code.lang-javascript{
+    color: inherit;
+}
