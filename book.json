@@ -30,6 +30,11 @@
       "index" : "uilicious",
       "logo" : "logo-2.png",
       "brandUrl" : "https://uilicious.com"
+    },
+    "prism": {
+      "css": [
+        "prism-themes/themes/prism-xonokai.css"
+      ]
     }
   }
 }
