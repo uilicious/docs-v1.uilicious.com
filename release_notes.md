@@ -12,6 +12,33 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+### 2.11.0
+*Released on 7 Nov 2018*
+
+##### 🚀 New Features:
+* **Datasets**: You can now configure variables for running tests on different environments.
+* New commands:
+  * `I.getValue` - Allows you to grab the value of an input field and set it to a variable
+  * New scroll commands for conveninence - `I.scrollUp`, `I.scrollDown`, `I.scrollLeft`, `I.scrollRight`.
+  * **Error supression** - For all `I` and `UI` commands, you can suppress the error with the `$` variant of the command - e.g. `I.see$("Flying pigs")`. This may be useful when you want so suppress the errors for commands used as conditional expressions in `if/else` blocks. 
+  * Error and **log suppression** - For all `I` and `UI` commands, you can suppress the error and logs with the `$$` variant of the command - e.g. `UI.execute$$(...)`.
+
+##### 💪 Enhancement:
+* Better error logging about errors in the test script itself.
+
+### 2.10.0
+*Released on 25 Oct 2018*
+
+We'll be taking it slow this couple of months for some major refactoring under the hood so that we can write code more efficiently, improve the performance of UI-licious, and support development of features planned in our roadmap.
+
+##### 🚀 New Features:
+* **Stop button**. Yes, you have been asking for it. Now there's a way to stop tests.
+* You can now see which tests that are currently being ran, how are they triggered, and how many of your concurrent test sessions are being used.
+
+##### 💪 Enhancement:
+* Studio - Monitoring View
+  * Added sorting controls to the Jobs overview.
+
 ### 2.9.0
 *Released on 20 Sept 2018*
 
