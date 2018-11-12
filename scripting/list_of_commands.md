@@ -37,6 +37,10 @@
 |---------|-------------|
 | [`I.click`](mouse.md#iclick--idoubleclick) <br> [`I.doubleClick`](mouse.md#iclick--idoubleclick) | Click or double click on an element |
 | [`I.scrollBy`](mouse.md#iscrollby) | Scrolls the page horizontally and vertically by a given number of pixels. |
+| [`I.scrollUp`](mouse.md#iscrollup) | Scrolls the page up by a given number of pixels |
+| [`I.scrollDown`](mouse.md#iscrolldown) | Scrolls the page down by a given number of pixels |
+| [`I.scrollLeft`](mouse.md#iscrollleft) | Scrolls the page left by a given number of pixels |
+| [`I.scrollRight`](mouse.md#iscrollright) | Scrolls the page right by a given number of pixels |
 | [`I.scrollTo`](mouse.md#iscrollto) | Scrolls to a coordinate on the page |
 | [`I.scrollToTop`](mouse.md#iscrolltotop) | Scroll to the top of the page |
 | [`I.scrollToBottom`](mouse.md#iscrolltobottom) | Scroll to the bottom of the page |

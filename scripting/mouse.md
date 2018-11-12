@@ -11,6 +11,10 @@ search:
 |---------|------------|
 | [`I.click`](#iclick--idoubleclick) <br> [`I.doubleClick`](#iclick--idoubleclick) | Click or double click on an element  |
 | [`I.scrollBy`](#iscrollby) | Scrolls the page horizontally and vertically by a given number of pixels |
+| [`I.scrollUp`](#iscrollup) | Scrolls the page up by a given number of pixels |
+| [`I.scrollDown`](#iscrolldown) | Scrolls the page down by a given number of pixels |
+| [`I.scrollLeft`](#iscrollleft) | Scrolls the page left by a given number of pixels |
+| [`I.scrollRight`](#iscrollright) | Scrolls the page right by a given number of pixels |
 | [`I.scrollTo`](#iscrollto) | Scroll to a given coordinate on the page  |
 | [`I.scrollToTop`](#iscrolltotop) | Scroll to the top of the page  |
 | [`I.scrollToBottom`](#iscrolltobottom) | Scroll to the bottom of the page  |
@@ -116,6 +120,102 @@ I.scrollBy(200, -500);
 ```
 Scrolls the page 200 pixels to the right, and 500 pixels up.
 
+
+---
+
+##`I.scrollUp`
+
+Scrolls the page up by a given number of pixels.
+
+#### Usage
+```javascript
+I.scrollUp(y);
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|----------|------|--------|
+| y | number | Number of pixels to scroll up by. |
+
+#### Example(s)
+
+```javascript
+I.scrollUp(50);
+```
+Scrolls the page 50 pixels up.
+
+---
+
+##`I.scrollDown`
+
+Scrolls the page down by a given number of pixels.
+
+#### Usage
+```javascript
+I.scrollDown(y);
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|----------|------|--------|
+| y | number | Number of pixels to scroll down by. |
+
+#### Example(s)
+
+```javascript
+I.scrollDown(50);
+```
+Scrolls the page 50 pixels down.
+
+---
+
+##`I.scrollLeft`
+
+Scrolls the page left by a given number of pixels.
+
+#### Usage
+```javascript
+I.scrollLeft(x);
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|----------|------|--------|
+| x | number | Number of pixels to scroll left by. |
+
+#### Example(s)
+
+```javascript
+I.scrollLeft(50);
+```
+Scrolls the page 50 pixels left.
+
+---
+
+##`I.scrollRight`
+
+Scrolls the page right by a given number of pixels.
+
+#### Usage
+```javascript
+I.scrollRight(x);
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|----------|------|--------|
+| x | number | Number of pixels to scroll right by. |
+
+#### Example(s)
+
+```javascript
+I.scrollRight(50);
+```
+Scrolls the page 50 pixels right.
 
 ---
 
