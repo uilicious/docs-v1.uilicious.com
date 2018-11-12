@@ -71,6 +71,7 @@
 |---------|-------------|
 | [`I.getCount`](extract.md#igetcount) | Get the number of occurances of a text or element |
 | [`I.getText`](extract.md#igettext) | Get text content from an element |
+| [`I.getValue`](extract.md#igetvalue) | Get value from an input element |
 
 #### Alert commands
 

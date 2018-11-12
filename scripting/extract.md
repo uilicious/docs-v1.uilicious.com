@@ -13,6 +13,7 @@ These commands allow you to extract parts of the page, which you may then use as
 |---------|------------|
 | [`I.getCount`](#igetcount) |  Get the number of occurances of a text or element |
 | [`I.getText`](#igettext) |  Get the text content of an element |
+| [`I.getValue`](#igetvalue) |  Get the value from an input element |
 
 ---
 ## `I.getCount`
@@ -87,3 +88,29 @@ var secret = I.getText("#secret"); // extracts "Batman"
 // For example, enter "Welcome Batman" to the "Secret Message" text field
 I.fill("Secret Message", message + ' ' + secret);
 ```
+
+---
+
+## `I.getValue`
+
+Get the value of an input element
+
+#### Usage
+
+```javascript
+I.getValue(target)
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|-----------|------|--------|
+| target | string | Keyword to identify the field. <br> The associated label, aria-label, placeholder, adjacent text, and current value can be used to identify a field. <br>  CSS selectors can also be used, *but is not recommended as it makes the tests harder to keep up to date.* |
+
+### Example(s)
+```javascript
+I.fill("Search", "Hello")
+I.type(" from the other side") 
+var foo = I.getValue("Search") // `foo` would be "Hello from the other side"
+```
+In this example, we first fill "Hello" to the "Search" field, and continue typing " from the other side" into the field which is currently in focus. You can get the value of the "Search" field using `I.getValue` and store the value into a variable for later use.

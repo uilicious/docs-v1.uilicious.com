@@ -67,6 +67,7 @@
 * [Extract page content](scripting/extract.md)
     * [I.getCount](scripting/extract.md#igetcount)
     * [I.getText](scripting/extract.md#igettext)
+    * [I.getValue](scripting/extract.md#igetvalue)
 * [Limiting test scope](scripting/ui_context.md)
 * [Executing Javascript on the Browser](scripting/executing-javascript.md)
     * [UI.execute](scripting/executing-javascript.md#uiexecute)
