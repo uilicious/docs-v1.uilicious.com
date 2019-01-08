@@ -21,6 +21,18 @@
   * `I.dragBy` - Allows you to drag an element in a direction using (x,y) pixel offset.
   * `I.dragUp`, `I.dragDown`, `I.dragLeft`, `I.dragRight` - Shortcuts for `I.dragBy`
 
+### 2.11.5
+*Released on 12 Dec 2018*
+
+##### 💪 Enhancement:
+* Improved performance on the test run history page for individual jobs.
+
+### 2.11.4
+*Released on 5 Dec 2018*
+
+##### 💪 Enhancement:
+* Added test run durations to reports sent via webhooks.
+
 ### 2.11.3
 *Released on 30 Nov 2018*
 
