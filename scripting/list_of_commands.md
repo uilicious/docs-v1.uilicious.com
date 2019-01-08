@@ -36,6 +36,12 @@
 | Command | Description |
 |---------|-------------|
 | [`I.click`](mouse.md#iclick--idoubleclick) <br> [`I.doubleClick`](mouse.md#iclick--idoubleclick) | Click or double click on an element |
+| [`I.dragTo`](mouse.md#idragto) | Drag an element to another target element |
+| [`I.dragBy`](mouse.md#idragby) | Drag an element directionally by (x,y) pixel offset |
+| [`I.dragUp`](mouse.md#idragup) | Drag an element to the up by a given number of pixel |
+| [`I.dragDown`](mouse.md#idragdown) | Drag an element to the down by a given number of pixel |
+| [`I.dragLeft`](mouse.md#idragleft) | Drag an element to the left by a given number of pixel |
+| [`I.dragRight`](mouse.md#idragright) | Drag an element to the right by a given number of pixel |
 | [`I.scrollBy`](mouse.md#iscrollby) | Scrolls the page horizontally and vertically by a given number of pixels. |
 | [`I.scrollUp`](mouse.md#iscrollup) | Scrolls the page up by a given number of pixels |
 | [`I.scrollDown`](mouse.md#iscrolldown) | Scrolls the page down by a given number of pixels |

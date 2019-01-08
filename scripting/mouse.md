@@ -7,9 +7,28 @@ search:
 
 ## List of commands
 
+##### Click
+
 | Command | Description|
 |---------|------------|
 | [`I.click`](#iclick--idoubleclick) <br> [`I.doubleClick`](#iclick--idoubleclick) | Click or double click on an element  |
+
+##### Drag
+
+| Command | Description|
+|---------|------------|
+| [`I.dragTo`](#idragto) | Drag an element to another target element |
+| [`I.dragBy`](#idragby) | Drag an element directionally by (x,y) pixel offset |
+| [`I.dragUp`](#idragup) | Drag an element to the up by a given number of pixel |
+| [`I.dragDown`](#idragdown) | Drag an element to the down by a given number of pixel |
+| [`I.dragLeft`](#idragleft) | Drag an element to the left by a given number of pixel |
+| [`I.dragRight`](#idragright) | Drag an element to the right by a given number of pixel |
+| [`I.scrollBy`](#iscrollby) | Scrolls the page horizontally and vertically by a given number of pixels |
+
+##### Scroll
+
+| Command | Description|
+|---------|------------|
 | [`I.scrollBy`](#iscrollby) | Scrolls the page horizontally and vertically by a given number of pixels |
 | [`I.scrollUp`](#iscrollup) | Scrolls the page up by a given number of pixels |
 | [`I.scrollDown`](#iscrolldown) | Scrolls the page down by a given number of pixels |
@@ -96,6 +115,174 @@ Click on an element with its `class` property set to `login-btn`.
 
 
 ---
+
+##`I.dragTo`
+
+Drags an element to another target element
+
+#### Usage
+```javascript
+I.dragTo(element, target);
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|----------|------|--------|
+| element | string | Keyword to identify the element to drag. <br> This is case-insensitive. <br> CSS / XPATHs may also be used. |
+| target | string | Keyword to identify the target element to drop on. <br> This is case-insensitive. <br> CSS / XPATHs may also be used. |
+
+#### Example(s)
+
+##### Drag elements using labels
+
+```javascript
+I.goTo("http://jqueryui.com/resources/demos/droppable/default.html")
+I.dragTo("drag me", "drop here")
+```
+Drags the element "drag me" to the target element "drop here".
+
+##### Drag elements using CSS
+
+```javascript
+I.goTo("http://jqueryui.com/resources/demos/droppable/default.html")
+I.dragTo("#draggable", "#droppable")
+```
+Drags the element with the ID "draggable" to the target element with the ID "droppable".
+
+---
+
+##`I.dragBy`
+
+Drags an element directionally by (x,y) pixels right and down.
+
+#### Usage
+```javascript
+I.dragBy(element, x, y);
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|----------|------|--------|
+| element | string | Keyword to identify the element to drag. <br> This is case-insensitive. <br> CSS / XPATHs may also be used. |
+| x | number | Number of pixels to drag right. Use negative numbers to drag left instead. |
+| y | number | Number of pixels to drag down. Use negative numbers to drag up instead. |
+
+#### Example(s)
+
+```javascript
+I.goTo("http://jqueryui.com/resources/demos/droppable/default.html")
+I.dragBy("drag me", 150, 75)
+```
+Drags the element "drag me" 150 pixels right, and 75 pixels down.
+
+---
+
+##`I.dragUp`
+
+Drags an element up by a given number of pixels
+
+#### Usage
+```javascript
+I.dragUp(element, y);
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|----------|------|--------|
+| element | string | Keyword to identify the element to drag. <br> This is case-insensitive. <br> CSS / XPATHs may also be used. |
+| y | number | Number of pixels to drag up. |
+
+#### Example(s)
+
+```javascript
+I.goTo("http://jqueryui.com/resources/demos/droppable/default.html")
+I.dragUp("drag me", 10)
+```
+Drags the element "drag me" 10 pixels up.
+
+---
+
+##`I.dragDown`
+
+Drags an element down by a given number of pixels
+
+#### Usage
+```javascript
+I.dragDown(element, y);
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|----------|------|--------|
+| element | string | Keyword to identify the element to drag. <br> This is case-insensitive. <br> CSS / XPATHs may also be used. |
+| y | number | Number of pixels to drag down. |
+
+#### Example(s)
+
+```javascript
+I.goTo("http://jqueryui.com/resources/demos/droppable/default.html")
+I.dragDown("drag me", 10)
+```
+Drags the element "drag me" 10 pixels down.
+
+---
+
+##`I.dragLeft`
+
+Drags an element left by a given number of pixels
+
+#### Usage
+```javascript
+I.dragLeft(element, x);
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|----------|------|--------|
+| element | string | Keyword to identify the element to drag. <br> This is case-insensitive. <br> CSS / XPATHs may also be used. |
+| x | number | Number of pixels to drag left. |
+
+#### Example(s)
+
+```javascript
+I.goTo("http://jqueryui.com/resources/demos/droppable/default.html")
+I.dragLeft("drag me", 10)
+```
+Drags the element "drag me" 10 pixels left.
+
+---
+
+##`I.dragRight`
+
+Drags an element right by a given number of pixels
+
+#### Usage
+```javascript
+I.dragRight(element, x);
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|----------|------|--------|
+| element | string | Keyword to identify the element to drag. <br> This is case-insensitive. <br> CSS / XPATHs may also be used. |
+| x | number | Number of pixels to drag right. |
+
+#### Example(s)
+
+```javascript
+I.goTo("http://jqueryui.com/resources/demos/droppable/default.html")
+I.dragRight("drag me", 10)
+```
+Drags the element "drag me" 10 pixels right.
+
+---
+
 
 ##`I.scrollBy`
 
