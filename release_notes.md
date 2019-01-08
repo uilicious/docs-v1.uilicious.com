@@ -12,6 +12,33 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+### 2.12.0
+*Released on 7 Jan 2019*
+
+##### 🚀 New Features:
+* Drag and drop commands are now available:
+  * `I.dragTo` - Allows you to drag an element to another target element.
+  * `I.dragBy` - Allows you to drag an element in a direction using (x,y) pixel offset.
+  * `I.dragUp`, `I.dragDown`, `I.dragLeft`, `I.dragRight` - Shortcuts for `I.dragBy`
+
+### 2.11.3
+*Released on 30 Nov 2018*
+
+##### 💪 Enhancement:
+* `UI.context` can now be used to explicitly switch the context to an iframe. This is useful in cases where security policies on the web application or on specific browsers prevents UI-licious from normally being able to see the contents of iframes and test it.
+
+### 2.11.2
+*Released on 25 Nov 2018*
+
+##### 💪 Enhancement:
+* `UI.execute` now prints out a snippet of the script to execute to make the test reports and flow easier to understand. And you may also override the log message for `UI.execute`.
+
+### 2.11.1
+*Released on 20 Nov 2018*
+
+##### 💪 Enhancement:
+* You may now override xpaths and css selectors with more human-friendly labels in reports for every command, please refer to the documentation for each command.
+
 ### 2.11.0
 *Released on 7 Nov 2018*
 
@@ -29,7 +56,7 @@
 ### 2.10.0
 *Released on 25 Oct 2018*
 
-We'll be taking it slow this couple of months for some major refactoring under the hood so that we can write code more efficiently, improve the performance of UI-licious, and support development of features planned in our roadmap.
+We'll be taking it slow for the next couple of months for some major refactoring under the hood so that we can write code more efficiently, improve the performance of UI-licious, and support development of features planned in our roadmap.
 
 ##### 🚀 New Features:
 * **Stop button**. Yes, you have been asking for it. Now there's a way to stop tests.
