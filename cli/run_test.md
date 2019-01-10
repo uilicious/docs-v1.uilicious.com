@@ -66,3 +66,30 @@ Test successful with no errors.
 
 
 
+#### Set Browser and Resolution
+
+You can choose the browser and resolution to run the test via CLI.
+
+```bash
+uilicious-cli run <project> <script> --browser <browser_name> --height <browser_height> --width <browser_width> -u <username> -p <password>
+```
+
+Available browsers : 
+* chrome
+* firefox
+* safari
+* edge
+* ie
+
+Example :
+
+To run tests on 'Safari' for example, type:
+```bash
+uilicious-cli run "Little Pet Store" "login"  --browser safari -u john -p supersecretpassword
+
+```
+
+To choose resolution, type :
+```bash
+uilicious-cli run "Little Pet Store" "login"  --height 960 --width 1280 -u john -p supersecretpassword
+```
