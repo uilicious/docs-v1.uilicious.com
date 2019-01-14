@@ -79,7 +79,7 @@ Available browsers :
 * firefox
 * safari
 * edge
-* ie
+* ie11
 
 Example :
 
