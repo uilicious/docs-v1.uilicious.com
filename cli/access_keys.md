@@ -19,5 +19,15 @@ When you are attempting to run your project's test script in the CLI tool, suppl
 
 ```bash
     # Running a test script
-    $ uilicious-cli --key <your-api-key> run Welcome "5. When a test fails"
+    $ uilicious-cli --key <your-api-key> run "Welcome" "5. When a test fails"
+
+    # Uploading your files to project
+    $ uilicious-cli --key <your-api-key> upload <Project Name> <location of your directory>
+
+    # Downloading your project tests
+    $ uilicious-cli --key <your-api-key> download <Project Name> <location to download to>
+
+    # Testing with ngrok overwrite data object
+    $ uilicious-cli --key <your-api-key> run <Project Name> <Test Script Name> --ngrokPort 8080 --ngrokParam 'url' --dataObject '{"url":"<your url>"}' 
 ```
+
