@@ -1,21 +1,16 @@
 # Access Keys
-This documentation aims to help you understand what are these keys used for.
 
-To create and manage your Access Keys, go to your [User Profile Dashboard > Manage Access](https://user.uilicious.com/profile/accessKeys).
+An access key is a randomly generated string that you can use as for authentication instead of your username and password when using the CLI.
 
-### What is a Access Key?
-The API key is the substitution of your actual login credentials. Rather than using your username and password, Uilicious is able to authenticate you via your account's API key.
+# Where's my access key?
 
-Every account has its own API key that can be reset at any point of time.
+You can view and generate your access key over here:  
 
-### Why do we need it?
-A common usage of the API key would be using Uilicious CLI. In this manner, you will be able to execute the test scripts and viewing the result without having the risk of exposing your actual login credentials. 
+[User Profile Dashboard > Access Keys](https://user.uilicious.com/profile/accessKeys)
 
-### Where to get your Access key?
-Go to [User Profile Dashboard > Access Keys](https://user.uilicious.com/profile/accessKeys)
+# Usage
 
-### How do we use Access key?
-When you are attempting to run your project's test script in the CLI tool, supply the API key as part of the parameters in the command.
+Use the `--key` option to set your access key.
 
 ```bash
     # Running a test script
@@ -30,4 +25,9 @@ When you are attempting to run your project's test script in the CLI tool, suppl
     # Testing with ngrok overwrite data object
     $ uilicious-cli --key <your-api-key> run <Project Name> <Test Script Name> --ngrokPort 8080 --ngrokParam 'url' --dataObject '{"url":"<your url>"}' 
 ```
+
+# Revoking your access key
+
+You can go to your dashboard to regenerate your access key anytime. This will revoke the old access key.
+
 
