@@ -12,6 +12,21 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+### 2.13.0
+*Released on 6 Mar 2019*
+
+##### 🚀 New Features:
+* Share your private test runs as an embed url to others
+* You can now trace your errors after your test is completed
+
+##### 💪 Enhancement:
+* File editor support for .json .csv .md files
+* Retrieval of test run results are now faster and more accurate!
+* Environment dataset are now sorted in alphabetical order
+
+##### 🐞 Fixes
+* Fixes for file not found errors (wasn't being handled properly previously)
+
 ### 2.12.0
 *Released on 7 Jan 2019*
 
