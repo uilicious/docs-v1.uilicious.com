@@ -92,7 +92,7 @@
 
 ## Command Line Interface
 
-* [Installing and using the CLI](https://www.npmjs.com/package/uilicious-cli)
+* [Installing and using the CLI](https://github.com/uilicious/uilicious-cli)
 
 ---
 
