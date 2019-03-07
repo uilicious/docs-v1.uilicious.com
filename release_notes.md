@@ -12,6 +12,59 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+### 2.15.0
+*Released on 6 Mar 2019*
+
+##### 🚀 New Features:
+* Added editing and linting support in the web studio for .json, .csv, .md files.
+* Added new commands for loading test data from .json and .csv files within the project:
+  * `TEST.loadDataFromJson`, `TEST.loadDataFromCsv`, `TEST.loadDataFromFile`
+
+##### 💪 Enhancement:
+* Retrieval of test run results are now faster and more accurate!
+
+##### 🐞 Fixes
+* Fix error handling when user attempt to create a file when it already exists.
+
+### 2.14.2
+*Released on 5 Mar 2019*
+
+##### 💪 Enhancement:
+* Sort dataset and dataset variables alphabetically. :)
+
+### 2.14.1
+*Released on 4 Mar 2019*
+
+##### 💪 Enhancement:
+* Improvements to web reports - added controls to allow you to jump directly to errors.
+
+##### 🐞 Fixes
+* Fix webhook report - When test fails, the report was showing last 3 steps from the end of the test instead of the last 3 steps from the first error occurrence, which isn't very helpful.
+
+### 2.14.0
+*Released on 1 Mar 2019*
+
+##### 🚀 New Features:
+* You can now share test run results publicly with an unlisted url and as an embedded iframe.
+
+### 2.13.1
+*Released on 29 Jan 2019*
+
+##### 🐞 Fixes
+* Fix `UI.context` - `UI-context` was failing when single quotes are used in the selector
+
+### 2.13.0
+*Released on 11 Jan 2019*
+
+##### 🚀 New Features:
+* You can **download test results as MP4 Video**
+
+### 2.12.1
+*Released on 8 Jan 2019*
+
+##### 🐞 Fixes
+* Fix `I.seeCount` - the assertion was still passing even if the count is incorrect
+
 ### 2.12.0
 *Released on 7 Jan 2019*
 
@@ -59,7 +112,7 @@
 * New commands:
   * `I.getValue` - Allows you to grab the value of an input field and set it to a variable
   * New scroll commands for conveninence - `I.scrollUp`, `I.scrollDown`, `I.scrollLeft`, `I.scrollRight`.
-  * **Error supression** - For all `I` and `UI` commands, you can suppress the error with the `$` variant of the command - e.g. `I.see$("Flying pigs")`. This may be useful when you want so suppress the errors for commands used as conditional expressions in `if/else` blocks. 
+  * **Error supression** - For all `I` and `UI` commands, you can suppress the error with the `$` variant of the command - e.g. `I.see$("Flying pigs")`. This may be useful when you want so suppress the errors for commands used as conditional expressions in `if/else` blocks.
   * Error and **log suppression** - For all `I` and `UI` commands, you can suppress the error and logs with the `$$` variant of the command - e.g. `UI.execute$$(...)`.
 
 ##### 💪 Enhancement:
@@ -83,23 +136,23 @@ We'll be taking it slow for the next couple of months for some major refactoring
 
 ##### 🚀 New Features:
 
-* Test Engine: 
+* Test Engine:
   * You can take full page screenshots with these new configuration and commands:
     * Add `TEST.fullScreenshot` configuration option to set screenshots to be taken as full page screenshots. Set `TEST.fullScreenshot = true` to enable full page screenshots for all subsequent commands. Note that this slows down testing time significantly, you should use it only when necessary.
     * Add `TEST.takeFullScreenshot()` command to take a full page screenshot
 * Studio:
-  * You can now download test run reports as JSON and CSV. 
+  * You can now download test run reports as JSON and CSV.
 * (For Enterprise On-Premise):
   * Added views to monitor running tests, all tests, and all scheduled jobs system-wide.
 
 ##### 💪 Enhancement:
-* Studio - Editor View: 
+* Studio - Editor View:
   * You can now share reports of tests ran from the Editor view by grabbing the URL of report.
   * Where `I.fill` is performed on the screen is now highlighted
 * Studio - Monitoring View:
   * You can now set the `User Agent` in jobs. This setting currently only works for tests running on Chrome.
   * Added pagination for list of tests ran for a scheduled job to view reports for test ran further back.
-  
+
 ##### 🐞 Fixes
 * Studio - Editor View:
   * Editor wasn't loading new tests immediately after creation.
@@ -108,18 +161,18 @@ We'll be taking it slow for the next couple of months for some major refactoring
 *Released on 6 Sept 2018
 
 ##### Highlights:
-* Studio - Editor View: 
+* Studio - Editor View:
   * Where `I.click` are performed on the screen is now highlighted. However, screenshots for `I.click` now shows the screen before the click is performed, instead of the screen after the click is performed. If you need to view the screen after the click is performed, simply add another command after `I.click` such as `I.see` to capture the screen after.
 
 ##### 🚀 New Features:
 * Studio - Editor View:
-  * "Autosave" switch to enable / disable autosaving of your test scripts. 
+  * "Autosave" switch to enable / disable autosaving of your test scripts.
 
 ##### 💪 Enhancement:
-* Studio - Editor View: 
+* Studio - Editor View:
   * Added a warning if you try to leave the Editor with unsaved changes to prevent accidental loss of work.
   * For each step in the test report, we've added a "View Test" link so that you can jump to the script for that step.
-  * 
+  *
 
 ### 2.7.0
 *Released on 29 Aug 2018*
