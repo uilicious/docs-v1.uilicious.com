@@ -90,16 +90,9 @@
 
 ----
 
-## Using the CLI
+## Command Line Interface
 
-* [Introduction](cli/intro.md#command-line-interface)
-* [Installation](cli/installation.md)
-* [Running a test](cli/run_test.md)
-* [Testing on localhost](cli/ngrok.md)
-* [Set test data during test runs](cli/test_data.md)
-* [Import test script](cli/import_test.md)
-* [Export test script](cli/export_test.md)
-* [Using Access Keys](cli/access_keys.md)
+* [Installing and using the CLI](https://www.npmjs.com/package/uilicious-cli)
 
 ---
 
