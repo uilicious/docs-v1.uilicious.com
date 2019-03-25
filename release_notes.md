@@ -17,7 +17,12 @@
 
 ##### 💪 Enhancement:
 * Added new SAMPLE commands
-* Now you can close tabs! 😀
+  * `SAMPLE.name` - Generate random full name
+  * `SAMPLE.last` - Generate random last name
+  * `SAMPLE.first` - Generate random first name
+  * `SAMPLE.email` - Generate random email address
+  * `SAMPLE.phone` - Generate random phone number
+* Now you can close tabs with `I.closeTab` command! 😀
 
 ### 2.15.0
 *Released on 6 Mar 2019*
