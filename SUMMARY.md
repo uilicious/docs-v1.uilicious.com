@@ -60,6 +60,12 @@
     * [TEST.run](scripting/sequence.md#testrun)
 * [Generate sample data](scripting/sample.md)
     * [SAMPLE.id](scripting/sample.md#sampleid)
+    * [SAMPLE.phone](scripting/sample.md#samplephone)
+    * [SAMPLE.last](scripting/sample.md#samplelast)
+    * [SAMPLE.first](scripting/sample.md#samplefirst)
+    * [SAMPLE.name](scripting/sample.md#samplename)
+    * [SAMPLE.email](scripting/sample.md#sampleemail)
+
 * [Utility](scripting/utility.md)
     * [I.wait](scripting/utility.md#iwait)
 * [Take screenshots](scripting/screenshot.md)

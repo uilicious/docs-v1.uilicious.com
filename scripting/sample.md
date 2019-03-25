@@ -228,7 +228,7 @@ This will generate a random full name with specific settings. Note that `middle`
 
 Generates a random email address.
 
-> This will generate a random email address, if there are no domain attributes attached to it, the email's domain will default to `inboxkitten.com`.
+> This will generate a random email address, if there are no `domain` attribute attached to it, the email's domain will default to `inboxkitten.com`.
 
 #### Usage
 ```javascript
