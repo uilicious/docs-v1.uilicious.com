@@ -1,10 +1,29 @@
 # Generate sample data
+The SAMPLE commands allow you to create sample details for your test scripts. Most of the SAMPLE commands that will be introduced will rely on the [ChanceJS](https://chancejs.com/) library.
+
+Each of these SAMPLE commands allows you to input a token attribute. The usage of this token is to ensure that throughout your test script, you are able to generate the same random value and reuse this value accordingly.
+
+```javascript
+// Example
+1. I.fill("Login", SAMPLE.email({}, "user1"))
+2. I.fill("Password", "simplepassword")
+3. I.click("Log In")
+4. I.see(SAMPLE.email({}, "user1"))
+
+// At line 1, the first generated email maybe testing@inboxkitten.com
+// At line 4, the email will be testing@inboxkitten.com as well
+```
 
 ## List of commands
 
 | Command | Description|
 |---------|------------|
 | [`SAMPLE.id`](#sampleid) | Generates a random string useful for IDs and passwords |
+| [`SAMPLE.phone`](sample.md#samplephone) | Generates a random phone number |
+| [`SAMPLE.last`](sample.md#samplelast) | Generates a random last name |
+| [`SAMPLE.first`](sample.md#samplefirst) | Generates a random first name |
+| [`SAMPLE.name`](sample.md#samplename) | Generates a random full name |
+| [`SAMPLE.email`](sample.md#sampleemail) | Generates a random email address |
 
 ## `SAMPLE.id`
 
@@ -14,14 +33,15 @@ Generates a random string useful for IDs and password.
 
 #### Usage
 ```javascript
-SAMPLE.id(length)
+SAMPLE.id(length, token)
 ```
 
 ##### Parameters
 
 | Parameter | Type | Remarks|
 |----------|------|--------|
-| length | integer | Length of the string to generate |
+| length | integer (optional) | Length of the string to generate |
+| token | String (optional) | A string acting as a seed to generate the last name. See examples of how it is used. |
 
 #### Example
 ```javascript
@@ -29,3 +49,237 @@ var password = SAMPLE.id(12)
 I.fill("Password", password)
 ```
 Generates a 12-character long random base58 string as the password to be used as input data for the "Password" field.
+
+## `SAMPLE.phone`
+
+Generates a random phone number.
+
+> This command is based on ChanceJS library. It generates a random phone number or specific to a certain nationality.
+
+#### Usage
+```javascript
+SAMPLE.phone(map, token)
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|----------|------|--------|
+| map | JSON Map (optional) | takes in a JSON map that can contain token and nationality. Nationality supports only `us`, `uk` and `fr`. |
+| token | String (optional) | A string acting as a seed to generate the last name. See examples of how it is used. |
+
+#### Example
+```javascript
+let phone = SAMPLE.phone()
+I.fill("Phone Number", phone)
+```
+Generates a random formatted phone number to be used as input data for the "Phone Number" field.
+
+```javascript
+// One way of adding token
+let abc = SAMPLE.phone({}, "Adam's phone")
+let efg = SAMPLE.phone({}, "Adam's phone")
+
+// Another way of using token
+let one_phone = SAMPLE.phone({token: "Adam's phone"})
+let two_phone = SAMPLE.phone({token: "Adam's phone"})
+```
+Every command in this example will generate the same phone number due to the token `Adam's phone`.
+
+```javascript
+SAMPLE.phone({
+    formatted: false, // true/false; to format the number such as (494) 927-2152
+    country: 'uk',    // uk/us/fr; the phone number in the country
+    mobile: true      // true/false; only applicable to `uk` and `fr` 
+})
+```
+Generates a random uk phone number that is not formatted.
+
+
+## `SAMPLE.last`
+
+Generates a random last name.
+
+> This command is based on ChanceJS library. It generates a random last name or specific to a certain nationality.
+
+
+#### Usage
+```javascript
+SAMPLE.last(map, token)
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|----------|------|--------|
+| map | JSON Map (optional) | takes in a JSON map that can contain token and nationality. Nationality supports only `us` and `it`. |
+| token | String (optional) | A string acting as a seed to generate the last name. See examples of how it is used. |
+
+
+#### Example
+```javascript
+// This will generate a random last name
+var last = SAMPLE.last()
+I.fill("Last Name", last)
+```
+Generates a random last name as input data for the "Last Name" field.
+
+```javascript
+// One way of adding token
+let abc = SAMPLE.last({}, "random string")
+let efg = SAMPLE.last({}, "random string")
+
+// Another way of using token
+let one_last = SAMPLE.last({token: "random string"})
+let two_last = SAMPLE.last({token: "random string"})
+```
+Every command in this example will generate the same last name due to the token `random string`.
+
+```javascript
+let us_last = SAMPLE.last({nationality: "us"})
+```
+This will generate an `us` nationality last name.
+
+## `SAMPLE.first`
+
+Generates a random first name.
+
+> This command is based on ChanceJS library. It generates a random first name or specific to a certain nationality.
+
+#### Usage
+```javascript
+SAMPLE.first(map, token)
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|----------|------|--------|
+| map | JSON Map (optional) | takes in a JSON map that can contain token and nationality. Nationality supports only `us` and `it`. |
+| token | String (optional) | A string acting as a seed to generate the first name. See examples of how it is used. |
+
+#### Example
+```javascript
+// This will generate a random last name
+var first = SAMPLE.first()
+I.fill("First Name", first)
+```
+Generates a random first name as input data for the "First Name" field.
+
+```javascript
+// One way of adding token
+let abc = SAMPLE.first({}, "random string")
+let efg = SAMPLE.first({}, "random string")
+
+// Another way of using token
+let one_first = SAMPLE.first({token: "random string"})
+let two_first = SAMPLE.first({token: "random string"})
+```
+Every command in this example will generate the same first name due to the token `random string`.
+
+```javascript
+let us_first = SAMPLE.first({nationality: "us"})
+```
+This will generate an us nationality first name.
+
+## `SAMPLE.name`
+
+Generates a random full name.
+
+> This command is based on ChanceJS library. It generates a random full name or specific to certain nationality and format of the full name.
+
+#### Usage
+```javascript
+SAMPLE.first(map, token)
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|----------|------|--------|
+| map | JSON Map (optional) | takes in a JSON map that can contain token and params in ChanceJS's name command. Nationality supports only `en` and `it`. |
+| token | String (optional) | A string acting as a seed to generate the first name. See examples of how it is used. |
+
+#### Example
+```javascript
+// This will generate a random last name
+var name = SAMPLE.name()
+I.fill("Full Name", name)
+```
+Generates a random full name as input data for the "Full Name" field.
+
+```javascript
+// One way of adding token
+let abc = SAMPLE.name({}, "random string")
+let efg = SAMPLE.name({}, "random string")
+
+// Another way of using token
+let one_name = SAMPLE.name({token: "random string"})
+let two_name = SAMPLE.name({token: "random string"})
+```
+Every command in this example will generate the same full name due to the token `random string`.
+
+```javascript
+let en_name = SAMPLE.first({nationality: "en"})
+```
+This will generate an `en` nationality full name.
+
+```javascript
+let full_configured_name = SAMPLE.name({
+    middle: true,         // true/false; middle name 
+    middle_initial: true, // true/false; shortform of the middle name
+    prefix: true,         // true/false; salutations of the person
+    nationality: 'it',    // en/it; nationality of the person
+    suffix: true,         // true/false; information after the last name
+    gender: 'male',       // female/male; gender of the name
+    token: "some random seed" // string; random seed string to generate the name
+})
+// e.g. Mrs. Margherita Eleonora Parigi Ph.D.
+```
+This will generate a random full name with specific settings. Note that `middle` attribute will overwrite `middle_initial` attribute.
+
+## `SAMPLE.email`
+
+Generates a random email address.
+
+> This will generate a random email address. If there is no `domain` attribute attached to it, the email's domain will default to `inboxkitten.com`.
+
+#### Usage
+```javascript
+SAMPLE.email(map, token)
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|----------|------|--------|
+| map | JSON Map (optional) | takes in a JSON map that can contain a token, domain and length. |
+| token | String (optional) | A string acting as a seed to generate the first name. See examples of how it is used. |
+
+#### Example
+```javascript
+let email = SAMPLE.email()
+I.fill("Email", email)
+```
+Generates a random email address with the `inboxkitten.com` domain and used as input data for the "Email" field.
+
+```javascript
+// One way of adding token
+let abc = SAMPLE.email({}, "random string")
+let efg = SAMPLE.email({}, "random string")
+
+// Another way of using token
+let one_name = SAMPLE.email({token: "random string"})
+let two_name = SAMPLE.email({token: "random string"})
+```
+Every command in this example will generate the same email due to the token `random string`.
+
+```javascript
+let email = SAMPLE.email({
+    domain: "example.com", // domain of the email address
+    length: "6",           // length of the username
+    token: "random string" // random seed string to generate the name
+})
+// e.g. r3px18@example.com
+```
+This will generate a random email address with 6 character username of a domain `example.com`.

@@ -99,6 +99,11 @@
 | Command | Description |
 |---------|-------------|
 | [`SAMPLE.id`](sample.md#sampleid) | Generates a random string useful for IDs and passwords |
+| [`SAMPLE.phone`](sample.md#samplephone) | Generates a random phone number |
+| [`SAMPLE.last`](sample.md#samplelast) | Generates a random last name |
+| [`SAMPLE.first`](sample.md#samplefirst) | Generates a random first name |
+| [`SAMPLE.name`](sample.md#samplename) | Generates a random full name |
+| [`SAMPLE.email`](sample.md#sampleemail) | Generates a random email address |
 
 #### Sequence commands
 
