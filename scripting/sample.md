@@ -1,4 +1,18 @@
 # Generate sample data
+The SAMPLE commands allow you to create sample details for your test scripts. Most of the SAMPLE commands that will be introduced will rely on the [ChanceJS](https://chancejs.com/) library.
+
+When using each of these SAMPLE commands, the commands allow you to input a token attribute. The usage of this token is to ensure that throughout your test script, you are able to generate the same random value and reuse this value accordingly.
+
+```javascript
+// Example
+1. I.fill("Login", SAMPLE.email({}, "user1"))
+2. I.fill("Password", "simplepassword")
+3. I.click("Log In")
+4. I.see(SAMPLE.email({}, "user1"))
+
+// At line 1, for example, the first generated email is testing@inboxkitten.com
+// At line 4, the email will be testing@inboxkitten.com as well since they are both using the same token `user1`
+```
 
 ## List of commands
 
