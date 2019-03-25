@@ -1,7 +1,7 @@
 # Generate sample data
 The SAMPLE commands allow you to create sample details for your test scripts. Most of the SAMPLE commands that will be introduced will rely on the [ChanceJS](https://chancejs.com/) library.
 
-When using each of these SAMPLE commands, the commands allow you to input a token attribute. The usage of this token is to ensure that throughout your test script, you are able to generate the same random value and reuse this value accordingly.
+Each of these SAMPLE commands allows you to input a token attribute. The usage of this token is to ensure that throughout your test script, you are able to generate the same random value and reuse this value accordingly.
 
 ```javascript
 // Example
@@ -10,8 +10,8 @@ When using each of these SAMPLE commands, the commands allow you to input a toke
 3. I.click("Log In")
 4. I.see(SAMPLE.email({}, "user1"))
 
-// At line 1, for example, the first generated email is testing@inboxkitten.com
-// At line 4, the email will be testing@inboxkitten.com as well since they are both using the same token `user1`
+// At line 1, the first generated email maybe testing@inboxkitten.com
+// At line 4, the email will be testing@inboxkitten.com as well
 ```
 
 ## List of commands
@@ -54,7 +54,7 @@ Generates a 12-character long random base58 string as the password to be used as
 
 Generates a random phone number.
 
-> This command is based on ChanceJS library. It generates a random phone number or specifically to a certain nationality.
+> This command is based on ChanceJS library. It generates a random phone number or specific to a certain nationality.
 
 #### Usage
 ```javascript
@@ -100,7 +100,7 @@ Generates a random uk phone number that is not formatted.
 
 Generates a random last name.
 
-> This command is based on ChanceJS library. It generates a random last name or specifically to certain nationality.
+> This command is based on ChanceJS library. It generates a random last name or specific to a certain nationality.
 
 
 #### Usage
@@ -144,7 +144,7 @@ This will generate an `us` nationality last name.
 
 Generates a random first name.
 
-> This command is based on ChanceJS library. It generates a random first name or specifically to certain nationality.
+> This command is based on ChanceJS library. It generates a random first name or specific to a certain nationality.
 
 #### Usage
 ```javascript
@@ -186,7 +186,7 @@ This will generate an us nationality first name.
 
 Generates a random full name.
 
-> This command is based on ChanceJS library. It generates a random full name or specifically to certain nationality and format of the full name.
+> This command is based on ChanceJS library. It generates a random full name or specific to certain nationality and format of the full name.
 
 #### Usage
 ```javascript
@@ -242,7 +242,7 @@ This will generate a random full name with specific settings. Note that `middle`
 
 Generates a random email address.
 
-> This will generate a random email address, if there are no `domain` attribute attached to it, the email's domain will default to `inboxkitten.com`.
+> This will generate a random email address. If there is no `domain` attribute attached to it, the email's domain will default to `inboxkitten.com`.
 
 #### Usage
 ```javascript
@@ -253,7 +253,7 @@ SAMPLE.email(map, token)
 
 | Parameter | Type | Remarks|
 |----------|------|--------|
-| map | JSON Map (optional) | takes in a JSON map that can contain token, domain and length. |
+| map | JSON Map (optional) | takes in a JSON map that can contain a token, domain and length. |
 | token | String (optional) | A string acting as a seed to generate the first name. See examples of how it is used. |
 
 #### Example
