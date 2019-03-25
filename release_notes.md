@@ -12,6 +12,13 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+### 2.15.1
+*Released on 25 Mar 2019*
+
+##### 💪 Enhancement:
+* Added new SAMPLE commands
+* Now you can close tabs! 😀
+
 ### 2.15.0
 *Released on 6 Mar 2019*
 
