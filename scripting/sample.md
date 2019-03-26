@@ -2,7 +2,7 @@
 The SAMPLE commands allow you to create sample details for your test scripts. Most of the SAMPLE commands that will be introduced will rely on the [ChanceJS](https://chancejs.com/) library.
 
 ### Constant random values
-Every SAMPLE commands will generate a random value, however if you want to ensure a constant random value, you can use the `token` attribute that is supported by each SAMPLE command. Do note that the values will only be the same within a particular test run, which means that a new test run will yield a different constant value.
+Every SAMPLE commands will generate a random value. However, if you want to ensure a constant random value, you can use the `token` attribute that is supported by each SAMPLE command. Do note that the values will only be the same within a particular test run, which means that a new test run will yield a different constant value.
 
 ```javascript
 // Example
