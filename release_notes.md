@@ -12,6 +12,15 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+### 2.15.x
+*Released on 1 Apr 2019*
+
+##### 💪 Enhancement:
+* Added `TEST.browser`, `TEST.width` and `TEST.height` to expose the settings for the current test run
+
+##### 🐞 Fixes
+* Fixed issue with scrolling elements into center when elements are within scrollable elements within the page body. Elements within scrollable elements were often scrolled to the top of the screen which caused problems, especially for dropdown elements.
+
 ### 2.15.0
 *Released on 6 Mar 2019*
 
