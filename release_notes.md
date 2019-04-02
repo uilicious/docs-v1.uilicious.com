@@ -17,6 +17,7 @@
 
 ##### 🐞 Fixes
 * Made adjustments in pricing plans
+* Fix issue with clearing input fields
 
 ### 2.15.3
 *Released on 1 Apr 2019*
