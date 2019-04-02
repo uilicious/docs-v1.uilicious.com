@@ -12,7 +12,13 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
-### 2.15.x
+### 2.15.4
+*Released on 2 Apr 2019*
+
+##### 🐞 Fixes
+* Made adjustments in pricing plans
+
+### 2.15.3
 *Released on 1 Apr 2019*
 
 ##### 💪 Enhancement:
@@ -23,6 +29,12 @@
 ##### 🐞 Fixes
 * Fixed issue with scrolling elements into center when elements are within scrollable elements within the page body. Elements within scrollable elements were often scrolled to the top of the screen which caused problems, especially for dropdown elements.
 * Fixed issue with `I.fill` command being able to properly clear certain input fields, and instead append the value instead.
+
+### 2.15.2
+*Released on 26 Mar 2019*
+
+##### 🐞 Fixes
+* Fixed issues with tab handling when alert popups are opened
 
 ### 2.15.1
 *Released on 25 Mar 2019*
