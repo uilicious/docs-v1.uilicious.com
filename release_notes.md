@@ -17,9 +17,12 @@
 
 ##### 💪 Enhancement:
 * Added `TEST.browser`, `TEST.width` and `TEST.height` to expose the settings for the current test run
+* Added `I.pressDelete` and `I.pressBackspace` commands for convenience.
+* Added `I.clear` to clear input fields (basically the same as `I.fill` using an empty string)
 
 ##### 🐞 Fixes
 * Fixed issue with scrolling elements into center when elements are within scrollable elements within the page body. Elements within scrollable elements were often scrolled to the top of the screen which caused problems, especially for dropdown elements.
+* Fixed issue with `I.fill` command being able to properly clear certain input fields, and instead append the value instead.
 
 ### 2.15.0
 *Released on 6 Mar 2019*
