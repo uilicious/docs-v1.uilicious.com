@@ -24,6 +24,19 @@
 * Fixed issue with scrolling elements into center when elements are within scrollable elements within the page body. Elements within scrollable elements were often scrolled to the top of the screen which caused problems, especially for dropdown elements.
 * Fixed issue with `I.fill` command being able to properly clear certain input fields, and instead append the value instead.
 
+### 2.15.1
+*Released on 25 Mar 2019*
+
+##### 💪 Enhancement:
+* Added new SAMPLE commands
+  * `SAMPLE.name` - Generate random full name
+  * `SAMPLE.last` - Generate random last name
+  * `SAMPLE.first` - Generate random first name
+  * `SAMPLE.email` - Generate random email address
+  * `SAMPLE.phone` - Generate random phone number
+* Now you can close tabs with `I.closeTab` command! 😀
+* You can switch to a different tab using `I.switchTab` command.
+
 ### 2.15.0
 *Released on 6 Mar 2019*
 
