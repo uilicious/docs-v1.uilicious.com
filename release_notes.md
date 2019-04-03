@@ -12,13 +12,6 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
-### 2.15.4
-*Released on 2 Apr 2019*
-
-##### 🐞 Fixes
-* Made adjustments in pricing plans
-* Fix issue with clearing input fields
-
 ### 2.15.3
 *Released on 1 Apr 2019*
 
@@ -48,7 +41,6 @@
   * `SAMPLE.email` - Generate random email address
   * `SAMPLE.phone` - Generate random phone number
 * Now you can close tabs with `I.closeTab` command! 😀
-* You can switch to a different tab using `I.switchTab` command.
 
 ### 2.15.0
 *Released on 6 Mar 2019*
