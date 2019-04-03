@@ -12,6 +12,36 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+### 2.15.3
+*Released on 1 Apr 2019*
+
+##### 💪 Enhancement:
+* Added `TEST.browser`, `TEST.width` and `TEST.height` to expose the settings for the current test run
+* Added `I.pressDelete` and `I.pressBackspace` commands for convenience.
+* Added `I.clear` to clear input fields (basically the same as `I.fill` using an empty string)
+
+##### 🐞 Fixes
+* Fixed issue with scrolling elements into center when elements are within scrollable elements within the page body. Elements within scrollable elements were often scrolled to the top of the screen which caused problems, especially for dropdown elements.
+* Fixed issue with `I.fill` command being able to properly clear certain input fields, and instead append the value instead.
+
+### 2.15.2
+*Released on 26 Mar 2019*
+
+##### 🐞 Fixes
+* Fixed issues with tab handling when alert popups are opened
+
+### 2.15.1
+*Released on 25 Mar 2019*
+
+##### 💪 Enhancement:
+* Added new SAMPLE commands
+  * `SAMPLE.name` - Generate random full name
+  * `SAMPLE.last` - Generate random last name
+  * `SAMPLE.first` - Generate random first name
+  * `SAMPLE.email` - Generate random email address
+  * `SAMPLE.phone` - Generate random phone number
+* Now you can close tabs with `I.closeTab` command! 😀
+
 ### 2.15.0
 *Released on 6 Mar 2019*
 
