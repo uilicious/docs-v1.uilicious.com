@@ -6,7 +6,8 @@
 |---------|-------------|
 | [`I.goTo`](navigation.md#igoto) | Navigate to a URL |
 | [`I.refreshPage`](navigation.md#irefreshpage) | Refresh a page |
-| [`I.switchTab`](navigation.md#iswitchtab) | Switch Tab |
+| [`I.switchTab`](navigation.md#iswitchtab) | Switch to a tab |
+| [`I.closeTab`](navigation.md#iclosetab) | Close the current tab |
 
 #### URL assertion commands
 

@@ -21,6 +21,7 @@
     * [I.amAt](scripting/navigation.md#iamat)
     * [I.refreshPage](scripting/navigation.md#irefreshpage)
     * [I.switchTab](scripting/navigation.md#iswitchtab)
+    * [I.closeTab](scripting/navigation.md#iclosetab)
 * [Form actions](scripting/form_input.md)
     * [I.fill](scripting/form_input.md#ifill)
     * [I.filled](scripting/form_input.md#ifilled)
