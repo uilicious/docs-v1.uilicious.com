@@ -106,11 +106,12 @@
 | [`SAMPLE.name`](sample.md#samplename) | Generates a random full name |
 | [`SAMPLE.email`](sample.md#sampleemail) | Generates a random email address |
 
-#### Sequence commands
+#### Test flow commands
 
 | Command | Description |
 |---------|-------------|
 | [`TEST.run`](sequence.md#testrun) | Runs another test |
+| [`TEST.stop`](sequence.md#teststop) | Stops the test |
 
 #### Screenshot commands
 

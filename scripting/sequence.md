@@ -82,5 +82,27 @@ TEST.run("./create_order") // use "./" to referece the current directory
 TEST.run("./view_order")
 ```
 
+---
 
+## `TEST.stop`
+
+Stops the test.
+
+Note that tests will automatically stop when there are no more commands. 
+
+Use this command to manually stop test in specific scenarios with conditions (see example).
+
+#### Usage
+````javascript
+TEST.stop()
+````
+
+#### Example
+
+```javascript
+if(I.see$("Out of stock")){ // I.see$ is the same as I.see, but any errors are supressed
+   TEST.stop()
+}
+```
+This test will stop if the text "Out of stock" is seen on the page. 
 
