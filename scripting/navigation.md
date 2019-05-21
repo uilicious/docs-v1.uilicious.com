@@ -13,6 +13,7 @@ search:
 | [`I.goTo`](#igoto) | Navigate to a URL |
 | [`I.refreshPage`](#irefreshpage) | Refresh the page |
 | [`I.switchTab`](#iswitchtab) | Switch to the next tab |
+| [`I.closeTab`](#icloseTab) | Close the current tab |
 
 #### Page assertion commands
 | Command | Description|
@@ -215,4 +216,19 @@ If the browser is currently on the last tab, then this command will switch to th
 #### Usage
 ```javascript
 I.switchTab()
+```
+
+---
+
+##`I.closeTab`
+
+Close the current tab. 
+
+`I.closeTab` cannot be used if there's only one tab open.
+
+After the tab is closed, the browser will be automatically switched to the next tab.
+
+#### Usage
+```javascript
+I.closeTab()
 ```
