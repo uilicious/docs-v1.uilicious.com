@@ -22,6 +22,7 @@
     * [I.refreshPage](scripting/navigation.md#irefreshpage)
     * [I.switchTab](scripting/navigation.md#iswitchtab)
     * [I.closeTab](scripting/navigation.md#iclosetab)
+    * [Status code assertions](scripting/http_status_code_assertion.md)
 * [Form actions](scripting/form_input.md)
     * [I.fill](scripting/form_input.md#ifill)
     * [I.filled](scripting/form_input.md#ifilled)

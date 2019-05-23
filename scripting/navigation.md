@@ -26,21 +26,24 @@ search:
 
 Navigate to a URL.
 
-You can use an absolute URL like `http://mystore.com/shoes` or a relative URL like `/shoes`.
-
-> If there is Basic HTTP Authentication on the page, add the username and password to your url like this:
-`https://username:password@mystore.com`
-
 #### Usage
 ```javascript
 I.goTo(url);
+I.goTo(url, options);
 ```
 
 ##### Parameters
 
 | Parameter | Type | Remarks|
-|----------|------|--------|
-| url | string | URL to navigate to |
+|-----------|------|--------|
+| url | `string` | URL to navigate to. <br> <br> You can use an absolute URL like `http://mystore.com/shoes` or a relative URL like `/shoes`. <br> <br> If there is Basic HTTP Authentication on the page, add the username and password to your url like this: `https://username:password@mystore.com` |
+| options | `object` | See below. | 
+
+###### Options
+
+| Option | Type | Remarks|
+|--------|------|--------|
+| assertStatusCode | `number` | Status code to expect after navigation. <br> By default, `I.goTo` will assert that the page after navigation does not return error status codes (status codes that are 400 and above). | 
 
 #### Example(s)
 
@@ -108,6 +111,22 @@ The following table shows where the browser will be navigated to depending on th
 |----------|------|
 | https://mystore.com/shoes | https://mystore.com/shoes#sale |
 | https://mystore.com/shoes#new | https://mystore.com/shoes#sale
+
+##### Assert status code
+
+By default, `I.goTo` asserts that the page after navigation does not return an error status code (status codes that are 400 and above).
+
+To check for a specific status code after navigation, you can use the `assertStatusCode` option.
+
+```javascript
+I.goTo("https://mystore.com/admin", {assertStatusCode: 403})
+```
+
+This example validates that navigation to the `https://mystore.com/admin` page returns a `403` Forbidden status code.
+
+##### Error supression
+
+If you don't want the status code to be validated, you can suppress the errors using `I.goTo$` instead.
 
 ---
 
