@@ -12,6 +12,59 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+### 2.18.1
+*Released on 23 May 2019*
+##### 🚀 New Features:
+* Added new commands to assert HTTP status code of the current page:
+  * `UI.isStatusCode(code)`, `UI.is200`, `UI.isNot200`, `UI.is404`, `UI.isNot404`, `UI.is500`, `UI.isNot500`
+* `I.goTo` will also now assert that the page does not return an error status code (codes that 400 and above).
+  * Added `assertStatusCode` option for use cases where you actually want to assert that page has a specific status code instead
+  * If you want to suppress errors for `I.goTo` commands - you can use `I.goTo$` instead.
+
+##### 💪 Enhancement:
+* Improve report status message for terminated tests - add cause of test termination e.g. stopped by user, reached max test run time limit, reached max concurrency.
+
+### 2.17.3
+*Released on 17 May 2019*
+
+##### 💪 Enhancement:
+* Update the report for test runs in jobs, replaced with the same report component as the editor for a more consistent look.
+* Added 🎨 color to browser icons so that it's faster to visually differentiate browsers
+
+### 2.17.2
+*Released on 15 May 2019*
+
+##### 🐞 Fixes
+* Fixed: Reports can't be loaded if they are too large (>2000 steps) and crashes the browser instead. Buffered rendering of the report to prevent browser from crashing.
+
+### 2.17.1
+*Released on 13 May 2019*
+
+##### 🚀 New Features:
+* Added "Runs" tab - We added a new "Runs" tab so that you can view all your previously ran tests in one place.
+
+##### 💪 Enhancement:
+* Test reports now shows you which tabs are opened at each step of the test.
+* Added browser icon to the preview window in test reports to indicate which browser the test was ran in.
+
+### 2.16.2
+*Released on 6 May 2019*
+
+##### 🐞 Fixes
+* Fixed: Safari tests freezes whenever native `<select>` dropdowns are opened.
+
+### 2.16.1
+*Released on 23 Apr 2019*
+
+##### 🚀 New Features:
+* Added "Learn" pane to the editor which contains tutorials and references on how to write UI-liicous test scripts.
+
+##### 💪 Enhancement:
+* Added prettier "Running Tests" dropdown to the top nav bar. Removed "Running Tests" drawer at the bottom of the screen. 
+
+##### 🐞 Fixes
+* Fix slowdown of tests due to slow merge array function
+
 ### 2.15.3
 *Released on 1 Apr 2019*
 
