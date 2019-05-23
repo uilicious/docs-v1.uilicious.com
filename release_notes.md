@@ -24,6 +24,12 @@
 ##### 💪 Enhancement:
 * Improve report status message for terminated tests - add cause of test termination e.g. stopped by user, reached max test run time limit, reached max concurrency.
 
+### 2.17.4
+*Released on 21 May 2019*
+
+##### 🐞 Fixes
+* Fixed an issue that causes ESOCKETTIMEOUT errors in the test when a new tab is opened.
+
 ### 2.17.3
 *Released on 17 May 2019*
 
