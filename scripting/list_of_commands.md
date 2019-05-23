@@ -1,6 +1,6 @@
 # List of commands
 
-#### Navigation commands
+#### Page navigation commands
 
 | Command | Description |
 |---------|-------------|
@@ -9,11 +9,19 @@
 | [`I.switchTab`](navigation.md#iswitchtab) | Switch to a tab |
 | [`I.closeTab`](navigation.md#iclosetab) | Close the current tab |
 
-#### URL assertion commands
+#### Page assertion commands
 
 | Command | Description |
 |---------|-------------|
 | [`I.amAt`](navigation.md#iamAt) | Assert that the browser is at a specific URL |
+| [`UI.isStatusCode`](#uiisstatuscode) | Asserts that the status code for the current page is a specific status code. |
+| [`UI.isNotStatusCode`](#uiisnotstatuscode) | Asserts that the status code for the current page is __NOT__ a specific status code. |
+| [`UI.is200`](#uiis200) | Asserts that the status code for the current page is 200 (OK). |
+| [`UI.isNot200`](#uisinot200) | Asserts that the status code for the current page is __NOT__ 200 (OK). |
+| [`UI.is404`](#usis404) | Asserts that the status code for the current page is 404 (Not Found). |
+| [`UI.isNot404`](#uiisnot404) | Asserts that the status code for the current page is __NOT__ 404 (Not Found). |
+| [`UI.is500`](#uiis500) | Asserts that the status code for the current page is 500 (Internal Server Error). |
+| [`UI.isNot500`](#uiisnot500) | Asserts that the status code for the current page is __NOT__ 500 (Internal Server Error). |
 
 #### Form input commands
 
