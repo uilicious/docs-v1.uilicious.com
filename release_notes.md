@@ -17,9 +17,9 @@
 ##### 🚀 New Features:
 * Added new commands to assert HTTP status code of the current page:
   * `UI.isStatusCode(code)`, `UI.is200`, `UI.isNot200`, `UI.is404`, `UI.isNot404`, `UI.is500`, `UI.isNot500`
-* `I.goTo` will also now assert that the page does not return an error status code (codes that 400 and above).
-  * Added `assertStatusCode` option for use cases where you actually want to assert that page has a specific status code instead
-  * If you want to suppress errors for `I.goTo` commands - you can use `I.goTo$` instead.
+<!-- * `I.goTo` will also now assert that the page does not return an error status code (codes that 400 and above). -->
+  <!-- * Added `assertStatusCode` option for use cases where you actually want to assert that page has a specific status code instead -->
+  <!-- * If you want to suppress errors for `I.goTo` commands - you can use `I.goTo$` instead. -->
 
 ##### 💪 Enhancement:
 * Improve report status message for terminated tests - add cause of test termination e.g. stopped by user, reached max test run time limit, reached max concurrency.

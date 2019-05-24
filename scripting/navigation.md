@@ -29,7 +29,6 @@ Navigate to a URL.
 #### Usage
 ```javascript
 I.goTo(url);
-I.goTo(url, options);
 ```
 
 ##### Parameters
@@ -37,13 +36,13 @@ I.goTo(url, options);
 | Parameter | Type | Remarks|
 |-----------|------|--------|
 | url | `string` | URL to navigate to. <br> <br> You can use an absolute URL like `http://mystore.com/shoes` or a relative URL like `/shoes`. <br> <br> If there is Basic HTTP Authentication on the page, add the username and password to your url like this: `https://username:password@mystore.com` |
-| options | `object` | See below. | 
+<!-- | options | `object` | See below. | 
 
 ###### Options
 
 | Option | Type | Remarks|
 |--------|------|--------|
-| assertStatusCode | `number` | Status code to expect after navigation. <br> By default, `I.goTo` will assert that the page after navigation does not return error status codes (status codes that are 400 and above). | 
+| assertStatusCode | `number` | Status code to expect after navigation. <br> By default, `I.goTo` will assert that the page after navigation does not return error status codes (status codes that are 400 and above). |  -->
 
 #### Example(s)
 
@@ -112,7 +111,7 @@ The following table shows where the browser will be navigated to depending on th
 | https://mystore.com/shoes | https://mystore.com/shoes#sale |
 | https://mystore.com/shoes#new | https://mystore.com/shoes#sale
 
-##### Assert status code
+<!-- ##### Assert status code
 
 By default, `I.goTo` asserts that the page after navigation does not return an error status code (status codes that are 400 and above).
 
@@ -126,7 +125,7 @@ This example validates that navigation to the `https://mystore.com/admin` page r
 
 ##### Error supression
 
-If you don't want the status code to be validated, you can suppress the errors using `I.goTo$` instead.
+If you don't want the status code to be validated, you can suppress the errors using `I.goTo$` instead. -->
 
 ---
 
