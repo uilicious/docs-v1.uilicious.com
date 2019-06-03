@@ -91,6 +91,9 @@
     * [SAMPLE.first](scripting/sample.md#samplefirst)
     * [SAMPLE.name](scripting/sample.md#samplename)
     * [SAMPLE.email](scripting/sample.md#sampleemail)
+* [Loading test data from file](scripting/load_data_from_file.md)
+    * [Load from CSV](scripting/load_data_from_file.md#testloaddatafromcsv)
+    * [Load from JSON](scripting/load_data_from_file.md#testloaddatafromjson)
 
 ## Reporting and Screenshots
 * [Write custom logs](scripting/logging.md)

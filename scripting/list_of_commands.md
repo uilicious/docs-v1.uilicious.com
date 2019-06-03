@@ -114,6 +114,13 @@
 | [`SAMPLE.name`](sample.md#samplename) | Generates a random full name |
 | [`SAMPLE.email`](sample.md#sampleemail) | Generates a random email address |
 
+#### Loading test data from file
+
+| Command | Description |
+|---------|-------------|
+| [`TEST.loadDataFromCsv`](load_data_from_file.md#testloaddatafromcsv) | Loads test data from a .csv file. |
+| [`TEST.loadDataFromJson`](load_data_from_file.md#testloaddatafromjson) | Loads test data from a .json file. |
+
 #### Test flow commands
 
 | Command | Description |
