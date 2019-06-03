@@ -61,19 +61,8 @@
 * [Controlling test flows](scripting/sequence.md)
     * [TEST.run](scripting/sequence.md#testrun)
     * [TEST.stop](scripting/sequence.md#teststop)
-* [Generate sample data](scripting/sample.md)
-    * [SAMPLE.id](scripting/sample.md#sampleid)
-    * [SAMPLE.phone](scripting/sample.md#samplephone)
-    * [SAMPLE.last](scripting/sample.md#samplelast)
-    * [SAMPLE.first](scripting/sample.md#samplefirst)
-    * [SAMPLE.name](scripting/sample.md#samplename)
-    * [SAMPLE.email](scripting/sample.md#sampleemail)
-
 * [Utility](scripting/utility.md)
     * [I.wait](scripting/utility.md#iwait)
-* [Take screenshots](scripting/screenshot.md)
-    * [`TEST.takeFullScreenshot`](scripting/screenshot.md#testtakefullscreenshot)
-
 
 ## Advanced Test Commands
 
@@ -92,10 +81,24 @@
     * [UI.COOKIE.isEqual](scripting/cookies.md#uicookieisequal)
     * [UI.COOKIE.delete](scripting/cookies.md#uicookiedelete)
     * [UI.COOKIE.deleteAll](scripting/cookies.md#uicookiedeleteall)
+
+## Test Data Management
+
+* [Generate sample data](scripting/sample.md)
+    * [SAMPLE.id](scripting/sample.md#sampleid)
+    * [SAMPLE.phone](scripting/sample.md#samplephone)
+    * [SAMPLE.last](scripting/sample.md#samplelast)
+    * [SAMPLE.first](scripting/sample.md#samplefirst)
+    * [SAMPLE.name](scripting/sample.md#samplename)
+    * [SAMPLE.email](scripting/sample.md#sampleemail)
+
+## Reporting and Screenshots
 * [Write custom logs](scripting/logging.md)
     * [`TEST.log.info`](scripting/logging.md#testloginfo)
     * [`TEST.log.pass`](scripting/logging.md#testlogpass)
     * [`TEST.log.fail`](scripting/logging.md#testlogfail)
+* [Take screenshots](scripting/screenshot.md)
+    * [`TEST.takeFullScreenshot`](scripting/screenshot.md#testtakefullscreenshot)
 
 ----
 
