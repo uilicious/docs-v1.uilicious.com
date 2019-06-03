@@ -94,6 +94,8 @@
 * [Loading test data from file](scripting/load_data_from_file.md)
     * [Load from CSV](scripting/load_data_from_file.md#testloaddatafromcsv)
     * [Load from JSON](scripting/load_data_from_file.md#testloaddatafromjson)
+* [Swapping test data between runs](scripting/datasets.md)
+* [Securing sensitive test data](scripting/datasets.md#securing-sensitive-test-data)
 
 ## Reporting and Screenshots
 * [Write custom logs](scripting/logging.md)
