@@ -29,20 +29,23 @@ Navigate to a URL.
 #### Usage
 ```javascript
 I.goTo(url);
+I.goTo(url, options);
 ```
 
 ##### Parameters
 
-| Parameter | Type | Remarks|
-|-----------|------|--------|
-| url | `string` | URL to navigate to. <br> <br> You can use an absolute URL like `http://mystore.com/shoes` or a relative URL like `/shoes`. <br> <br> If there is Basic HTTP Authentication on the page, add the username and password to your url like this: `https://username:password@mystore.com` |
-<!-- | options | `object` | See below. | 
+| Parameter | Type     | Remarks|
+|-----------|----------|--------|
+| url       | `string` | URL to navigate to. <br> <br> You can use an absolute URL like `http://mystore.com/shoes` or a relative URL like `/shoes`. <br> <br> If there is Basic HTTP Authentication on the page, add the username and password to your url like this: `https://username:password@mystore.com` |
+| options   | `object` | See below. | 
 
 ###### Options
 
-| Option | Type | Remarks|
-|--------|------|--------|
-| assertStatusCode | `number` | Status code to expect after navigation. <br> By default, `I.goTo` will assert that the page after navigation does not return error status codes (status codes that are 400 and above). |  -->
+| Option | Type      | Remarks|
+|--------|-----------|--------|
+| newTab | `boolean` | Flag to open the url in an new tab. Defaults to `false` |
+<!--| assertStatusCode | `number` | Status code to expect after navigation. <br> By default, `I.goTo` will assert that the page after navigation does not return error status codes (status codes that are 400 and above). |  -->
+
 
 #### Example(s)
 
@@ -63,8 +66,6 @@ I.goTo("https://username:password@mystore.com/shoes");
 Go to https://mystore.com/shoes.
 
 ##### Relative URL
-
-
 
 ```javascript
 I.goTo("/shoes");
@@ -110,6 +111,13 @@ The following table shows where the browser will be navigated to depending on th
 |----------|------|
 | https://mystore.com/shoes | https://mystore.com/shoes#sale |
 | https://mystore.com/shoes#new | https://mystore.com/shoes#sale
+
+##### Open in a new tab
+
+```javascript
+I.goTo("https://mystore.com", {newTab: true})
+```
+Set `newTab` option to `true` to open "https://mystore.com" in a new tab.
 
 <!-- ##### Assert status code
 
