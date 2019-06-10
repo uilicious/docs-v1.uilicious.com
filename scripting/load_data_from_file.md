@@ -58,7 +58,7 @@ password, 'super secret password'
 
 Test Script:
 ```javascript
-var user = TEST.loadDataFrom("credentials.csv")
+var user = TEST.loadDataFromCsv("credentials.csv")
 // user = {"username" : "johndoe", "password" : "super secret password"}
 I.fill("Username", user.username)
 I.fill("password", user.password)
@@ -74,7 +74,7 @@ johndoe, 'super secret password'
 
 Test Script:
 ```javascript
-var user = TEST.loadDataFrom("credentials.csv", {header: "row"})
+var user = TEST.loadDataFromCsv("credentials.csv", {header: "row"})
 // user = {"username" : "johndoe", "password" : "super secret password"}
 I.fill("Username", user.username)
 I.fill("Password", user.password)
@@ -90,12 +90,12 @@ password, 'super secret password', 'hello from the other side'
 
 Test Script:
 ```javascript
-var adele = TEST.loadDataFrom("credentials.csv", "username=adele")
+var adele = TEST.loadDataFromCsv("credentials.csv", "username=adele")
 // user = {"username" : "adele", "password" : "hello from the other side"}
 I.fill("Username", adele.username)
 I.fill("Password", adele.password)
 
-var john = TEST.loadDataFrom("credentials.csv", "username=john")
+var john = TEST.loadDataFromCsv("credentials.csv", "username=john")
 // user = {"username" : "johndoe", "password" : "super secret password"}
 I.fill("Username", john.username)
 I.fill("Password", john.password)
