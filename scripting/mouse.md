@@ -53,8 +53,13 @@ If the click opens a page in a new tab, the browser will automatically be switch
 
 #### Usage
 ```javascript
+// Single click
 I.click(target);
+I.click(target, x, y);
+
+// Double click
 I.doubleClick(target);
+I.doubleClick(target, x, y);
 ```
 
 ##### Parameters
@@ -62,6 +67,8 @@ I.doubleClick(target);
 | Parameter | Type | Remarks|
 |----------|------|--------|
 | target | string | Keyword to identify the element to click. <br> This is case-insensitive. |
+| x | number | Optional. <br> Offset the click x pixels right from the top-left corner of the target element. |
+| y | number | Optional. <br> Offset the click y pixels down from the top-left corner of the target element. |
 
 #### Example(s)
 
@@ -109,10 +116,11 @@ I.click(".login-btn")
 ```
 Click on an element with its `class` property set to `login-btn`.
 
-
-
-<!--##### Click on element by XPATH-->
-
+##### Click on element with offset
+```javascript
+I.click("#map", 100, 100)
+```
+Clicks on 100 to the right and 100 down from the top-left corner of the element with the id `map`
 
 ---
 
