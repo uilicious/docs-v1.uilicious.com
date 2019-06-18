@@ -145,7 +145,7 @@
 
 | Command | Description|
 |---------|------------|
-| [`UI.context`](ui_context.md#uicontext) | Limit the test to run on specific parts of a page |
+| [`UI.context`](ui_context.md#uicontext) | Limit the test to run on specific parts of a page. <br> Can be used to explicitly switch to the context of an iframe. |
 
 #### Execute Javascript
 
