@@ -67,7 +67,7 @@
 ## Advanced Test Commands
 
 * [Advanced Commands](scripting/advanced_commands.md)
-* [Using Javascript](scripting/javascript.md)
+* [Loops and conditionals with Javascript](scripting/javascript.md)
 * [Extract page content](scripting/extract.md)
     * [I.getCount](scripting/extract.md#igetcount)
     * [I.getText](scripting/extract.md#igettext)
