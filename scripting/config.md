@@ -1,10 +1,18 @@
 # Configuration
 
-These configurations allow you to change the behaviour of the test engine.
+These configurations allow you to query and set the behaviour of the test engine.
+
+## Read-only configurations
+
+| Configuration | Type | Remarks | 
+|---------------|------|---------|
+| `TEST.browser` | string | The browser that you have set for the test run, e.g. `chrome`, `firefox`, `safari`, `edge`, `ie11` |
+| `TEST.width` | number | The resolution width that you have set for the test run. |
+| `TEST.height` | number | The resolution height that you have set for the test run. |
+
+## Editable configurations
 
 You can set these configurations any time during a test run.
-
-## List of configurations
 
 | Configuration | Type | Remarks | 
 |---------------|------|---------|
