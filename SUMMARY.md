@@ -105,6 +105,10 @@
 * [Take screenshots](scripting/screenshot.md)
     * [`TEST.takeFullScreenshot`](scripting/screenshot.md#testtakefullscreenshot)
 
+## More
+* [IP Whitelisting](grid/ip_whitelisting.md)
+* [Timezone](grid/timezone.md)
+
 ----
 
 ## Command Line Interface
