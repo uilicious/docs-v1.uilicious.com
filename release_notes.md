@@ -12,7 +12,88 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+### 2.18.8
+*Released on 26 Aug 2019*
+##### 💪 Enhancement:
+
+![More Info and Actions on the Jobs List](images/job-list-enhancements-26-aug-2019.png)
+_We've made the Monitoring Dashboard richer to help you identify problems faster!_
+
+* __Monitoring Dashboard__:
+  * __Latest results at a glance__: You can now see the latest result for each job at a glance, and click on the status to view the report directly.
+  * __More Info and Actions__:
+    * Added the browser, resolution, and dataset configuration information for each job to help you differentiate similar jobs at a glance.
+    * Added the "Edit" button to allow you to edit your Job configuration without leaving the Jobs list page.
+  * __New Filters__:
+    * Added the resolution filter.
+  * __Bulk edit__:
+    ![Bulk Edit Jobs](images/job-list-bulk-edit-26-aug-2019.png)
+    * You can now select multiple jobs and bulk edit the browsers, resolutions, and schedule configurations for the selected jobs.
+
+### 2.18.7
+*Released on 22 Aug 2019*
+
+##### 🐞 Fixes
+* Drag and drop commands:
+  * Fixed issues with the drag commands on implementations of the Drag and Drop UI where the original drag element is destroyed after dragging.
+
+### 2.18.6
+*Released on 16 Aug 2019*
+
+##### 🐞 Fixes
+* Drag and drop commands:
+  * Fixed issues with the drag commands on various implementations of the Drag and Drop UI, including:
+    * Native HTML5 implementations
+    * Implementations that creates ghosts during dragging,
+    * Implementations that detaches the drag element from its parent during dragging
+
+### 2.18.5
+*Released on 8 Aug 2019*
+##### 💪 Enhancement:
+* PDF reports:
+  * Added interaction highlighting to indicate targeted elements for interaction commands.
+  * Buffered rendering to improve experience of loading really huge reports
+
+##### 🐞 Fixes
+* Reports:
+  * Fixed janky scrolling issues when selecting a report step.
+  * Fixed Preview Window not resizing to fit on Firefox, Safari, and Edge browsers.
+* Run Tab:
+  * Fixed list display issue on Safari.
+* PDF reports:
+  * Fixed overflow issues happening on certain screen sizes and zoom levels.
+
+### 2.18.4
+*Released on 1 Aug 2019*
+
+##### 💪 Enhancement:
+* Improve performance of retrieving screenshots of the tests
+
+### 2.18.3
+*Released on 19 July 2019*
+##### 💪 Enhancement:
+* Job filters:
+  * Added filters to quickly filter jobs by name, and by statuses.
+
+### 2.18.2
+*Released on 18 July 2019*
+##### 💪 Enhancement:
+* Added raw time taken to execute tests, including post-processing time.
+  * Previously, we only displayed the time taken to execute a test excluding post-processing time (which includes time taken for capturing screenshots and other telemetry) and other script processing time (for example, if you have a long running loop to compute stuff in between test commands). Depending on the browser used for the test, the post-processing time can be significant. Some users requested for raw time taken in order to accurately predict the total time needed to execute the full test suite.
+
 ### 2.18.1
+*Released on 24 Jun 2019*
+
+##### 💪 Enhancement:
+
+* Editor: We've made some improvements to the editor to increase your productivity in writing tests.
+  * Added hotkeys to quickly comment and uncomment lines using (`CTRL + /`, or `CMD + /` for Mac users)
+  * Added hotkeys to quickly indent and un-indent using `TAB` and `SHIFT + TAB`. 
+  * Defaults for auto-indentation is now 1 tab instead of 2 spaces (sorry spaces!)
+  * Braces and quotes are now automatically closed for your convenience.
+* Offline Warning: Display warning if you are currently offline
+
+### 2.18.0
 *Released on 23 May 2019*
 ##### 🚀 New Features:
 * Added new commands to assert HTTP status code of the current page:
@@ -24,26 +105,26 @@
 ##### 💪 Enhancement:
 * Improve report status message for terminated tests - add cause of test termination e.g. stopped by user, reached max test run time limit, reached max concurrency.
 
-### 2.17.4
+### 2.17.3
 *Released on 21 May 2019*
 
 ##### 🐞 Fixes
 * Fixed an issue that causes ESOCKETTIMEOUT errors in the test when a new tab is opened.
 
-### 2.17.3
+### 2.17.2
 *Released on 17 May 2019*
 
 ##### 💪 Enhancement:
 * Update the report for test runs in jobs, replaced with the same report component as the editor for a more consistent look.
 * Added 🎨 color to browser icons so that it's faster to visually differentiate browsers
 
-### 2.17.2
+### 2.17.1
 *Released on 15 May 2019*
 
 ##### 🐞 Fixes
 * Fixed: Reports can't be loaded if they are too large (>2000 steps) and crashes the browser instead. Buffered rendering of the report to prevent browser from crashing.
 
-### 2.17.1
+### 2.17.0
 *Released on 13 May 2019*
 
 ##### 🚀 New Features:
@@ -53,13 +134,13 @@
 * Test reports now shows you which tabs are opened at each step of the test.
 * Added browser icon to the preview window in test reports to indicate which browser the test was ran in.
 
-### 2.16.2
+### 2.16.1
 *Released on 6 May 2019*
 
 ##### 🐞 Fixes
 * Fixed: Safari tests freezes whenever native `<select>` dropdowns are opened.
 
-### 2.16.1
+### 2.16.0
 *Released on 23 Apr 2019*
 
 ##### 🚀 New Features:
