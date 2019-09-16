@@ -12,6 +12,26 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+### 2.19.1
+*Released on 11 Sept 2019*
+
+##### 💪 Enhancement:
+* __Reporter role__: You can invite a team member as a Reporter. Reporters may only view reports.
+* __Spaces page__: Add indicator of your role in each space.
+
+### 2.19.0
+*Released on 06 Sept 2019*
+
+![Invite team members to your space](images/invite-team-members.gif)
+
+##### 🚀 New Features:
+* __Spaces & Teams__: You can now invite your team members to your Space (your collection of projects) as Editors! Editors may create, edit, run tests and schedule jobs, but may not manage users or billing. 
+
+##### 💪 Enhancement:
+* __Editor Tab__:
+  * Added preview for your image files
+  * Added icons to help you differentiate between different files types
+
 ### 2.18.8
 *Released on 26 Aug 2019*
 ##### 💪 Enhancement:
