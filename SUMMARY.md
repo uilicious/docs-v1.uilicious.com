@@ -8,6 +8,7 @@
 
 ## Quick Reference
 
+* [Basic Webstudio Navigation](administration/web-studio-navigation.md)
 * [List of commands](scripting/list_of_commands.md)
 * [Configuration](scripting/config.md)
 
@@ -107,10 +108,10 @@
 
 ## Team Spaces
 
-* [Administer users in a team space](administration/space-administration.md)
-* [Rename an existing team space](administration/space-rename.md)
 * [Setup a new project](administration/project-administration.md)
 * [Renaming a project](administration/project-rename.md)
+* [Administer users in a team space](administration/space-administration.md)
+* [Rename an existing team space](administration/space-rename.md)
 
 ## Self-Hosted Uilicious
 
