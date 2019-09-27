@@ -19,4 +19,3 @@ To remove an existing invitation or member, click on the respective `x` button
 And confirm the action
 
 ![user removal confirmation](../images/adminstration/space-remove-confirm.png)
-

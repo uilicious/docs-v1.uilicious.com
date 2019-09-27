@@ -109,10 +109,13 @@
 
 * [Administer users in a team space](administration/space-administration.md)
 * [Rename an existing team space](administration/space-rename.md)
+* [Setup a new project](administration/project-administration.md)
+* [Renaming a project](administration/project-rename.md)
 
 ## Self-Hosted Uilicious
 
-* [User Management](administration/on-prem-signup.md)
+* [Self-Serve Signup](administration/on-prem-signup.md)
+* [Signup using Admin](administration/admin-signup.md)
 
 ## More
 * [IP Whitelisting](grid/ip_whitelisting.md)
