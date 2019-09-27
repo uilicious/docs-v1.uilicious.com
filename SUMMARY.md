@@ -105,6 +105,15 @@
 * [Take screenshots](scripting/screenshot.md)
     * [`TEST.takeFullScreenshot`](scripting/screenshot.md#testtakefullscreenshot)
 
+## Team Spaces
+
+* [Administer users in a team space](administration/space-administration.md)
+* [Rename an existing team space](administration/space-rename.md)
+
+## Self-Hosted Uilicious
+
+* [User Management](administration/on-prem-signup.md)
+
 ## More
 * [IP Whitelisting](grid/ip_whitelisting.md)
 * [Timezone](grid/timezone.md)

@@ -5,7 +5,11 @@
   "scripts": {
     "install": "gitbook install",
     "build": "gitbook build",
-    "serve": "gitbook serve"
+    "serve": "gitbook serve",
+    "pdf": "gitbook pdf . _out/uilicious-docs.pdf",
+    "epub": "gitbook epub . _out/uilicious-docs.epub",
+    "mobi": "gitbook mobi . _out/uilicious-docs.mobi",
+    "gitbook-help": "gitbook help"
   },
   "author": "UILICIOUS PRIVATE LIMITED",
   "license": "ISC",
