@@ -323,3 +323,8 @@ body {
 .markdown-section code.lang-javascript{
     color: inherit;
 }
+
+/* Image border */
+.page-inner img {
+    border: 2px solid black;
+}
