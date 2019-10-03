@@ -8,7 +8,7 @@
     "youtube",
     "prism",
     "-highlight",
-    "ga",
+    "gtm",
     "addcssjs",
     "-search",
     "-lunr",
@@ -16,8 +16,8 @@
   ],
   "pluginsConfig": {
     "favicon": "favicon-32.png",
-    "ga": {
-      "token": "UA-85473608-1"
+    "gtm": {
+      "token": "GTM-KLGVBHH"
     },
     "addcssjs": {
       "css": [

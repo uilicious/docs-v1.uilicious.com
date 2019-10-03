@@ -13,14 +13,14 @@
   "author": "UILICIOUS PRIVATE LIMITED",
   "license": "UNLICENSED",
   "dependencies": {
-    "prism-themes": "=1.0.1",
     "gitbook-cli": "=2.3.2",
     "gitbook-plugin-addcssjs": "=1.0.2",
     "gitbook-plugin-custom-favicon": "=0.0.4",
     "gitbook-plugin-docsearch": "=1.2.0",
-    "gitbook-plugin-ga": "=1.0.1",
+    "gitbook-plugin-gtm": "0.0.6",
     "gitbook-plugin-prism": "=2.4.0",
     "gitbook-plugin-toggle-chapters": "=0.0.3",
-    "gitbook-plugin-youtube": "=1.1.0"
+    "gitbook-plugin-youtube": "=1.1.0",
+    "prism-themes": "=1.0.1"
   }
 }
