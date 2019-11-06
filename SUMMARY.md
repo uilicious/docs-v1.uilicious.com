@@ -8,9 +8,9 @@
 
 ## Quick Reference
 
-* [Basic Webstudio Navigation](administration/web-studio-navigation.md)
 * [List of commands](scripting/list_of_commands.md)
 * [Configuration](scripting/config.md)
+* [Basic Webstudio Navigation](administration/web-studio-navigation.md)
 
 ----
 
