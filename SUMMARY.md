@@ -113,7 +113,7 @@
 * [Administer users in a team space](administration/space-administration.md)
 * [Rename an existing team space](administration/space-rename.md)
 
-## Self-Hosted Uilicious
+## Self-Hosting
 
 * [Self-Serve Signup](administration/on-prem-signup.md)
 * [Signup using Admin](administration/admin-signup.md)
@@ -121,6 +121,7 @@
 ## More
 * [IP Whitelisting](grid/ip_whitelisting.md)
 * [Timezone](grid/timezone.md)
+* [Frequently Asked Questions](faqs.md)
 
 ----
 
