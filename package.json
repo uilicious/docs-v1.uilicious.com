@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Guide and documentation on how to use UI-licious",
   "scripts": {
-    "install": "gitbook install",
-    "build": "gitbook build",
-    "serve": "gitbook serve",
-    "pdf": "gitbook pdf . _out/uilicious-docs.pdf",
-    "epub": "gitbook epub . _out/uilicious-docs.epub",
+    "install": "gitbook --version; gitbook install",
+    "build": "gitbook --version; gitbook build",
+    "serve": "gitbook --version; gitbook serve",
+    "pdf": "gitbook --version; gitbook pdf . _out/uilicious-docs.pdf",
+    "epub": "gitbook --version; gitbook epub . _out/uilicious-docs.epub",
     "gitbook-help": "gitbook help"
   },
   "author": "UILICIOUS PRIVATE LIMITED",
