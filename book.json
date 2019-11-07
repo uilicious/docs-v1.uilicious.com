@@ -4,7 +4,6 @@
   "author": "Uilicious Private Limited",
   "plugins": [
     "custom-favicon",
-    "toggle-chapters",
     "youtube",
     "prism",
     "-highlight",

@@ -1,3 +1,13 @@
+.markdown-section a{
+    color: #2196f3;
+}
+/* .markdown-section a code{
+    color: #2196f3;
+    background: none;
+} */
+
+/* ALGOLIA SEARCH */
+
 .searchbox {
     display: inline-block;
     position: relative;
@@ -327,4 +337,32 @@ body {
 /* Image border */
 .page-inner img {
     border: 2px solid black;
+}
+
+/* Navigation */
+.book-summary ul.summary li span,
+.book-summary ul.summary li a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.book-summary ul.summary li span{
+    color: #424242;
+}
+.book-summary ul.summary li a{
+    color: #2196f3;
+}
+.book-summary ul.summary li.active > a{
+    font-weight: bold;
+}
+
+.book-summary ul.summary > li > span /* LEVEL 1 */,
+.book-summary ul.summary > li > a /* LEVEL 1 */{
+    font-weight: bold;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.gitbook-link {
+    color: #b9b9b9 !important;
 }
