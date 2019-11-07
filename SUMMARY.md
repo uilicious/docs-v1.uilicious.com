@@ -18,7 +18,7 @@
 * Targeting elements
 	* [How UI-licious targets elements](todo.md)
 	* [Handling dymanic content with implicit waits](todo.md)
-	* [Limiting target](scripting/ui_context.md)
+	* [Limiting target area](scripting/ui_context.md)
 	* [Handling iframes](scripting/ui_context.md#handling-iframes)
 
 * Controlling test flows
