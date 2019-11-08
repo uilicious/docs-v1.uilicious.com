@@ -16,9 +16,12 @@
 		* [Validate page content](scripting/assertion.md)
 	
 * Targeting elements
-	* [How UI-licious targets elements](todo.md)
+	* [How UI-licious works](concepts/targeting.md#how-ui-licious-works)
+	* [Images and icon buttons](concepts/targeting.md#targeting-graphical-elements)
+	* [Resolving similar elements](concepts/targeting.md#resolving-similar-elements)
+	* [Limiting the scan area](concepts/targeting.md#limiting-the-scan-area)
+	* [Using CSS and XPATH](concepts/targeting.md#using-css--xpath-selectors)
 	* [Handling dymanic content with implicit waits](todo.md)
-	* [Limiting target area](scripting/ui_context.md)
 	* [Handling iframes](scripting/ui_context.md#handling-iframes)
 
 * Controlling test flows
