@@ -78,6 +78,15 @@ You can capture a snapshot manually with the `.check` API:
 TEST.applitools.check("Custom snapshot name")
 ```
 
+Example:
+```javascript
+I.goTo("https://mystore.com")
+TEST.applitools.check("Home") // 👈 Add a checkpoint here
+I.fill("Search", "watches")
+I.click("Search")
+TEST.applitools.check("Search 'watches' result") // 👈 Add a checkpoint here
+```
+
 To know more about using Applitools eyes, 👉 [read the official documentation](https://applitools.com/docs/topics/sdk/the-eyes-sdk-check-fluent-api.html).
 
 
