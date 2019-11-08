@@ -45,7 +45,7 @@
 	* [Utility](scripting/utility.md)
 
 * Integrations
-	* [Applitools (Experimental)](todo.md)
+	* [Applitools Eyes (Experimental)](integration/applitools.md)
 
 ---
 
