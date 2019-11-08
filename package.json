@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "Guide and documentation on how to use UI-licious",
   "scripts": {
+    "gitbook-help": "gitbook help",
     "install": "gitbook --version; gitbook install",
     "build": "gitbook --version; gitbook build",
     "serve": "gitbook --version; gitbook serve",
     "pdf": "gitbook --version; gitbook pdf . _out/uilicious-docs.pdf",
     "epub": "gitbook --version; gitbook epub . _out/uilicious-docs.epub",
-    "gitbook-help": "gitbook help"
+    "deploy": "gitbook --version; gitbook build; netlify deploy --prod",
+    "deploy--production": "gitbook --version; gitbook build; netlify deploy --prod"
   },
   "author": "UILICIOUS PRIVATE LIMITED",
   "license": "UNLICENSED",
@@ -22,5 +24,8 @@
     "gitbook-plugin-toggle-chapters": "=0.0.3",
     "gitbook-plugin-youtube": "=1.1.0",
     "prism-themes": "=1.0.1"
+  },
+  "devDependencies": {
+    "netlify": "^2.4.8"
   }
 }
