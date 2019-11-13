@@ -62,17 +62,17 @@ Capturing an Applitool snapshot for every UI-licious command can get overwhelmin
 
 You can disable automatic snapshots and capture snapshots manually instead. 
 
-Set the `autoSnapshot` option to false during setup, e.g.:
+Set the `autoScreenshot` option to false during setup, e.g.:
 
 ```javascript
 TEST.applitools.setup("YOUR_APPLITOOLS_API_KEY", {
-	autoSnapshot: false
+	autoScreenshot: false
 })
 ```
 
 Note that this only disables the snapshots automatically taken for Applitools, but screenshots for every command will still be taken for UI-licious reports.
 
-You can capture a snapshot manually with the `.check` API:
+You can capture a snapshot manually with the `.check` or `.checkWindow` API:
 ```javascript
 // Take a snapshot of the current viewport
 TEST.applitools.check("Custom snapshot name")
@@ -89,6 +89,42 @@ TEST.applitools.check("Search 'watches' result") // 👈 Add a checkpoint here
 
 To know more about using Applitools eyes, 👉 [read the official documentation](https://applitools.com/docs/topics/sdk/the-eyes-sdk-check-fluent-api.html).
 
+### Tip: `eyes` object alias
 
+If you feel that typing `TEST.applitools.check` is pretty long, you can alias the Applitools API returned by `TEST.applitools.setup` to a shorter variable, e.g. `eyes`:
+
+```javascript
+var eyes = TEST.applitools.setup("YOUR_APPLITOOLS_API_KEY")
+
+I.goTo("https://mystore.com")
+eyes.check("Home") // 👈 Add a checkpoint here
+I.fill("Search", "watches")
+I.click("Search")
+eyes.check("Search 'watches' result") // 👈 Add a checkpoint here
+```
+
+### Check Window
+
+The `.checkWindow(name)` methods takes a snapshot of the window. 
+
+```javascript
+var eyes = TEST.applitools.setup("YOUR_APPLITOOLS_API_KEY")
+
+I.goTo("https://mystore.com")
+eyes.checkWindow("Home") // 👈 Add a checkpoint here
+```
+
+### Check Fluent API
+
+> todo
+
+```javascript
+var eyes = TEST.applitools.setup("YOUR_APPLITOOLS_API_KEY")
+let Target = TEST.applitools.Target // 👈 Alias the "Target" API for convenience
+let By = TEST.applitools.By // 👈 Alias the "By" API for convenience
+
+I.goTo("https://wikipedia.com")
+eyes.check("Search form", Target.region(By.id("#searchform")) // 👈 Add a checkpoint here
+```
 
 
