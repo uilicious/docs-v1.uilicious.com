@@ -127,4 +127,17 @@ I.goTo("https://wikipedia.com")
 eyes.check("Search form", Target.region(By.id("#searchform")) // 👈 Add a checkpoint here
 ```
 
+#### Taking a full page screenshot
 
+```javascript
+let Target = TEST.applitools.Target
+eyes.check("Search results", Target.window().fully())
+```
+
+#### Taking a element screenshot
+
+```javascript
+let Target = TEST.applitools.Target
+let By = TEST.applitools.By
+eyes.check("Menu dropdown button", Target.region(By.css("#login-btn .dropdown-menu")))
+```
