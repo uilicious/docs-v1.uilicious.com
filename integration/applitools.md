@@ -134,12 +134,19 @@ In above example, Applitools will only only capture the screenshot of Wikipedia'
 
 #### Taking a full page screenshot
 
+You can use `Target.window().fully()` to instruct Applitools to take a full page screenshot.
+
 ```javascript
 var Target = TEST.applitools.Target
 eyes.check("Search results", Target.window().fully())
 ```
 
 #### Taking a element screenshot
+
+You can take element screenshots by targeting an element using css or xpath selectors, e.g.:
+- `Target.region(By.id("login-btn"))`
+- `Target.region(By.css("#login-btn .dropdown"))`
+- `Target.region(By.xPath("//button[@id='login-btn']"))`
 
 ```javascript
 var Target = TEST.applitools.Target
