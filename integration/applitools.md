@@ -116,28 +116,33 @@ eyes.checkWindow("Home") // 👈 Add a checkpoint here
 
 ### Check Fluent API
 
-> todo
+The `.check` Fluent APIs offers more flexiblity on how screenshots will be captured.
+
+First, we recommend aliasing the Applitools `Target` and `By` APIs for convenience.
+```javascript
+var Target = TEST.applitools.Target // 👈 Alias the "Target" API for convenience
+var By = TEST.applitools.By // 👈 Alias the "By" API for convenience
+```
+The `Target` and `By` APIs provide methods for targeting specific parts of the window or page to screenshot, for example:
 
 ```javascript
-var eyes = TEST.applitools.setup("YOUR_APPLITOOLS_API_KEY")
-let Target = TEST.applitools.Target // 👈 Alias the "Target" API for convenience
-let By = TEST.applitools.By // 👈 Alias the "By" API for convenience
-
 I.goTo("https://wikipedia.com")
-eyes.check("Search form", Target.region(By.id("#searchform")) // 👈 Add a checkpoint here
+eyes.check("Search form", Target.region(By.id("searchform")) // 👈 Add a checkpoint here
 ```
+
+In above example, Applitools will only only capture the screenshot of Wikipedia's search form which has the id `searchform`.
 
 #### Taking a full page screenshot
 
 ```javascript
-let Target = TEST.applitools.Target
+var Target = TEST.applitools.Target
 eyes.check("Search results", Target.window().fully())
 ```
 
 #### Taking a element screenshot
 
 ```javascript
-let Target = TEST.applitools.Target
-let By = TEST.applitools.By
+var Target = TEST.applitools.Target
+var By = TEST.applitools.By
 eyes.check("Menu dropdown button", Target.region(By.css("#login-btn .dropdown-menu")))
 ```
