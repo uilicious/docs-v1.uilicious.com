@@ -28,7 +28,6 @@ TEST.applitools.setup("YOUR_APPLITOOLS_API_KEY")
 I.goTo("https://mystore.com")
 I.fill("Search", "watches")
 I.click("Search")
-TEST.applitools.setup("YOUR_APPLITOOLS_API_KEY")
 ```
 
 That's all!
@@ -119,11 +118,13 @@ eyes.checkWindow("Home") // 👈 Add a checkpoint here
 The `.check` Fluent APIs offers more flexiblity on how screenshots will be captured.
 
 First, we recommend aliasing the Applitools `Target` and `By` APIs for convenience.
+
 ```javascript
 var Target = TEST.applitools.Target // 👈 Alias the "Target" API for convenience
 var By = TEST.applitools.By // 👈 Alias the "By" API for convenience
 ```
-The `Target` and `By` APIs provide methods for targeting specific parts of the window or page to screenshot, for example:
+
+The `Target` and `By` APIs provide methods for targeting specific parts of the window or page to screenshot.for example:
 
 ```javascript
 I.goTo("https://wikipedia.com")
