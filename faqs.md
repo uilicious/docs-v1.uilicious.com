@@ -32,9 +32,9 @@ If you need to test a localhost or internal application, you can consider the fo
 
 UI-licious cannot solve Recaptcha, as it is designed to detect humans and block bots.
 
-We recommend disabling Recaptcha on your testing environment to allow automated tests to pass through. 
+We recommend disabling Recaptcha on your testing environment to allow automated tests to pass through. You can find Google's offical docs on disabling Recaptcha on testing environment [here](https://developers.google.com/recaptcha/docs/faq#id-like-to-run-automated-tests-with-recaptcha.-what-should-i-do).
 
-If you want to test this on production, you can use `UI.cookie.set` in your test to set a cookie to identify test sessions and use javascript to conditionally disable Recaptcha whenever the cookie is present.
+If you want to test this on production, you can use `UI.cookie.set` in your test to set a cookie to identify test sessions and use javascript to conditionally bypass Recaptcha whenever the cookie is present.
 
 ### How do I clear a text input field?
 
