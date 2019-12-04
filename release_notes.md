@@ -40,7 +40,12 @@
 ### 2.21.0
 *Released on 25 Oct 2019*
 
+<video autoplay loop muted width="300px">
+    <source src="./images/editor/code-hinting.mov" type="video/mp4">
+</video>
+
 ##### 🚀 New Features:
+
 * __Editor__: Code hinting and auto complete is available as you type! 
 * __Browser Notifications__: Get browser notifications whenever tests (triggered manually from the Editor) are completed.
 
@@ -54,6 +59,10 @@
 
 ### 2.20.1
 *Released on 14 Oct 2019*
+
+<div class="screenshot">
+    <img src="./images/project-run-tab/run-tab-filters.png" alt="Run tab filters">
+</div>
 
 ##### 💪 Enhancement:
 * __Runs page__: Added filters for searching test runs by Name, Status, Browser, and Trigger.
