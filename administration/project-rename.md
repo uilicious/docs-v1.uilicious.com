@@ -2,18 +2,26 @@
 
 Login as either the space admin or owner.
 
-![spaces dashboard](../images/spaces-dashboard.png)
+<div class="screenshot">
+	<img src="../images/spaces-dashboard.png" alt="Space Dashboard">
+</div>	
 
 Select the project you intent to rename
 
-![add project button](../images/project/select-project.png)
+<div class="screenshot">
+	<img src="../images/project/select-project.png" alt="Select project">
+</div>	
 
 Inside the web studio editor, click the project settings `gear` icon
 
-![project settings button](../images/project/project-settings-button.png)
+<div class="screenshot">
+	<img src="../images/project/project-settings-button.png" alt="Project Settings Button">
+</div>	
 
 Within the settings, rename accordingly
 
-![project renaming](../images/project/project-settings-rename.png)
+<div class="screenshot">
+	<img src="../images/project/project-settings-rename.png" alt="Rename project">
+</div>	
 
 And remember to click `update`

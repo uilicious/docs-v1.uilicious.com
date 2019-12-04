@@ -335,8 +335,14 @@ body {
 }
 
 /* Image border */
-.page-inner img {
-    border: 2px solid black;
+.markdown-section .screenshot {
+    padding: 12px;
+    max-width: 100%;
+}
+
+.markdown-section .screenshot img{
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
 }
 
 /* Navigation */

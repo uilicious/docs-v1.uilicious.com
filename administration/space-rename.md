@@ -2,12 +2,18 @@
 
 Login as either the space admin or owner.
 
-![spaces dashboard](../images/spaces-dashboard.png)
+<div class="screenshot">
+	<img src="../images/spaces-dashboard.png" alt="Space Dashboard">
+</div>	
 
 Beside the invite button, click on the `gear` icon, and select `rename`
 
-![space rename button](../images/adminstration/space-rename-button.png)
+<div class="screenshot">
+	<img src="../images/adminstration/space-rename-button.png" alt="Space Rename Button">
+</div>
 
 Rename the space accordingly
 
-![space rename test](../images/adminstration/space-rename-text.png)
+<div class="screenshot">
+	<img src="../images/adminstration/space-rename-text.png" alt="Space Rename Input Field">
+</div>

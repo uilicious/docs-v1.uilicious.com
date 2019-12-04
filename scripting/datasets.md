@@ -6,19 +6,27 @@ Datasets can be used to swap test data quickly between runs and to manage sensit
 
 In Editor Tab, click on the "Dataset" dropdown on the "Result" Pane Toolbar, and "Add Dataset" option to create a dataset.
 
-![Add dataset](../images/dataset-add-dataset.png)
+<div class="screenshot">
+	<img src="../images/dataset-add-dataset.png" alt="Add dataset">
+</div>
 
 Enter a name for the dataset, e.g. "Production".
 
-![Name the dataset](../images/dataset-name-dataset.png)
+<div class="screenshot">
+	<img src="../images/dataset-name-dataset.png" alt="Name the dataset">
+</div>
 
 To add a property to the dataset, enter the property name and value, and press "Add".
 
-![Add a property to the dataset](../images/dataset-add-properties.png)
+<div class="screenshot">
+	<img src="../images/dataset-add-properties.png" alt="Add a property to the dataset">
+</div>
 
 Save the dataset. You should see the new dataset in your "Dataset" dropdown.
 
-![Dataset added](../images/dataset-added.png)
+<div class="screenshot">
+	<img src="../images/dataset-added.png" alt="Dataset added">
+</div>
 
 When a dataset is selected, the properties and values will be loaded to the `DATA` object. You can reference the properties in the dataset like this:
 
@@ -49,8 +57,12 @@ You can manage sensitive test data such as passwords with secret properties in D
 
 When adding a property, change the visibility of the property from "Visible" to "Secret". Let's set password to "Secret".
 
-![Setting secret dataset properties](../images/dataset-secret-properties.png)
+<div class="screenshot">
+	<img src="../images/dataset-secret-properties.png" alt="Setting secret dataset properties">
+</div>
 
 Secret properties are masked in the test run reports.
 
-![Secret properties are masked in reports](../images/dataset-run-secret.png)
+<div class="screenshot">
+	<img src="../images/dataset-run-secret.png" alt="Secret properties are masked in reports">
+</div>
