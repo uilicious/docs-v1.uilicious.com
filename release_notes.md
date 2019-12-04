@@ -91,7 +91,9 @@
 ### 2.19.0
 *Released on 06 Sept 2019*
 
-![Invite team members to your space](images/invite-team-members.gif)
+<div class="screenshot">
+    <img src="images/invite-team-members.gif" alt="Invite team members to your space">
+</div>
 
 ##### 🚀 New Features:
 * __Spaces & Teams__: You can now invite your team members to your Space (your collection of projects) as Editors! Editors may create, edit, run tests and schedule jobs, but may not manage users or billing. 
@@ -105,18 +107,23 @@
 *Released on 26 Aug 2019*
 ##### 💪 Enhancement:
 
-![More Info and Actions on the Jobs List](images/job-list-enhancements-26-aug-2019.png)
 _We've made the Monitoring Dashboard richer to help you identify problems faster!_
 
-* __Monitoring Dashboard__:
-  * __Latest results at a glance__: You can now see the latest result for each job at a glance, and click on the status to view the report directly.
-  * __More Info and Actions__:
+<div class="screenshot">
+    <img src="images/job-list-enhancements-26-aug-2019.png" alt="More Info and Actions on the Jobs List">
+</div>
+
+* __Latest results at a glance__: You can now see the latest result for each job at a glance, and click on the status to view the report directly.
+* __More Info and Actions__:
     * Added the browser, resolution, and dataset configuration information for each job to help you differentiate similar jobs at a glance.
     * Added the "Edit" button to allow you to edit your Job configuration without leaving the Jobs list page.
-  * __New Filters__:
+* __New Filters__:
     * Added the resolution filter.
-  * __Bulk edit__:
-    ![Bulk Edit Jobs](images/job-list-bulk-edit-26-aug-2019.png)
+
+<div class="screenshot">
+    <img src="images/job-list-bulk-edit-26-aug-2019.png" alt="Bulk Edit Jobs">
+</div>
+* __Bulk edit__:
     * You can now select multiple jobs and bulk edit the browsers, resolutions, and schedule configurations for the selected jobs.
 
 ### 2.18.7
