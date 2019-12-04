@@ -2,6 +2,19 @@
 
 ## Browser and Device support
 
+### Does UI-licious support multiple versions of the same browser?
+
+For the cloud edition: 
+- At the moment, we support the latest version of every browser. However, this depends on stability of drivers provided by each browser vendor (Google, Mozilla, Microsoft, Apple, etc.) - we may skip versions if the driver for a specific browser version has regression failures. 
+- We plan to roll out support for up to (N - 2) versions for evergreen browsers (Chrome, Firefox, Edge). Meaning if the current version of Chrome is 100, we'll support 99 and 98.
+
+For the self-hosted Enterprise edition:
+- Specific versions of evergreen browsers that are available from 2016 can be requested.
+
+### Does UI-licious support mobile browser testing on real mobile devices?
+
+Yes. Please contact [sales@uilicious.com](sales@uilicious.com) for more information. 
+
 ### Any plans to support mobile native app testing?
 
 Yes. Please contact [sales@uilicious.com](sales@uilicious.com) if you are interested in our early access program. 
