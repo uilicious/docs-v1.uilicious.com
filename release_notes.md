@@ -12,6 +12,75 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+### 2.22.1
+*Released on 28 Nov 2019*
+
+##### 🐞 Fixes
+* Fixed issue with UI showing no controls when the last project in the space is deleted.
+
+### 2.22.0
+*Released on 13 Nov 2019*
+
+![Applitools](images/integrations/applitools.png)
+
+##### 🧪 Experimental (currently under Beta):
+* Integration with [Applitools](https://applitools.com/) for visual regression testing
+
+### 2.21.1
+*Released on 4 Nov 2019*
+
+##### 💪 Enhancement:
+* __Editor__: Pressing the "Stop" button now releases the Report pane immediately instead of waiting for the test run to be fully stopped, so that you can immediately execute another test.
+
+##### 🐞 Fixes
+* Fixed issue on "Manage Datasets" modal cannot be scrolled
+* Fixed issue with newly created jobs showing last run time as 1 Jan 1970.
+* Fixed layout on "Monitoring" tab to accomodate narrow screen sizes.
+
+### 2.21.0
+*Released on 25 Oct 2019*
+
+##### 🚀 New Features:
+* __Editor__: Code hinting and auto complete is available as you type! 
+* __Browser Notifications__: Get browser notifications whenever tests (triggered manually from the Editor) are completed.
+
+##### 💪 Enhancement:
+* __Jobs__: 
+  * You can now get a quick glance of the schedule configured for a job on the Monitoring tab
+  * Dates are now displayed in localised format.
+
+##### 🐞 Fixes
+* __Runs page__: Fixed Enter key support for submitting search query on the test runs
+
+### 2.20.1
+*Released on 14 Oct 2019*
+
+##### 💪 Enhancement:
+* __Runs page__: Added filters for searching test runs by Name, Status, Browser, and Trigger.
+
+##### 🐞 Fixes
+* __Runs page__: Fixed issue with pending test run reports not updating automatically.
+
+### 2.20.0
+*Released on 8 Oct 2019*
+
+![Microsoft Teams](images/integrations/microsoft-teams.png)
+
+##### 🚀 New Features:
+* __Jobs__: Integration with Microsoft Teams now supported - you can now get error reports sent straight to your channels in MS Teams.
+
+### 2.19.3
+*Released on 2 Oct 2019*
+
+##### 💪 Enhancement:
+* __Jobs__: You can now enable / disable jobs to temporarily pause them. 
+
+### 2.19.2
+*Released on 23 Sept 2019*
+
+##### 💪 Enhancement:
+* __Spaces page__: (For cloud edition) Added tag to display subscription plan for each space
+
 ### 2.19.1
 *Released on 11 Sept 2019*
 
