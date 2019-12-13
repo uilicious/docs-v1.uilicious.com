@@ -12,6 +12,13 @@ search:
 | Command | Description|
 |---------|------------|
 | [`I.click`](#iclick--idoubleclick) <br> [`I.doubleClick`](#iclick--idoubleclick) | Click or double click on an element  |
+| [`I.rightClick`](#irightclick) | Right click on an element |
+
+##### Hover
+
+| Command | Description|
+|---------|------------|
+| [`I.hoverOn`](#ihoveron) | Hover on an element  |
 
 ##### Drag
 
@@ -121,6 +128,63 @@ Click on an element with its `class` property set to `login-btn`.
 I.click("#map", 100, 100)
 ```
 Clicks on 100 to the right and 100 down from the top-left corner of the element with the id `map`
+
+---
+
+## `I.rightClick`
+
+Right click on an element.
+
+For image / icon elements, we'd strongly recommend that setting an `aria-label` for the target element, use `I.click` using the label. This will also help make your application more friendly to humans using accessibility tools.
+
+> Note that this action will typically open the default OS context menu, which cannot be interacted with by the test engine or captured in screenshot. Hence, this command will only be useful if you have a custom behavior on right click for the target element
+
+#### Usage
+```javascript
+I.rightClick(target)
+I.rightClick(target, x, y)
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|----------|------|--------|
+| target | string | Keyword to identify the element to click. <br> This is case-insensitive. |
+| x | number | Optional. <br> Offset the click x pixels right from the top-left corner of the target element. |
+| y | number | Optional. <br> Offset the click y pixels down from the top-left corner of the target element. |
+
+---
+
+## `I.hoverOn`
+
+Hover on an element.
+
+For image / icon elements, we'd strongly recommend that setting an `aria-label` for the target element, use `I.click` using the label. This will also help make your application more friendly to humans using accessibility tools.
+
+#### Usage
+```javascript
+I.hoverOn(target);
+```
+
+##### Parameters
+
+| Parameter | Type | Remarks|
+|----------|------|--------|
+| target | string | Keyword to identify the element to click. <br> This is case-insensitive. |
+
+#### Example(s)
+
+```javascript
+// using element's label, based on e.g. the element's text, tooltip, title, ARIA labels, etc.
+I.hoverOn("Help")          // Hover on the element labelled "Help"
+
+// using css selector
+I.hoverOn("#menu-mobile")  // Hover on element with the id "menu-mobile"
+I.hoverOn(".menu")         // Hover on element with the class ".menu"
+
+// using xpath
+I.hoverOn("//img[@class='question-card']") // Hover on image with the class "question-card"
+```
 
 ---
 

@@ -12,6 +12,28 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+### 2.23.0
+*Released on 12 Dev 2019*
+
+_Major update to the test-engine - we've added `I.hoverOn` and `I.rightClick` command, ability to send chords in `I.press` and `I.type`, and fixed several issues._
+
+##### 🚀 New Features:
+* New commands:
+  * [`I.hoverOn`](scripting/mouse.md#ihoveron) lets you hover on target elements, e.g. `I.hoverOn("Help")`, `I.hoverOn(".menu")`
+  * [`I.rightClick`](scripting/mouse.md#irightclick) lets you press right mouse button on target element. However, if the action opens the default OS context menu, there is no way to interact with this menu or to take a screenshot of it. This command should only be used if you have a custom behavior for the element on right click. 
+* `I.press` and `I.type` now supports key chords, e.g. `I.press(["Alt", "r"])` will press "Alt" and "r" keys together.
+
+##### 🧪 Experimental (currently under Beta):
+* [Applitools](https://applitools.com/) Integration: 
+  * Added method to enable setting stitch mode for full page screenshots.
+
+##### 🐞 Fixes
+* Fixed issue with clearing fields with `I.clear` or `I.fill("my field", "")` commands on right-aligned fields or fields with values in RTL languages.
+* Fixed issue with test crashing when new tab to specific websites are opened
+* Fixed: improved error message if element cannot be found for `I.getText` and `I.getValue` commands
+* Fixed issue with alerts being auto-dismissed by default on Firefox
+* Fixed issue with test crashing when alerts are opened on Safari and IE11.
+
 ### 2.22.1
 *Released on 28 Nov 2019*
 

@@ -43,10 +43,23 @@ I.fill(field, value)
 
 #### Example(s)
 
+###### Fill a field
+
 ```javascript
 I.fill("Email", "bruce@waynecorp.com");
 ```
 This command fills "bruce@waynecorp.com" into the "Email" field.
+
+###### Clear a field
+
+```javascript
+// fill with empty value
+I.fill("Email", "");
+
+// or
+I.clear("Email");
+```
+This command clears the "Email" field.
 
 ---
 

@@ -45,6 +45,8 @@
 | Command | Description |
 |---------|-------------|
 | [`I.click`](mouse.md#iclick--idoubleclick) <br> [`I.doubleClick`](mouse.md#iclick--idoubleclick) | Click or double click on an element |
+| [`I.rightClick`](mouse.md#irightclick) | Right click on an element |
+| [`I.hoverOn`](mouse.md#ihoverOn) | Hover on an element |
 | [`I.dragTo`](mouse.md#idragto) | Drag an element to another target element |
 | [`I.dragBy`](mouse.md#idragby) | Drag an element directionally by (x,y) pixel offset |
 | [`I.dragUp`](mouse.md#idragup) | Drag an element to the up by a given number of pixel |
