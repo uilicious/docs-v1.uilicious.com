@@ -30,6 +30,7 @@ _Major update to the test-engine - we've added `I.hoverOn` and `I.rightClick` co
 ##### 🐞 Fixes
 * Fixed issue with clearing fields with `I.clear` or `I.fill("my field", "")` commands on right-aligned fields or fields with values in RTL languages.
 * Fixed issue with test crashing when new tab to specific websites are opened
+* Fixed issue with `I.dontSee` always returning `false` - it should return `true` when target is not visible.
 * Fixed: improved error message if element cannot be found for `I.getText` and `I.getValue` commands
 * Fixed issue with alerts being auto-dismissed by default on Firefox
 * Fixed issue with test crashing when alerts are opened on Safari and IE11.
