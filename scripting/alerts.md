@@ -23,7 +23,7 @@ These commands interact with **alerts**, including **confirm** and **prompt** di
 
 Assert the message displayed on the alert.
 
-#### Usage
+### Usage
 ```
 I.seeAlert(text)
 ```
@@ -32,7 +32,7 @@ I.seeAlert(text)
 |----------|------|--------|
 | text | string | (Optional) Text that is expected to be displayed on the alert. |
 
-#### Example(s)
+### Example(s)
 
 ```
 UI.execute("alert('hello    world')") // opens an alert with the message "Hello world"
@@ -45,7 +45,7 @@ I.seeAlert("lorem") // fail
 
 Press the "Ok" button (or the equivalent in other languages) on the alert.
 
-#### Usage
+### Usage
 ```
 I.acceptAlert()
 ```
@@ -56,7 +56,7 @@ Press the "Cancel" (or the equivalent in other languages) button on the alert.
 
 > On alert boxes that do not have the "Cancel" button, the "Ok" button will be pressed instead to dismiss the alert.
 
-#### Usage
+### Usage
 ```
 I.cancelAlert()
 ```
@@ -67,7 +67,7 @@ Fill the text box on the alert.
 
 > Only applicable to **prompt** dialogs.
 
-#### Usage
+### Usage
 ```
 I.fillAlert(value)
 ```

@@ -13,22 +13,22 @@ search:
 
 ---
 
-##`I.wait`
+## `I.wait`
 
 Wait for a given amount of time
 
-#### Usage
+### Usage
 ```javascript
 I.wait(seconds)
 ```
 
-##### Parameters
+### Parameters
 
 | Parameter | Type | Remarks|
 |----------|------|--------|
 | seconds | number | Number of seconds to wait for |
 
-#### Example(s)
+### Example(s)
 
 ```javascript
 I.wait(3);

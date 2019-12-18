@@ -43,11 +43,11 @@ I.click("Zoom in")
 
 When there are multiple elements matching the same keyword, UI-licious will make an educated guess to resolve the ambiguity based on semantics, accessibility, and the previous steps. 
 
-##### Using semantics
+### Using semantics
 
 For example, if `I.click("Sign in")` matches a `h1` element and a `button` element, the UI-licious is more biased to click on the `button` which sematically indicates that the element is clickable. 
 
-##### Using previous commands
+### Using previous commands
 
 UI-licious also looks at your previous commands to identify the target element.
 
@@ -66,7 +66,7 @@ __Results:__
 
 <iframe src="https://snippet.uilicious.com/embed/test/public/Fj3vkLRmW12UTkGdAknQVq?step=4&autoplay=0" frameborder="0" width="100%" height="400px;"></iframe>
 
-##### Hinting with I.see 
+### Hinting with I.see 
 
 You can use `I.see` to drop hints to the test engine on where your target element for the subsequent commands might be.
 
@@ -81,7 +81,7 @@ I.fill("Birthday", "19 July 2015") // Updates the birthday of "Max"
 
 This will help you to avoid having to specify CSS or XPATH selectors to update the first, second, third... nth... birthday fields.
 
-##### Limiting the scan area
+### Limiting the scan area
 
 Sometimes it might be more convenient to just specify the region where UI-licious will scan to identify target elements. You can use `UI.context` to do so.
 

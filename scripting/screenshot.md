@@ -22,7 +22,7 @@ Note that taking full page screenshots can slow down your tests, use it when you
 
 Additionally, if there's infinite scrolling on the page, only what's currently visible will be taken. You'll need to combine this with scrolling commands to take longer screenshots on these kinds of pages.
 
-#### Usage
+### Usage
 ```javascript
 TEST.takeFullScreenshot()
 ```

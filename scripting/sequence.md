@@ -14,21 +14,21 @@ Runs another test.
 
 > WARNING! <br> All tests run in the same scope. This means that variables with the same name in different tests will override each other.
 
-#### Usage
+### Usage
 ````javascript
 TEST.run(path)
 ````
 
-##### Parameters
+#### Parameters
 
 | Parameter | Type | Remarks|
 |----------|------|--------|
 | path | string | Path to the test to run|
 
 
-#### Example(s)
+### Example(s)
 
-###### Basic example using absolute path
+#### Basic example using absolute path
 
 Let's take this project with this structure for example.
 ```
@@ -62,7 +62,7 @@ I.fill("password", "supersecretpassword");
 I.click("Login");
 ```
 
-###### Using `TEST.run` with relative paths
+#### Using `TEST.run` with relative paths
 
 We can specify tests to run relative to the current test file.
 
@@ -92,12 +92,12 @@ Note that tests will automatically stop when there are no more commands.
 
 Use this command to manually stop test in specific scenarios with conditions (see example).
 
-#### Usage
+### Usage
 ````javascript
 TEST.stop()
 ````
 
-#### Example
+### Example
 
 ```javascript
 if(I.see$("Out of stock")){ // I.see$ is the same as I.see, but any errors are supressed

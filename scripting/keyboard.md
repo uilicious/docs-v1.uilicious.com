@@ -29,20 +29,20 @@ This will send keyboard inputs to the element in focus, or the page &lt;body&gt;
 
 > `I.press` and `I.type` are exactly the same thing - we simply provided these two versions for whichever linguistic preference you have.
 
-#### Usage
+### Usage
 ```javascript
 I.type(key)
 I.press(key)
 ```
 
-##### Parameters
+#### Parameters
 | Parameter | Type | Remarks |
 |-----------|------|---------|
 | key | string <br> array of strings | Key(s) to press |
 
-##### Examples
+### Examples
 
-###### Text input
+#### Text input
 
 > Note that `I.fill(field, value)` is recommended over `I.type(value)` for entering text into input fields
 
@@ -50,13 +50,13 @@ I.press(key)
 I.type("hello") // this will send "h" "e" "l" "l" "o" 
 ```
 
-###### Press a key
+#### Press a key
 
 ```javascript
 I.press("?") // this will send "?"
 ```
 
-###### Press a special key
+#### Press a special key
 
 ```javascript
 // Send a special keys 
@@ -65,7 +65,7 @@ I.press("Delete") // This will press the "Delete" key
 I.pressEnter() // Convenience command are provided for frequently used keys
 ```
 
-###### Press a chord (send multiple keys simultaneously)
+#### Press a chord (send multiple keys simultaneously)
 
 ```javascript
 // Send a chord (press multiple keys at the same time)
@@ -83,7 +83,7 @@ Press the `Enter` key.
 
 This is same as using the command `I.press("Enter")`.
 
-#### Usage
+### Usage
 ```javascript
 I.pressEnter()
 ```
@@ -96,7 +96,7 @@ Press the &uarr; key.
 
 This is same as using the command `I.press("ArrowUp")`.
 
-#### Usage
+### Usage
 ```javascript
 I.pressUp()
 ```
@@ -109,7 +109,7 @@ Press the &darr; key.
 
 This is same as using the command `I.press("ArrowDown")`.
 
-#### Usage
+### Usage
 ```javascript
 I.pressDown()
 ```
@@ -122,7 +122,7 @@ Press the &larr; key.
 
 This is same as using the command `I.press("ArrowLeft")`.
 
-#### Usage
+### Usage
 ```javascript
 I.pressLeft()
 ```
@@ -135,7 +135,7 @@ Press the &rarr; key.
 
 This is same as using the command `I.press("ArrowRight")`.
 
-#### Usage
+### Usage
 ```javascript
 I.pressRight()
 ```
@@ -148,7 +148,7 @@ Press the &rarr; key.
 
 This is same as using the command `I.press("Tab")`.
 
-#### Usage
+### Usage
 ```javascript
 I.pressTab()
 ```

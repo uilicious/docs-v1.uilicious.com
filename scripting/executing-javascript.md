@@ -8,11 +8,13 @@ Executes Javascript on the browser.
 
 **Note that** the script will run in the browser's context, and will have no access to any variables declared in the scope of the test scripts. It will have access to variables available in the browser, such as `window`, `document`, and libraries exposed by the webpage such as `jQuery`.
 
-#### Usage
+### Usage
 
 ```javascript
 UI.execute(script, args)
 ```
+
+#### Parameters
 
 | Parameter | Type | Remarks|
 |----------|------|--------|
@@ -22,9 +24,9 @@ UI.execute(script, args)
 **Returns:** 
 The return value of the script.
 
-#### Example(s)
+### Example(s)
 
-##### Executing Javascript as function
+#### Executing Javascript as function
 
 You can pass the script to execute as a function, and provide the arguments for the function as such:
 
@@ -34,7 +36,7 @@ var value = UI.execute(function () {
 }); // value is 42
 ```
 
-##### Executing Javascript as string
+#### Executing Javascript as string
 
 You can pass the script to execute as a string.
 
@@ -46,7 +48,7 @@ var value = UI.execute("return 1 + 2"); // value is 3
 var value = UI.execute("var i = 42"); // value is `undefined`
 ```
 
-##### Script runs in the browser's context
+#### Script runs in the browser's context
 
 The script is sent to the browser for execution and has access to variables available to the context of the browsers.
 
@@ -85,7 +87,7 @@ var value = UI.execute(function (a, b) {
 }, [1, 2]); // value is 3
 ```
 
-##### When errors occur
+#### When errors occur
 
 When an error is thrown during the execution of the script, the command results in a test failure, and the value return will be `undefined`.
 

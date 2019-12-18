@@ -20,13 +20,13 @@ These commands allow you to extract parts of the page, which you may then use as
 
 Get the number of occurances of a text or element
 
-#### Usage
+### Usage
 
 ```javascript
 I.getCount(target)
 ```
 
-##### Parameters
+#### Parameters
 
 | Parameter | Type | Remarks|
 |-----------|------|--------|
@@ -54,13 +54,13 @@ Get the text content of an element
 
 Aliases: `I.grabText` (legacy)
 
-#### Usage
+### Usage
 
 ```javascript
 I.getText(target)
 ```
 
-##### Parameters
+#### Parameters
 
 | Parameter | Type | Remarks|
 |-----------|------|--------|
@@ -68,7 +68,7 @@ I.getText(target)
 
 ### Example(s)
 
-###### HTML
+##### HTML
 ```xml
 <div id="message">Welcome</div>
 <div id="secret">Batman</div>
@@ -78,7 +78,7 @@ I.getText(target)
 </div>
 ```
 
-###### Script
+##### Script
 ```javascript
 // Extract text from elements
 var message = I.getText("#message"); // extracts "Welcome"
@@ -95,13 +95,13 @@ I.fill("Secret Message", message + ' ' + secret);
 
 Get the value of an input element
 
-#### Usage
+### Usage
 
 ```javascript
 I.getValue(target)
 ```
 
-##### Parameters
+#### Parameters
 
 | Parameter | Type | Remarks|
 |-----------|------|--------|

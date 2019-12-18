@@ -1,6 +1,6 @@
 # List of commands
 
-#### Page navigation commands
+## Page navigation commands
 
 | Command | Description |
 |---------|-------------|
@@ -9,7 +9,7 @@
 | [`I.switchTab`](navigation.md#iswitchtab) | Switch to a tab |
 | [`I.closeTab`](navigation.md#iclosetab) | Close the current tab |
 
-#### Page assertion commands
+## Page assertion commands
 
 | Command | Description |
 |---------|-------------|
@@ -23,7 +23,7 @@
 | [`UI.is500`](#uiis500) | Asserts that the status code for the current page is 500 (Internal Server Error). |
 | [`UI.isNot500`](#uiisnot500) | Asserts that the status code for the current page is __NOT__ 500 (Internal Server Error). |
 
-#### Form input commands
+## Form input commands
 
 | Command | Description |
 |---------|-------------|
@@ -32,7 +32,7 @@
 | [`I.deselect`](form_input.md#ideselect) | Deselect a checkbox |
 | [`I.upload`](form_input.md#iupload) | Upload a file to a file field |
 
-#### Form assertion commands
+## Form assertion commands
 
 | Command | Description |
 |---------|-------------|
@@ -40,7 +40,7 @@
 | [`I.selected`](form_input.md#iselected) | Assert that a dropdown option, checkbox, or radio button is selected |
 | [`I.deselected`](form_input.md#ideselected) | Assert that a dropdown option, checkbox, or radio button is NOT selected |
 
-#### Mouse commands
+## Mouse commands
 
 | Command | Description |
 |---------|-------------|
@@ -62,7 +62,7 @@
 | [`I.scrollToTop`](mouse.md#iscrolltotop) | Scroll to the top of the page |
 | [`I.scrollToBottom`](mouse.md#iscrolltobottom) | Scroll to the bottom of the page |
 
-#### Keyboard commands
+## Keyboard commands
 
 | Command | Description |
 |---------|-------------|
@@ -74,7 +74,7 @@
 | [`I.pressRight`](keyboard.md#ipressright) | Press the → key |
 | [`I.pressTab`](keyboard.md#ipresstab) | Press the `Tab` key |
 
-#### Validate page content
+## Validate page content
 
 | Command | Description |
 |---------|-------------|
@@ -82,7 +82,7 @@
 | [`I.dontSee`](assertion.md#idontSee) | Assert that an text or element is NOT visible |
 | [`I.count`](assertion.md#icount) | Assert the number of occurances for a text or element |
 
-#### Page content extraction commands
+## Page content extraction commands
 
 | Command | Description |
 |---------|-------------|
@@ -90,7 +90,7 @@
 | [`I.getText`](extract.md#igettext) | Get text content from an element |
 | [`I.getValue`](extract.md#igetvalue) | Get value from an input element |
 
-#### Alert commands
+## Alert commands
 
 | Command | Description|
 |---------|------------|
@@ -99,13 +99,13 @@
 | [`I.cancelAlert`](alerts.md#icancelalert) | Press the "Cancel" button on the alert |
 | [`I.fillAlert`](alerts.md#ifillalert) | Fill the text box on the alert |
 
-#### Utility commands
+## Utility commands
 
 | Command | Description |
 |---------|-------------|
 | [`I.wait`](utility.md#iwait) | Wait for a given amount of time |
 
-#### Generate sample data
+## Generate sample data
 
 | Command | Description |
 |---------|-------------|
@@ -116,46 +116,46 @@
 | [`SAMPLE.name`](sample.md#samplename) | Generates a random full name |
 | [`SAMPLE.email`](sample.md#sampleemail) | Generates a random email address |
 
-#### Loading test data from file
+## Loading test data from file
 
 | Command | Description |
 |---------|-------------|
 | [`TEST.loadDataFromCsv`](load_data_from_file.md#testloaddatafromcsv) | Loads test data from a .csv file. |
 | [`TEST.loadDataFromJson`](load_data_from_file.md#testloaddatafromjson) | Loads test data from a .json file. |
 
-#### Test flow commands
+## Test flow commands
 
 | Command | Description |
 |---------|-------------|
 | [`TEST.run`](sequence.md#testrun) | Runs another test |
 | [`TEST.stop`](sequence.md#teststop) | Stops the test |
 
-#### Screenshot commands
+## Screenshot commands
 
 | Command | Description |
 |---------|-------------|
 | [`TEST.takeFullScreenshot`](screenshot.md#testtakefullscreenshot) | Take a full page screenshot (Safari & IE only) |
 
-#### Reporting commands
+## Reporting commands
 | Command | Description |
 |---------|-------------|
 | [`TEST.log.info`](logging.md#testloginfo) | Log a message to report |
 | [`TEST.log.pass`](logging.md#testlogpass) | Log a message to report with `pass` status |
 | [`TEST.log.fail`](logging.md#testlogfail) | Log a message to report with `fail` status |
 
-#### Limiting test scope
+## Limiting test scope
 
 | Command | Description|
 |---------|------------|
 | [`UI.context`](ui_context.md#uicontext) | Limit the test to run on specific parts of a page. <br> Can be used to explicitly switch to the context of an iframe. |
 
-#### Execute Javascript
+## Execute Javascript
 
 | Command | Description |
 |---------|-------------|
 | [`UI.execute`](executing-javascript.md#uiexecute) | Executes Javascript on the browser |
 
-#### Cookie management
+## Cookie management
 | Command | Description|
 |---------|------------|
 | [`UI.COOKIE.set`](cookies.md#uicookieset) | Set a cookie on the current page |

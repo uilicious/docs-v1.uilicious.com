@@ -16,19 +16,19 @@ These commands are for you to write custom logs to the reports with statuses.
 
 Log a message to report
 
-#### Usage
+### Usage
 
 ```javascript
 TEST.log.info(message)
 ```
 
-##### Parameters
+#### Parameters
 
 | Parameter | Type | Remarks|
 |----------|------|--------|
 | message | string | Message to log to report |
 
-#### Example(s)
+### Example(s)
 
 ```javascript
 var applicationId = I.getText("#applicationId")
@@ -43,19 +43,19 @@ Gets the text from the element with the id "applicationId" and prints it to the 
 
 Log a message to report with `pass` status
 
-#### Usage
+### Usage
 
 ```javascript
 TEST.log.pass(message)
 ```
 
-##### Parameters
+#### Parameters
 
 | Parameter | Type | Remarks|
 |----------|------|--------|
 | message | string | Message to log to report |
 
-#### Example(s)
+### Example(s)
 
 ```javascript
 I.click("Clear all")
@@ -72,19 +72,19 @@ Clears all items in a todo list, and count the number of elements with the "todo
 
 Log a message to report with `fail` status. This adds to the error count and will result in the overall test failing.
 
-#### Usage
+### Usage
 
 ```javascript
 TEST.log.fail(message)
 ```
 
-##### Parameters
+#### Parameters
 
 | Parameter | Type | Remarks|
 |----------|------|--------|
 | message | string | Message to log to report |
 
-#### Example(s)
+### Example(s)
 
 ```javascript
 if(I.amAt('/notFound')){

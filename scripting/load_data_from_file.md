@@ -21,7 +21,7 @@ The header will be used as the name of each property. The first column will be u
 
 You may store multiple datasets in .csv files, but only one can be read at a time, using the `dataset` parameter or option to define to expression to select the dataset.
 
-#### Usage
+### Usage
 ```javascript
 TEST.loadDataFromCsv(file)
 TEST.loadDataFromCsv(file, dataset)
@@ -37,7 +37,7 @@ Returns test data as json object.
 | dataset   | `string` | Required if file contains more than one datasets. <br> Expression for selecting the dataset to load. e.g. `country=korea` | 
 | options   | `object` | Optional. <br> See options below |
 
-###### Options
+#### Options
 
 | Option    | Type     | Remarks|
 |-----------|----------|--------|
@@ -46,9 +46,9 @@ Returns test data as json object.
 | escape    | `string` | Set the escape character, applies to quote and escape characters inside quoted fields. Defaults to `\"`. |
 | delimiter | `string` | Set the delimiter charater. Defaults to `,` (comma). |
 
-#### Examples(s)
+### Examples(s)
 
-##### Test data with first column as header
+#### Test data with first column as header
 
 "credentials.csv" file:
 ```
@@ -64,7 +64,7 @@ I.fill("Username", user.username)
 I.fill("password", user.password)
 ```
 
-##### Test data with first column as row
+#### Test data with first column as row
 
 "credentials.csv" file:
 ```
@@ -80,7 +80,7 @@ I.fill("Username", user.username)
 I.fill("Password", user.password)
 ```
 
-##### Multiple datasets in a file
+#### Multiple datasets in a file
 
 "credentials.csv" file:
 ```
@@ -109,7 +109,7 @@ Loads data from a .json (javascript object notation) file.
 
 Returns the test data as a json object. Nested data structure is supported.
 
-#### Usage
+### Usage
 
 ```javascript
 TEST.loadDataFromJson(file)
@@ -122,7 +122,7 @@ Returns the test data as a json object.
 |-----------|----------|--------|
 | file      | `string` | Relative or absolute path to the file to load |
 
-#### Examples(s)
+### Examples(s)
 
 "credentials.json" file:
 ```json

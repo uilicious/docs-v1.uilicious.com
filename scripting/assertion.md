@@ -20,16 +20,16 @@ Assert that an text or element is visible
 
 > Ignores casing and white-spaces. This behavior is not configurable at the moment.
 
-#### Usage
+### Usage
 ```javascript
 I.see(target)
 ```
-##### Parameters
+#### Parameters
 | Parameter | Type | Remarks|
 |-----------|------|--------|
 | target | string | Text or element to find |
 
-#### Example(s)
+### Example(s)
 
 ```javascript
 I.see("Welcome back, Bruce");
@@ -44,12 +44,12 @@ Assert that an text or element is **NOT** visible
 
 > Ignores casing and white-spaces. This behavior is not configurable at the moment.
 
-#### Usage
+### Usage
 
 ```javascript
 I.dontSee(target)
 ```
-##### Parameters
+#### Parameters
 | Parameter | Type | Remarks|
 |-----------|------|--------|
 | target | string | Text or element to find |
@@ -64,18 +64,18 @@ Aliases: `I.seeCount`
 
 > Ignores casing and white-spaces. This behavior is not configurable at the moment.
 
-#### Usage
+### Usage
 
 ```javascript
 I.count(target, n)
 ```
-##### Parameters
+#### Parameters
 | Parameter | Type | Remarks|
 |-----------|------|--------|
 | target | string | Text or element to find |
 | n | number | Number of occurance expected |
 
-#### Example(s)
+### Example(s)
 
 ```javascript
 I.count("Add to cart", 20);

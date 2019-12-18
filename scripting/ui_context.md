@@ -16,18 +16,18 @@ Limit the test to specific parts of a page.
 
 Can be used to explicitly switch to the context of an iframe. 👉 [Jump to "Handling Iframes"](#handling-iframes).
 
-#### Usage
+### Usage
 ```javascript
 UI.context(context, test)
 ```
 
-##### Parameters
+#### Parameters
 | Parameter | Type | Remarks |
 |-----------|------|---------|
 | context | string | Limit the test to specific parts of a page. Specify a CSS selector or XPATH to specify the element to limit the test to. If the CSS selector or XPATH matches multiple elements, the scope of the test will be set to all matches. |
 | test | function | Test to run using the context |
 
-##### Example(s)
+### Example(s)
 
 Take this page for example, it has two identical forms to login and create account.
 {% raw %}
@@ -45,7 +45,7 @@ UI.context("#login-form", function(){ // the following commands runs on the logi
 })
 ```
 
-#### Handling IFrames
+### Handling IFrames
 
 The contents of `<iframe>` can sometimes be inaccessible to the test engine, depending on how the `<iframe>` element is composed and the security policies of the browser, the iframe, and the parent page - so commands can fail unexpectedly if the target elements are within an `<iframe>` element. To interact with elements in an `<iframe>`, you need to explicitly select the iframe as the context using `UI.context`.
 
