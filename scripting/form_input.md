@@ -4,7 +4,7 @@ These commands are used to set values for form input and validate form inputs.
 
 ## List of commands
 
-##### Input commands
+### Input commands
 
 | Command | Description|
 |---------|------------|
@@ -13,7 +13,7 @@ These commands are used to set values for form input and validate form inputs.
 | [`I.deselect`](#ideselect) | Deselect a checkbox |
 | [`I.upload`](#iupload) | Upload a file |
 
-##### Assertion / Validation commands
+### Assertion / Validation commands
 | Command | Description|
 |---------|------------|
 | [`I.filled`](#ifilled) |  Assert that the form is filled with a specific value |
@@ -30,27 +30,27 @@ Fill a textual field.
 
 This works for date picker fields that accept direct text input.
 
-#### Usage
+### Usage
 ```javascript
 I.fill(field, value)
 ```
 
-##### Parameters
+#### Parameters
 | Parameter | Type | Remarks|
 |----------|------|--------|
 | field | string | Keyword to identify the field. <br> The associated label, aria-label, placeholder, adjacent text, and current value can be used to identify a field. <br>  CSS selectors can also be used, *but is not recommended as it makes the tests harder to keep up to date.* |
 | value | string | Value to fill into the field |
 
-#### Example(s)
+### Example(s)
 
-###### Fill a field
+#### Fill a field
 
 ```javascript
 I.fill("Email", "bruce@waynecorp.com");
 ```
 This command fills "bruce@waynecorp.com" into the "Email" field.
 
-###### Clear a field
+#### Clear a field
 
 ```javascript
 // fill with empty value
@@ -67,20 +67,18 @@ This command clears the "Email" field.
 
 Asserts that the form is filled with a specific value
 
-#### Usage
+### Usage
 
 ```javascript
 I.filled(field, value)
 ```
 
-##### Parameters
+#### Parameters
 
 | Parameter | Type | Remarks|
 |-----------|------|--------|
 | field | string | Keyword to identify the field. <br> The associated label, placeholder, adjacent text, and name can be used to identify a field. <br>  CSS selectors can also be used, *but is not recommended as it makes the tests harder to keep up to date.* |
 | value | string | Value that the field is expected to have |
-
-#### Example(s)
 
 ---
 
@@ -92,7 +90,7 @@ Select a dropdown, checkbox, or radio button.
 > <br>
 > For custom elements, use `I.click` as a fallback. <br>
 
-#### Usage
+### Usage
 
 Select an `option`:
 ```javascript
@@ -104,15 +102,15 @@ Select an `option` in a `list`:
 I.select(list, option)
 ```
 
-##### Parameters
+#### Parameters
 | Parameter | Type | Remarks|
 |----------|------|--------|
 | list | string | (Optional) Keyword to identify the options list |
 | option | string | Keyword to identify the option to select |
 
-#### Example(s)
+### Example(s)
 
-##### Select a dropdown
+#### Select a dropdown
 
 Here, we will use this "Number" dropdown list for illustration.
 
@@ -128,8 +126,6 @@ Here, we will use this "Number" dropdown list for illustration.
 </div>
 {% endraw %}
 
-###### Script
-
 Specify the `option`;
 ```javascript
  I.select("Two");
@@ -142,7 +138,7 @@ I.select("Number", "Two");
 
 This selects the option "Two".
 
-##### Select a checkbox
+#### Select a checkbox
 
 Here, we will use this check box for illustration.
 
@@ -152,14 +148,12 @@ Here, we will use this check box for illustration.
 </div>
 {% endraw %}
 
-###### Script
-
 ```javascript
 I.select("I agree to the terms and conditions");
 ```
 This selects the checkbox "I agree to the terms and conditions".
 
-##### Select a check box in a checkbox list
+#### Select a check box in a checkbox list
 
 Here, we will use this "Color" checkbox list for illustration.
 
@@ -172,8 +166,6 @@ Here, we will use this "Color" checkbox list for illustration.
 </div>
 {% endraw %}
 
-###### Script
-
 Specify the `option`;
 ```javascript
 I.select("Red");
@@ -185,7 +177,7 @@ I.select("Color", "Red");
 
 This selects the option "Red".
 
-##### Select a radio button
+#### Select a radio button
 
 Here, we will use this "Animal" radio button list for illustration.
 
@@ -197,8 +189,6 @@ Here, we will use this "Animal" radio button list for illustration.
     <label style='margin-left:16px'><input type='radio' name="animal"/> Mouse </label>
 </div>
 {% endraw %}
-
-###### Script
 
 Specify the `option`;
 ```javascript
@@ -218,7 +208,7 @@ This selects the option "Cat".
 
 Asserts that a dropdown option, checkbox, or radio button is selected
 
-#### Usage
+### Usage
 
 ```javascript
 I.selected(option)
@@ -228,7 +218,7 @@ I.selected(option)
 I.selected(list, option)
 ```
 
-##### Parameters
+#### Parameters
 
 | Parameter | Type | Remarks|
 |-----------|------|--------|
@@ -241,7 +231,7 @@ I.selected(list, option)
 
 Deselect a checkbox.
 
-#### Usage
+### Usage
 Deselect an `option`:
 ```javascript
 I.deselect(option)
@@ -252,7 +242,7 @@ Deselect an `option` in a `list`:
 I.deselect(list, option)
 ```
 
-##### Parameters
+#### Parameters
 | Parameter | Type | Remarks|
 |-----------|------|--------|
 | list (optional) | string | Keyword to identify the options list |
@@ -264,7 +254,7 @@ I.deselect(list, option)
 
 Asserts that a dropdown option, checkbox, or radio button is NOT selected
 
-#### Usage
+### Usage
 
 ```javascript
 I.deselected(option)
@@ -274,7 +264,7 @@ I.deselected(option)
 I.deselected(list, option)
 ```
 
-##### Parameters
+#### Parameters
 
 | Parameter | Type | Remarks|
 |-----------|------|--------|
@@ -287,44 +277,39 @@ I.deselected(list, option)
 
 Upload a file.
 
-#### Usage
+### Usage
 ```javascript
 I.upload(field, pathToFile)
 ```
 
-##### Parameters
+#### Parameters
 | Parameter | Type | Remarks|
 |-----------|------|--------|
 | field | string | Keyword to identify the file upload field |
 | pathToFile | string | Path to the file to upload. <br> **Currently, only absolute paths from the project root are supported.** |
 
-#### Example(s)
+### Example
 
-Here, we will use this "Photo" file upload field for illustration.
+First, you need to add the file to be used for testing file upload to the UI-licious test project. 
 
-{% raw %}
-<div style='margin-left: 16px; margin-bottom: 16px'>
-    <label>
-        <b>Photo</b> <input type="file"/>
-    </label>
+Click on the "plus" button in the workspace pane to open the "Add file" dialog.
+
+<div class="screenshot">
+    <img src="../images/i_upload_tutorial/add-file.png" alt="Add a file to the project">
 </div>
-{% endraw %}
 
-###### Project structure
+Select the "Upload file" menu, and upload the file to the project.
 
-> Added the files to upload into your project.
+<div class="screenshot">
+    <img src="../images/i_upload_tutorial/upload-file.png" alt="Upload a file to the project">
+</div>
 
-In our project, we have created a 'photos' directory and uploaded 'cat.png' and 'dog.png'.
-```
--- [myproject]
-   |-- photos
-       |-- cat.png
-       |-- dog.png
-   |-- login_test
-   |-- profile_test
-```
-###### Script
-```javascript
-I.upload('Photo', 'photos/cat.png');
-```
-This uploads the "photos/cat.png" to the "Photos" file upload field.
+Finally, specify the absolute or relative path to the file in the `I.upload` command. 
+
+<div class="screenshot">
+    <img src="../images/i_upload_tutorial/i-upload-command.png" alt="Specify the file to upload in I.upload command">
+</div>
+
+This will upload "cat.jpg" to the "Start uploading" file input field in our test application.
+
+
