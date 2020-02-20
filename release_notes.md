@@ -12,8 +12,61 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+### 2.23.4
+*Released on 20 Feb 2020*
+
+_Several fixes for edge cases with click operations, and other minor fixes and improvements in the Test Engine._
+
+##### 💪 Enhancement:
+
+* Test Engine:
+    * Improve error handling for UI.execute so that it reports the actual javascript error now instead of a generic error. 
+* Studio:
+    * Minor performance improvements to reduce time to load UI-licious Studio
+
+##### 🐞 Fixes
+
+* Test Engine:
+    * Fix evaluation of XPATH selectors in **IE11** tests 
+    * Fix edge case issues with targeting element using coordinates or pixel offsets from target elements using `I.click(x,y)` and `I.click(target, x, y)`
+    * Fix edge case issues with `I.rightClick`
+    * Fix edge case issues with `I.click` on Salesforce navigation bar and dropdown components
+    * Fix incorrect information about browser tabs and current page url being reported when `I.click` triggers a page navigation. Previously, I.click will show the screenshot taken **before** the click operation, but reports the browser tabs and current page url **after** the click operation instead. Now I.click commands will report the screenshot, browser tabs, and current page url **before** the click operation.
+    * Fix bug where browser tabs and current page url does not update after `I.closeTab` commands are used 
+
+### 2.23.3
+*Released on 11 Feb 2020*
+
+##### 💪 Enhancement:
+* Spaces:
+    * Clicking on the UI-licious Cake logo should bring you to the Spaces page without doing a full page reload
+    * Spaces can be renamed directly by click on the name of the space on the Spaces page *[Only for Space Owner roles]*
+* Editor:
+    * Added preview for .md files
+* Monitoring:
+    * Added dropdown menu with quick actions to disable or delete a job from the Job list page.
+
+##### 🐞 Fixes
+* Editor:
+    * Fix broken layout when viewing an image in the project files in Editor
+
+### 2.23.2
+*Released on 14 Jan 2020*
+
+##### 🐞 Fixes
+ * Fix bug with tests not being ran with the selected dataset for users with the Editor role. 
+
+### 2.23.1
+*Released on 10 Jan 2020*
+
+##### 💪 Enhancement:
+* Editor:
+    * New syntax highlighting theme to make it easier to read and understand test scripts
+* Test Engine:
+    * Performance improvements during test initialising process. Projects that were very large were experience issues with very slow starts and occasionally timeouts due to the slow down.
+
 ### 2.23.0
-*Released on 12 Dev 2019*
+*Released on 12 Dec 2019*
 
 _Major update to the test-engine - we've added `I.hoverOn` and `I.rightClick` command, ability to send chords in `I.press` and `I.type`, and fixed several issues._
 
