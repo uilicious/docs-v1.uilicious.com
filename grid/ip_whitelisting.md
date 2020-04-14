@@ -19,4 +19,5 @@ If you want to filter traffic from the UI-licious test servers (e.g. to disablin
 167.99.202.76
 206.189.113.202
 47.244.249.38
+132.147.79.54
 ```
