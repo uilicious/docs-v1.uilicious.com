@@ -13,28 +13,30 @@ These commands allow you to load test data from files in supported formats.
 
 ## `TEST.loadDataFromCsv`
 
-Loads data from a .csv (comma-separated value) file. 
+Loads entries from a .csv (comma-separated value) file. 
 
-Returns test data as a json object. Note that nested data is not supported.
+Returns an array of JSON objects, or a single JSON object if `dataset` is specified.
 
-The header will be used as the name of each property. The first column will be used as the header by default, but you can change this configuration to read the first row as the header with the `header` option (see below).
-
-You may store multiple datasets in .csv files, but only one can be read at a time, using the `dataset` parameter or option to define to expression to select the dataset.
+The header will be used as the property names. 
+By default, the first **column** will be used as the header. 
+You can change this configuration to read the first row as the header by setting the `header` option (see below).
 
 ### Usage
 ```javascript
-TEST.loadDataFromCsv(file)
-TEST.loadDataFromCsv(file, dataset)
+// load all entries
 TEST.loadDataFromCsv(file, options)
+
+// load one entry
+TEST.loadDataFromCsv(file, dataset, options)
 ```
-Returns test data as json object. 
+Returns an array of JSON objects, or a single JSON object if `dataset` is specified.
 
 #### Parameters
 
 | Parameter | Type     | Remarks|
 |-----------|----------|--------|
 | file      | `string` | Relative or absolute path to the file to load |
-| dataset   | `string` | Required if file contains more than one datasets. <br> Expression for selecting the dataset to load. e.g. `country=korea` | 
+| dataset   | `string` | Optional. Expression for selecting the dataset to load. e.g. `country=korea` | 
 | options   | `object` | Optional. <br> See options below |
 
 #### Options
@@ -42,63 +44,82 @@ Returns test data as json object.
 | Option    | Type     | Remarks|
 |-----------|----------|--------|
 | header    | `string` | Set to `row` to indicate that the header (which will be used as the property names) is the first row, or set to `col` to indicate that the header is the first column. <br> Defaults to `col`. |
-| dataset   | `string` | Required if file contains more than one datasets. <br> Expression for selecting the dataset to load as a property name-value pair. e.g. `country=korea` |
+| dataset   | `string` | Optional. Expression for selecting the dataset to load. e.g. `country=korea` |
 | escape    | `string` | Set the escape character, applies to quote and escape characters inside quoted fields. Defaults to `\"`. |
 | delimiter | `string` | Set the delimiter charater. Defaults to `,` (comma). |
 
 ### Examples(s)
 
-#### Test data with first column as header
+#### Read all entries from a CSV file
 
-"credentials.csv" file:
+In this example, we have a file "credentials.csv" in our project, where the header is the first **row**:
 ```
-username, johndoe
-password, 'super secret password'
+username,password
+johndoe,jane
+'super secret password','qwerty123'
 ```
 
-Test Script:
+We can use `TEST.loadDataFromCsv` to load the data from "credentials.csv" as such:
 ```javascript
-var user = TEST.loadDataFromCsv("credentials.csv")
-// user = {"username" : "johndoe", "password" : "super secret password"}
+// This loads entries from "credentials.csv" into an object array, 
+// using values in the first row as property name.
+var userList = TEST.loadDataFromCsv("credentials.csv", {header: "row"})
+// Result:
+//   users = [
+//     {"username" : "johndoe", "password" : "super secret password"},
+//     {"username" : "jane", "password" : "qwerty123"}
+//   ]
+//
+var johndoe = userList[0]
+I.goTo("https://example.com")
+I.fill("Username", johndoe.username)
+I.fill("password", johndoe.password)
+I.click("Login")
+```
+
+#### Read a single entry from CSV
+
+In this example, we have a file "credentials.csv" in our project, where the header is the first **row**:
+```
+username,password
+johndoe,jane
+'super secret password','qwerty123'
+```
+
+We can pick a single entry from the CSV file to load as a JSON object using the `dataset` parameter as such:
+```javascript
+// This loads only the entry where "username" equals "johndoe" from "credentials.csv" into an object, 
+// using values in the first row as property name.
+var user = TEST.loadDataFromCsv("credentials.csv", "username=johndoe", {header: "row"})
+// Result:
+//   user = {"username" : "johndoe", "password" : "super secret password"}
+//
+I.goTo("https://example.com")
 I.fill("Username", user.username)
 I.fill("password", user.password)
+I.click("Login")
 ```
 
-#### Test data with first column as row
+#### Read first column as header
 
-"credentials.csv" file:
+In this example, we have a file "credentials.csv" in our project, where the header is the first **column**:
 ```
-username, password
-johndoe, 'super secret password'
+username,johndoe,jane
+password,'super secret password','qwerty123'
 ```
 
-Test Script:
+We can specify the `header` option to `col` to read the first column as the header:
 ```javascript
-var user = TEST.loadDataFromCsv("credentials.csv", {header: "row"})
-// user = {"username" : "johndoe", "password" : "super secret password"}
+// This loads only the entry where "username" equals "johndoe" from "credentials.csv" into an object, 
+// using values in the first column as property name.
+var user = TEST.loadDataFromCsv("credentials.csv", "username=johndoe", {header: "col"})
+// Result:
+//   user = {"username" : "johndoe", "password" : "super secret password"}
+//
+I.goTo("https://example.com")
 I.fill("Username", user.username)
-I.fill("Password", user.password)
-```
-
-#### Multiple datasets in a file
-
-"credentials.csv" file:
-```
-username, john,                    adele
-password, 'super secret password', 'hello from the other side'	 
-```
-
-Test Script:
-```javascript
-var adele = TEST.loadDataFromCsv("credentials.csv", "username=adele")
-// user = {"username" : "adele", "password" : "hello from the other side"}
-I.fill("Username", adele.username)
-I.fill("Password", adele.password)
-
-var john = TEST.loadDataFromCsv("credentials.csv", "username=john")
-// user = {"username" : "johndoe", "password" : "super secret password"}
-I.fill("Username", john.username)
-I.fill("Password", john.password)
+I.fill("password", user.password)
+I.click("Login")
 ```
 
 ---
