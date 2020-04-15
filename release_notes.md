@@ -12,6 +12,108 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+### 3.0.0
+*Released on 14 Apr 2020*
+
+This release contains a minor breaking change that only affects you if you've used `TEST.loadDataFromCsv` with only the `file` parameter passed in to read a CSV file with exactly one entry. See details below.
+
+[View TEST.loadDataFromCsv documentation](/scripting/load_data_from_file.md#testloaddatafromcsv)
+
+##### ❗️ Breaking Changes
+
+* Previously, `TEST.loadDataFromCsv(file)` could be used to read a CSV with exactly one entry. As this is an uncommon use case and support to read all entries in an CSV is a popular request, it made more sense for `TEST.loadDataFromCsv` to load all entries if `dataset` parameter is not provided, `TEST.loadDataFromCsv(file)` will now return all entries as a JSON object array instead. If your tests are failing due to this change, you need to update your test like this: 
+  ```javascript
+  // this will no longer work
+  var admin = TEST.loadDataFromCsv("admin_user.csv") 
+
+  // fix by adding [0] to read the first element from the returned array
+  var admin = TEST.loadDataFromCsv("admin_user.csv")[0]
+  ```
+
+##### 🐞 Fixes
+
+* Fix bug with processing `TEST.loadDataFromCsv(file, options)` method signature.
+* Fix bug with handling CSV files with exactly 2 rows and 2 columns.
+
+### 2.23.12
+*Released on 27 Mar 2020*
+
+##### 💪 Enhancement:
+
+* You can now bulk edit notifications settings for jobs from the Monitoring dashboard.
+
+### 2.23.11
+*Released on 24 Mar 2020*
+
+##### 💪 Enhancement:
+
+* Studio - Spaces:
+  * Renamed the "Invite" button to "Manage members" button because it wasn't obvious that the button opens the controls for editting and removing team members as well.
+
+##### 🐞 Fixes
+
+* Studio - Editor:
+  * Fix bug with failed steps with error supressions are being included in the error count.
+
+### 2.23.10
+*Released on 20 Mar 2020*
+
+##### 🐞 Fixes
+
+* Studio
+  * Fix bug with "Try it" button on "Learn" pane not working
+* Test Engine:
+  * Fix issue with I.click missing the target element on websites where the layout changes on scroll.
+  * Fix missing return value for click, select, deselect, and drag commands - these commands will return `true` or `false` depending on where the action was performed successfully or not. E.g. `false` will be returned if the target element is not found.
+
+### 2.23.9
+*Released on 16 Mar 2020*
+
+##### 💪 Enhancement:
+
+* Email reports:
+  * Display test run time in more human-friendly way (now it shows 4:00 PM GMT+8 instead of 16:00 +0800)
+
+##### 🐞 Fixes
+
+* Email reports:
+  * Fix issues with processing failed tests steps caused by non-assertion errors, causing some Test Failure reports to be unsent.
+  * Fix bug were timezone offset for test run time was incorrectly computed
+  * Display test run time in more human-friendly way (now it shows 4:00 PM GMT+8 instead of 16:00 +0800)
+
+### 2.23.8
+*Released on 12 Mar 2020*
+
+##### 🐞 Fixes
+
+* Fix issues with `I.click` targeting elements in scrollable dropdown menus.
+
+### 2.23.7
+*Released on 04 Mar 2020*
+
+##### 💪 Enhancement:
+
+* Testing nested iframe elements is now supported - using nested `UI.context`
+
+##### 🐞 Fixes
+
+* Fix bug where the first command used in `UI.context` will always fail when used to target an iframe.
+
+### 2.23.6
+*Released on 02 Mar 2020*
+
+##### 🐞 Fixes
+
+* Fix bug with `I.click` not working on elements in iframes on Chrome 80.
+
+### 2.23.5
+*Released on 28 Feb 2020*
+
+##### 🐞 Fixes
+
+* Fix bug where PDF report show test run start time as 1 Jan 1970
+* (On-premise only) Fix link to PDF reports 
+  
 ### 2.23.4
 *Released on 20 Feb 2020*
 
