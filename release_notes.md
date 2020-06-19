@@ -12,6 +12,135 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+### 3.6.1
+*Released 19 Jun 2020*
+
+##### 🐞 Fixes:
+* Test Engine:
+  * Fix issue when test cannot be run on application where `window.self` property has been overwritten
+  * Improved error handling for unexpected session termination on Chrome and Edge browsers so that such test runs will be automatically retried when triggered by a job.
+
+### 3.6.0
+*Released 16 Jun 2020*
+
+##### 💪 Enhancement:
+
+* We now support the ability to transfer projects to another space. Please contact your administrator (for UI-licious Enterprise Edition) or support@uilicious.com to do so.
+
+##### 🐞 Fixes:
+
+* Fix bug with cloning dataset
+
+### 3.5.0
+*Released 9 Jun 2020*
+
+##### 💪 Enhancement:
+
+* Webhook reports - Improved error preview for failed tests
+* Clean up and restructuring underneath the hood to improve performance and support new features in the future. 
+
+##### 🐞 Fixes:
+
+* Jobs:
+  * Fix bug enabling/disabling jobs.
+  * Fix bug where scheduled jobs would sometimes skip timings in some edge cases
+  * Fix bug where jobs that failed due to system errors are retried excessively due to race conditions.
+  * Fix messy UI display of retry attempts for job test runs - hide previous attempts if the final attempt completed properly, otherwise show test run ID and attempt counts.
+
+### 3.4.0
+*Released 2 Jun 2020*
+
+##### 💪 Enhancement:
+
+* UI-licious Cloud Testing Grid:
+  * Performance optimisations to increase startup and execution time for Safari, Edge, and IE11 test sessions
+* Test Engine:
+  * Taking screenshots for Safari tests is now faster.
+
+### 3.3.1
+*Released 29 May 2020*
+
+##### 🐞 Fixes
+* Studio
+  * Fix bug where the running tests pill always showed 0 tests running.
+
+### 3.3.1
+*Released 28 May 2020*
+
+##### 🐞 Fixes
+* Studio 
+  * Fix bug - "Resend" space invitation was not working
+
+### 3.3.0
+*Released 27 May 2020*
+
+##### 💪 Enhancement:
+* Clean up and restructuring underneath the hood to improve performance and support new features in the future. 
+
+### 3.2.4
+*Released 14 May 2020*
+
+##### 🐞 Fixes
+* Studio 
+  * Dropped feature to download MP4 video for test report due to stability issues and lack of use.
+* Test Engine
+  * Fix bug where the `User-Agent` string is set to `null` when running Chrome tests, causing issues in applications that rely on user agent detection.
+
+### 3.2.3
+*Released 12 May 2020*
+
+* Test Engine:
+  * Fix issue with compile reports for tests that are terminated before completion.
+
+### 3.2.2
+*Released 11 May 2020*
+
+##### 🐞 Fixes
+* Studio - Monitoring Tab:
+  * Fix time display for jobs that are set to start at exact 12:00 PM (was showing 12:00 AM instead)
+  * Updated "Bulk Edit" interface so that it is neater and shows errors better.
+
+### 3.2.1
+*Released on 7 May 2020*
+
+##### 🐞 Fixes
+* Test Engine
+  * Add relative path support for `I.upload` command
+
+### 3.2.0
+*Released on 28 Apr 2020*
+
+##### 🚀 New Features:
+* Test Engine:
+  * Added new commands to get and assert element attributes and classes:
+    * UI.getAttribute(element, attribute) - returns the value of an attribute on an element
+    * UI.hasAttribute(element, attribute, [value]) - assert the existance or value of an attribute on an element
+    * UI.doesNotHaveAttribute(element, attribute) - asser the absence of an attribute on an element
+    * UI.hasClass - assert the existance of a CSS class on an element
+    * UI.doesNotHaveClass - assert the absense of a CSS class on an element
+
+##### 🐞 Fixes
+* Test Engine
+  * Fix issue with executing click commands on IE11 in some edge cases
+
+### 3.1.0
+*Released on 21 Apr 2020*
+
+##### 🐞 Fixes
+* Studio - Editor:
+  * Fix bug where "Region" setting from the "Advanced Run Settings" dialog "sticks" and also gets applied when triggering runs using the quick "Run" button on the toolbar afterwards.
+* Studio - Monitoring Tab:
+  * Add "Dataset" filter to make it easier to view jobs ran with specific datasets.
+  * Add "Bulk Run" button to allow you to trigger "Run" on multiple jobs at a time.
+
+### 3.0.1
+*Released on 17 Apr 2020*
+
+##### 🐞 Fixes
+* Test Engine:
+  * Improve error message when I.goTo command times out because the target page took too long to load. 
+  * Increase timeout for I.goTo command to fail if page takes too long to load from 1 minute to 5 minutes.
+
 ### 3.0.0
 *Released on 14 Apr 2020*
 
