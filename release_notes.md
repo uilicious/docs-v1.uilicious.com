@@ -13,7 +13,7 @@
 * Patch: Contains enhancements and bug fixes only
 
 ### 3.6.1
-*Released 19 Jun 2020*
+*Released 22 Jun 2020*
 
 ##### 🐞 Fixes:
 * Test Engine:
@@ -126,12 +126,15 @@
 ### 3.1.0
 *Released on 21 Apr 2020*
 
-##### 🐞 Fixes
-* Studio - Editor:
-  * Fix bug where "Region" setting from the "Advanced Run Settings" dialog "sticks" and also gets applied when triggering runs using the quick "Run" button on the toolbar afterwards.
+##### 💪 Enhancement:
+
 * Studio - Monitoring Tab:
   * Add "Dataset" filter to make it easier to view jobs ran with specific datasets.
   * Add "Bulk Run" button to allow you to trigger "Run" on multiple jobs at a time.
+
+##### 🐞 Fixes
+* Studio - Editor:
+  * Fix bug where "Region" setting from the "Advanced Run Settings" dialog "sticks" and also gets applied when triggering runs using the quick "Run" button on the toolbar afterwards.
 
 ### 3.0.1
 *Released on 17 Apr 2020*
