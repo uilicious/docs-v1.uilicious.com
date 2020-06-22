@@ -42,6 +42,7 @@
 
 * Miscellaneous 
 	* [Extract page content](scripting/extract.md)
+	* [Get and assert element attributes](scripting/element_attributes.md)
 	* [Executing Javascript on the Browser](scripting/executing-javascript.md)
 	* [Alerts](scripting/alerts.md)
 	* [Cookies](scripting/cookies.md)

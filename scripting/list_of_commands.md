@@ -90,6 +90,16 @@
 | [`I.getText`](extract.md#igettext) | Get text content from an element |
 | [`I.getValue`](extract.md#igetvalue) | Get value from an input element |
 
+# Element attribute extraction and assertion
+
+| Command | Description |
+|---------|-------------|
+| [`UI.getAttribute`](element_attributes.md#uigetattribute) | Get the value of an attribute on an element. |
+| [`UI.hasAttribute`](element_attributes.md#uihasattribute) | Assert the presence or the expected value of an attribute on an element. |
+| [`UI.doesNotHaveAttribute`](element_attributes.md#uidoesnothaveattribute) | Assert the absence of an attribute on an element, or that the value of an attribute is not equals a given string. |
+| [`UI.hasClass`](element_attributes.md#uihasclass) | Assert the presence of a CSS class on an element. |
+| [`UI.doesNotHaveClass`](element_attributes.md#uidoesnothaveclass) | Assert the absence of a CSS class on an element. |
+
 ## Alert commands
 
 | Command | Description|
@@ -147,7 +157,7 @@
 
 | Command | Description|
 |---------|------------|
-| [`UI.context`](ui_context.md#uicontext) | Limit the test to run on specific parts of a page. <br> Can be used to explicitly switch to the context of an iframe. |
+| [`UI.context`](ui_context.md#uicontext) | Limit the test to target within specific parts of a page. <br> Can be used to explicitly switch to the context of an iframe. |
 
 ## Execute Javascript
 
