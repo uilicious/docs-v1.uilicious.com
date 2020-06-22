@@ -18,7 +18,7 @@ cache:
     - node_modules/
 
 variables:
-  OUTPUT_DIR: "_book"
+  OUTPUT_DIR: "_book/"
   NETLIFY_AUTH_TOKEN: "***REMOVED***"
   NETLIFY_SITE_ID: "***REMOVED***"
 
@@ -38,20 +38,28 @@ build_job:
   stage: build
   script: 
     - npm run build
+  artifacts:
+    paths:
+      - "_book/"
   only:
     - branches
 
 preview_job:
   stage: preview
   script:
-    - node_modules/.bin/netlify deploy --dir=$OUTPUT_DIR --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID
+    - node_modules/.bin/netlify deploy --dir=_book --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID
+  dependencies:
+    - build_job
   only:
     - branches
 
 deploy_job:
   stage: deploy
   script:
-    - node_modules/.bin/netlify deploy --dir=$OUTPUT_DIR --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID --prod
+    - node_modules/.bin/netlify deploy --dir=_book --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID --prod
+  dependencies:
+    - build_job
   when: manual
   only: 
     - master@uilicious/documentation/gitbook
+  
