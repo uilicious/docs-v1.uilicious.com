@@ -40,18 +40,18 @@ build_job:
     - npm run build
   only:
     - branches
-    
+
 preview_job:
   stage: preview
   script:
-    - node_modules/.bin/netlify deploy --dir=OUTPUT_DIR --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID
+    - node_modules/.bin/netlify deploy --dir=$OUTPUT_DIR --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID
   only:
     - branches
 
 deploy_job:
   stage: deploy
   script:
-    - node_modules/.bin/netlify deploy --dir=OUTPUT_DIR --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID --prod
+    - node_modules/.bin/netlify deploy --dir=$OUTPUT_DIR --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID --prod
   when: manual
   only: 
     - master@uilicious/documentation/gitbook
