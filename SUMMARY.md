@@ -53,8 +53,8 @@
 
 ---
 
-* UI-licious In-Depth
-	* [Frequently asked questions](faqs.md)
+* UI-licious Guides
+	* [Testing Salesforce](guides/salesforce/getting_started.md)
 
 ---
 
@@ -88,3 +88,4 @@
 * Product Updates
 	* [Release Notes](release_notes.md)
     * [Roadmap](https://trello.com/b/G80eoZU3)
+	* [Frequently asked questions](faqs.md)
