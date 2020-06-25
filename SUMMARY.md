@@ -65,18 +65,18 @@
 
 ---
 
-* UI-licious Studio
-  * [Basics](administration/web-studio-navigation.md)
-  * Spaces
-	* [Rename a space](administration/space-rename.md)
-	* [Creating a project](administration/project-administration.md)
-	* [Renaming a project](administration/project-rename.md)
-	* [Inviting team members](administration/space-administration.md)
+<!-- * UI-licious Studio -->
+<!-- 	* [Basics](administration/web-studio-navigation.md) -->
+<!-- 	* Spaces -->
+<!-- 		* [Rename a space](administration/space-rename.md) -->
+<!-- 		* [Creating a project](administration/project-administration.md) -->
+<!-- 		* [Renaming a project](administration/project-rename.md) -->
+<!-- 		* [Inviting team members](administration/space-administration.md) -->
 
-* UI-licious Studio (Self-hosted)
-	* Creating users
-		* [Self-serve](administration/on-prem-signup.md)
-		* [Creation by Admin](administration/admin-signup.md)
+<!-- * UI-licious Studio (Self-hosted) -->
+<!-- 	* Creating users -->
+<!-- 		* [Self-serve](administration/on-prem-signup.md) -->
+<!-- 		* [Creation by Admin](administration/admin-signup.md) -->
     
 ---
 
