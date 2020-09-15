@@ -12,6 +12,116 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+
+### 3.13.0
+*Released 14 Sept 2020*
+
+##### 💪 Enhancement:
+* Test engine:
+  * Performance optimisations to improve test start times (reduced from an average of 15 seconds to 7 seconds!)
+
+##### 🐞 Fixes:
+* Test engine:
+  * Fix issue in Edge browser tests being unable to properly scroll to and target elements in certain layouts.
+
+### 3.12.1
+*Released 8 Sept 2020*
+
+##### 🐞 Fixes:
+* Test engine:
+  * Fix issue that causes some files for the I.upload command to be corrupted.
+
+### 3.12.0
+*Released 4 Sept 2020*
+
+##### 💪 Enhancement:
+
+* Test engine:
+  * Faster keyboard input commands for Edge and IE11 tests
+
+##### 🐞 Fixes:
+* Test engine:
+  * Fix random "file not found" errors with test initialisation
+
+### 3.11.1
+*Released 3 Sept 2020*
+
+##### 🐞 Fixes:
+* Test engine:
+  * Fix issue properly targeting deeply nested web components on Chrome tests (affects Salesforce LWC testing)
+
+### 3.11.0
+*Released 2 Sept 2020*
+
+##### 💪 Enhancement:
+* Test engine:
+  * Performance optimisations to improve test start times
+
+##### 🐞 Fixes:
+* Test engine:
+  * Fix IE11 issue with randomly not filling fields sometimes
+  * Fix IE11 "e is null" bug
+
+### 3.10.0
+*Released 20 Aug 2020*
+
+##### 💪 Enhancement:
+
+* Studio
+  * Added the "Admin" role - admins may manage users, projects, tests, and scheduled jobs.
+* Test engine:
+  * Added user agent support for firefox tests
+  * Added TEST.assert command. 
+
+##### 🐞 Fixes:
+
+* Studio
+  * Fix the "Stop" button - in some cases, it did nothing.
+  * Fix styling of "terminated" steps
+  * If a step does not have a screenshot (bc. screenshots are disabled, or test was terminated, etc.), the report will fallback to the last available screenshot before step.
+* Test Engine:
+  * Fix issue where test will timeout if I.wait is long (like a few minutes) but not that long (more than an hour)
+  * Fix user agent support for chrome tests
+  * Fix report processing of some errors causing error messages to be formatted as a blank string
+* (On-premise only) System administration
+  * Fix search for user's access to a space, project, job, or test
+
+### 3.9.0
+*Released 5 Aug 2020*
+
+##### 💪 Enhancement:
+
+* Studio:
+  * You can now drag and drop to move files. :)
+  * Better page titles across the application
+
+##### 🐞 Fixes:
+
+* Studio:
+  * Fix janky tooltip display issues - sometimes tooltips will get stuck and doesn't go away
+  
+
+### 3.8.0
+*Released 3 Aug 2020*
+
+##### 💪 Enhancement:
+
+* Studio: 
+  * You can now set a dataset as a default for the Editor, so that when ever you load the Editor, it automatically gets selected as the dataset you want to run your tests with.
+  * When you move away from the Editor tab to other tabs like "Monitoring", the last opened file is remembered, so that if you go back to the Editor, you'll see the last opened file instead of a blank file.
+
+### 3.7.0
+*Released 23 Jun 2020*
+
+##### 💪 Enhancement:
+* Test Engine:
+  * Added SAMPLE.fromList method - this will allow you to randomly pick a value from a list, e.g. SAMPLE.fromList("Red", "Green", "Blue")
+
+##### 🐞 Fixes:
+
+* Test Engine:
+  *  Fix a bug with SAMPLE.id that causes the tests to crash
+
 ### 3.6.1
 *Released 22 Jun 2020*
 
