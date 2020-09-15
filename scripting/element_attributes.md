@@ -82,7 +82,7 @@ I.goTo("https://mystore.com")
 UI.hasAttribute("#summer-sale-banner", "campaign-id", "SUMMERSALE2020")
 ```
 
-This test will pass the `#summer-sale-banner` element exists on the page, and has the `campaign-id` attribute, with the value of `SUMMERSALE2020`.
+This test will pass if the `#summer-sale-banner` element exists on the page, and has the `campaign-id` attribute, with the value of `SUMMERSALE2020`.
 
 ## `UI.doesNotHaveAttribute`
 
