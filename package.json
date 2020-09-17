@@ -9,8 +9,8 @@
     "serve": "gitbook --version; gitbook serve",
     "pdf": "gitbook --version; gitbook pdf . _out/uilicious-docs.pdf",
     "epub": "gitbook --version; gitbook epub . _out/uilicious-docs.epub",
-    "deploy": "gitbook --version; gitbook build; netlify deploy --dir=_book",
-    "deploy--production": "gitbook --version; gitbook build; netlify deploy --prod --dir=_book"
+    "deploy": "gitbook --version; gitbook build && netlify deploy --dir=_book",
+    "deploy--production": "gitbook --version; gitbook build && netlify deploy --prod --dir=_book"
   },
   "author": "UILICIOUS PRIVATE LIMITED",
   "license": "UNLICENSED",
@@ -26,7 +26,7 @@
     "prism-themes": "=1.0.1"
   },
   "devDependencies": {
-    "netlify": "^2.4.8",
-    "netlify-cli": "^2.54.0"
+    "netlify": "^4.5.1",
+    "netlify-cli": "^2.63.2"
   }
 }
