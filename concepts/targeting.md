@@ -9,8 +9,7 @@ The reason for this is because writing your tests using hard-coded CSS and XPATH
 UI-licious encourages you to write tests as if you are telling a friend over the phone how to use a particular website, e.g.:
 
 ```javascript
-I.goTo("https://www.github.com")
-I.click("Sign in")
+I.goTo("https://github.com/login")
 I.fill("Email", "john@example.com")
 I.fill("Password", "supersecretpassword")
 I.click("Sign in")
