@@ -7,7 +7,6 @@
     "youtube",
     "prism",
     "-highlight",
-    "gtm",
     "addcssjs",
     "-search",
     "-lunr",
@@ -15,13 +14,13 @@
   ],
   "pluginsConfig": {
     "favicon": "favicon-32.png",
-    "gtm": {
-      "token": "GTM-KLGVBHH"
-    },
     "addcssjs": {
       "css": [
         "css/font-awesome-4.7.0/font-awesome.min.css",
         "css/uilicious-docs.css"
+      ],
+      "js": [
+        "js/google_gtm.js"
       ]
     },
     "docSearch": {
