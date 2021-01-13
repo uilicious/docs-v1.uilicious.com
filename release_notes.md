@@ -12,6 +12,35 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+### 3.15.0
+
+##### 💪 Enhancement:
+* Account and billing:
+  * If you own more than one space, you can manage billing independently for both spaces. 
+  * Space members with the `Admin` role can now manage billing.
+
+### 3.14.0
+
+##### 💪 Enhancement:
+* Web studio:
+  * All resolutions are now enabled for Safari and IE11
+  * Added button to go to Applitools report if test is ran with Applitools integration
+  * When loading a report on the Editor for a test ran using a dataset, the dataset will be automatically selected in the Run toolbar
+  * Add tooltip to indicate browser name and version number when you hover over the browser icon in reports.
+
+### 3.13.2
+*Released 16 Dec 2020*
+
+##### 🐞 Fixes
+* Test engine:
+  * Fix bug where I.select does not work for &lt;select> element in some iframes
+
+### 3.13.1
+*Released 25 Nov 2020*
+
+##### 🐞 Fixes
+* Test engine:
+  * (Applitools Integration) Fix bug that causes `eyes is undefined` error if you call TEST.applitools.setup more than once.
 
 ### 3.13.0
 *Released 14 Sept 2020*
