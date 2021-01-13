@@ -13,6 +13,7 @@
 * Patch: Contains enhancements and bug fixes only
 
 ### 3.15.0
+*Released 6 Jan 2021*
 
 ##### 💪 Enhancement:
 * Account and billing:
@@ -22,6 +23,7 @@
 ### 3.14.0
 
 ##### 💪 Enhancement:
+*Released 28 Dec 2020*
 * Web studio:
   * All resolutions are now enabled for Safari and IE11
   * Added button to go to Applitools report if test is ran with Applitools integration
