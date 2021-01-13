@@ -61,5 +61,5 @@ deploy_job:
     - build_job
   when: manual
   only: 
-    - master@uilicious/documentation/gitbook
+    - master@uilicious/documentation/docs
   
