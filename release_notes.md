@@ -12,6 +12,32 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+
+### x.xx.x
+*Released 9 Feb 2021*
+
+##### 💪 Enhancement:
+* UI-licious Server:
+  * We're refactoring how tests are executed under the hood in order to support new upcoming features. 😉
+
+### x.xx.x
+*Released 8 Feb 2021*
+
+##### 🚀 New Features:
+* Test Engine:
+  * Added new commands for performing API requests - UI.httpGet, UI.httpPost, UI.httpRequest. [Read the docs](/scripting/ui_http_commands.md)
+
+##### 🐞 Fixes
+* Test Engine:
+  * Fix bug with I.amAt not honoring TEST.commandTimeout. Now, I.amAt will retry until it succeeds or timeouts instead of immediately failing. 
+
+### x.xx.x
+*Released 5 Feb 2021*
+
+##### 🐞 Fixes
+* Web Studio:
+  * Fix error handling and display for known 4xx error responses from the API.
+
 ### 3.15.0
 *Released 6 Jan 2021*
 
@@ -19,6 +45,7 @@
 * Account and billing:
   * If you own more than one space, you can manage billing independently for both spaces. 
   * Space members with the `Admin` role can now manage billing.
+  * [Admn]
 
 ### 3.14.0
 
