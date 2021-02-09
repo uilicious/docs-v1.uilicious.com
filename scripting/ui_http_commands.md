@@ -83,14 +83,15 @@ var response = UI.httpRequest(options)
 
 **The `options` object**
 
-| Parameter     | Type   | Remarks |
-|---------------|--------|---------|
-| method        | string | The HTTP method to use, e.g. GET, HEAD, OPTIONS, POST, PUT, PATCH, DELETE. <br> Ignored when `UI.httpGet` and `UI.httpPost` commands are used. |
-| data          | object | The request data to send. Ignored for `GET` and `HEAD` methods. <br> If data is a json object, and `content-type` header is not specified, the `content-type` will automatically default to `application/json;charset=utf-8`|
-| params        | object | Key-value map to set the url search parameters. <br> E.g. Given `{product: 1, currency: ['USD', 'JPY']}`, this sets the url search parameter to `?product=1&currency=USD&currency=JPY`. <br> If you need arrays to be serialised differently, you will need to pass the values as a string literal instead of an array. |
-| responseType  | string | The expected response type. <br> By default, the response's `data` object will contain the raw response body as a `string`. <br>If set to `"json"`, the response's `data` object will be automatically parsed to JSON. |
-| headers       | object | Map of request headers to set. |
-| auth          | object | Basic authentication credentials. This should be a map containing values for `username` and `password`. Overrides the `Authorization` header. |
+| Parameter       | Type    | Remarks |
+|-----------------|---------|---------|
+| method          | string  | The HTTP method to use, e.g. GET, HEAD, OPTIONS, POST, PUT, PATCH, DELETE. <br> Ignored when `UI.httpGet` and `UI.httpPost` commands are used. |
+| data            | object  | The request data to send. Ignored for `GET` and `HEAD` methods. <br> If data is a json object, and `content-type` header is not specified, the `content-type` will automatically default to `application/json;charset=utf-8`|
+| params          | object  | Key-value map to set the url search parameters. <br> E.g. Given `{product: 1, currency: ['USD', 'JPY']}`, this sets the url search parameter to `?product=1&currency=USD&currency=JPY`. <br> If you need arrays to be serialised differently, you will need to pass the values as a string literal instead of an array. |
+| responseType    | string  | The expected response type. <br> By default, the response's `data` object will contain the raw response body as a `string`. <br>If set to `"json"`, the response's `data` object will be automatically parsed to JSON. |
+| headers         | object  | Map of request headers to set. |
+| auth            | object  | Basic authentication credentials. This should be a map containing values for `username` and `password`. Overrides the `Authorization` header. |
+| withCredentials | boolean | Defaults to `true`. If `true`, allows cross-site requests to be made using credentials such as cookies, Authorization headers or TLS client certificates, and allows cookies from response to be set. If this is `false`, you might get CORS or Network errors (reported error may be different across browsers) when making cross-site requests. |   
 
 #### Returned object
 
