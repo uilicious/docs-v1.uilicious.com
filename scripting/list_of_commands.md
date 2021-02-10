@@ -165,6 +165,15 @@
 |---------|-------------|
 | [`UI.execute`](executing-javascript.md#uiexecute) | Executes Javascript on the browser |
 
+## HTTP requests
+
+| Command | Description|
+|---------|------------|
+| [`UI.httpGet`](ui_http_commands.md#how-it-works)     | Do a http request with the GET method. |
+| [`UI.httpPost`](ui_http_commands.md#how-it-works)    | Do a http request with the POST method. |
+| [`UI.httpRequest`](ui_http_commands.md#how-it-works) | Do a http request. |
+
+
 ## Cookie management
 | Command | Description|
 |---------|------------|

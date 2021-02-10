@@ -12,6 +12,60 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+<!-- 
+### 3.16.2
+*Released 10 Feb 2021*
+
+##### 💪 Enhancement:
+* Test Engine:
+  * I.goTo will now handle references to parent and current path using ".." and "."
+  * I.amAt will be less strict in some special cases:
+    * When base path equals "/", it is treated as empty, e.g.: I.amAt("https://google.com") will now pass if the actual url is "https://google.com**/**"
+    * When subdomain equals "www", it is treated as empty, e.g.: I.amAt("https://google.com") will now pass if the actual url is "https://**www**.google.com"
+  * Updates to I.click command to resolve issues with clicking elements in some edge cases.
+    * Fix accuracy of I.click(x, y) and I.click(element, x, y) in some edge cases.
+  * Updates to I.hover command: it is now supported for Edge browser  
+-->
+  
+### 3.16.1
+*Released 9 Feb 2021*
+
+##### 💪 Enhancement:
+* UI-licious server (under the hood stuff):
+  * Stopping a test will now immediately free up the concurrency instead of waiting until the test fully stops.
+  * Changes under the hood in order to support new upcoming features in jobs and reporting. 😉
+
+### 3.16.0
+*Released 8 Feb 2021*
+
+##### 🚀 New Features:
+* Test Engine:
+  * Added new commands for performing API requests - `UI.httpGet`, `UI.httpPost`, `UI.httpRequest`. [Read the docs](/scripting/ui_http_commands.md)
+
+##### 🐞 Fixes
+* Test Engine:
+  * Fix bug with `I.amAt` not honoring `TEST.commandTimeout`. Now, `I.amAt` will retry until it succeeds or timed out, instead of failing when current url did not immediately match. 
+
+### 3.15.3
+*Released 5 Feb 2021*
+
+##### 🐞 Fixes
+* Web Studio:
+  * UI should probably display appropriate error messages for 4xx errors from the API instead of a vague error message.
+
+### 3.15.2
+*Released 15 Jan 2021*
+
+* Web Studio:
+  * Fix bug where file cannot be viewed on the Editor if its name contains the square brackets characters - `[` and `]`.
+  * Display warning if the configured test for a job has been moved or deleted.
+
+### 3.15.1
+*Released 13 Jan 2021*
+
+* Test Engine
+  * Fixed bug with `TEST.autoScreenshot=false` having no effect - it should properly disable screenshots now.
+
 ### 3.15.0
 *Released 6 Jan 2021*
 
@@ -29,6 +83,14 @@
   * Added button to go to Applitools report if test is ran with Applitools integration
   * When loading a report on the Editor for a test ran using a dataset, the dataset will be automatically selected in the Run toolbar
   * Add tooltip to indicate browser name and version number when you hover over the browser icon in reports.
+
+### 3.13.3
+** Released 17 Dec 2020 **
+
+##### 💪 Enhancement:
+
+* For Enterprise On-Premise Edition:
+  * System administrators can now configure system-wide concurrency limits. If there are more requests to run test than the configured limits, then requests will be postponed (if it is a scheduled test triggered via a job) or rejected with "No server available" error (if it is an adhoc test run via the Editor or CLI).
 
 ### 3.13.2
 *Released 16 Dec 2020*
