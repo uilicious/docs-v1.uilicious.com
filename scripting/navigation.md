@@ -13,12 +13,12 @@ search:
 | [`I.goTo`](#igoto) | Navigate to a URL |
 | [`I.refreshPage`](#irefreshpage) | Refresh the page |
 | [`I.switchTab`](#iswitchtab) | Switch to the next tab |
-| [`I.closeTab`](#icloseTab) | Close the current tab |
+| [`I.closeTab`](#iclosetab) | Close the current tab |
 
 ### Page assertion commands
 | Command | Description|
 |---------|------------|
-| [`I.amAt`](#iamAt) |  Assert that the browser is at a specific URL |
+| [`I.amAt`](#iamat) |  Assert that the browser is at a specific URL |
 
 ---
 
@@ -80,6 +80,29 @@ The following table shows where the browser will be navigated to depending on th
 | https://storeA.com | https://storeA.com/shoes |
 | https://storeB.com | https://storeB.com/shoes |
 | https://mystore.com/wallet | https://mystore.com/shoes |
+
+##### Reference current folder using "."
+
+You can also reference the current folder using a single "." character.
+
+For example, if the current URL is at "https://mystore.com/popular/bags".
+
+Then the current folder is "/popular".
+
+`I.goTo("./shoes")` will navigate to "https://mystore.com/popular/shoes".
+
+##### Reference parent folder using ".."
+
+You can also reference parent folders using two "." characters.
+
+For example, if the current URL is at "https://mystore.com/popular/bags".
+
+Then the current folder is "/popular".
+
+The parent folder is "/".
+
+`I.goTo("../shoes")` will navigate to "https://mystore.com/shoes".
+
 
 #### Query string
 
