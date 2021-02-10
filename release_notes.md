@@ -12,20 +12,27 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
-<!-- 
 ### 3.16.2
 *Released 10 Feb 2021*
 
 ##### 💪 Enhancement:
 * Test Engine:
-  * I.goTo will now handle references to parent and current path using ".." and "."
-  * I.amAt will be less strict in some special cases:
+  * `I.goTo` will now handle references to parent and current path using ".." and "."
+  * `I.amAt` will be less strict in some special cases:
     * When base path equals "/", it is treated as empty, e.g.: I.amAt("https://google.com") will now pass if the actual url is "https://google.com**/**"
     * When subdomain equals "www", it is treated as empty, e.g.: I.amAt("https://google.com") will now pass if the actual url is "https://**www**.google.com"
-  * Updates to I.click command to resolve issues with clicking elements in some edge cases.
-    * Fix accuracy of I.click(x, y) and I.click(element, x, y) in some edge cases.
-  * Updates to I.hover command: it is now supported for Edge browser  
--->
+
+##### 🐞 Fixes
+* Test Engine:
+  * `I.click` command:
+    * Fix some edge case issues with clicking elements in iframes
+    * Fix accuracy of I.click(x, y) and I.click(element, x, y) in some edge cases
+    * If for some reason the element is removed or re-rendered in the middle of the click operation, causing a stale element reference error, the command will retried
+    * Timing of the command will now include any page navigation triggered after the click
+  * `I.hover` command is now supported for Edge browser  
+  * Testing within iframes:
+    * If a command is executed within an iframe, the reported tabs, url and page title should be that of the top browsing context, not of the iframe's browsing context. 
+    * Fix the indicated position of interaction commands (as marked by the blue circle in reports) within iframes. There are still some issues in the case where the iframe is a long scrollable container though.
   
 ### 3.16.1
 *Released 9 Feb 2021*
