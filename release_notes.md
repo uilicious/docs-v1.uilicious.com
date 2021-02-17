@@ -12,6 +12,16 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+### 3.16.3
+*Released 17 Feb 2021*
+
+##### 💪 Enhancement:
+
+* Web Studio:
+  * Improved reports: 
+    * Fixed alignment issues
+    * Added "More info" for each step to show additional information such as the returned value of the command (useful for commands like I.getText, UI.execute / UI.http - which you usually want to save the value to a variable).
+
 ### 3.16.2
 *Released 10 Feb 2021*
 
