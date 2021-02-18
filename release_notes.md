@@ -12,7 +12,7 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
-### 3.16.3
+### 3.16.4
 *Released 18 Feb 2021*
 
 ##### 🐞 Fixes
