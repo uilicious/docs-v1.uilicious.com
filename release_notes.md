@@ -13,6 +13,15 @@
 * Patch: Contains enhancements and bug fixes only
 
 ### 3.16.3
+*Released 18 Feb 2021*
+
+##### 🐞 Fixes
+
+* Web Studio:
+  * Fixed slow scrolling in very large reports in some browsers (e.g. Chromium and WebKit browsers) because too many tooltips rendered on individual steps in the report. Now tooltips are only drawn as needed to reduce rendering overhead.
+  * "More info" toggle button on report step will not be shown if there's no additional information available.
+
+### 3.16.3
 *Released 17 Feb 2021*
 
 ##### 💪 Enhancement:
