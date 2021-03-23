@@ -85,6 +85,7 @@ var response = UI.httpRequest(options)
 
 | Parameter       | Type    | Remarks |
 |-----------------|---------|---------|
+| url             | string  | For `UI.httpRequest` command: The url to send the HTTP request to. |
 | method          | string  | The HTTP method to use, e.g. GET, HEAD, OPTIONS, POST, PUT, PATCH, DELETE. <br> Ignored when `UI.httpGet` and `UI.httpPost` commands are used. |
 | data            | object  | The request data to send. Ignored for `GET` and `HEAD` methods. <br> If data is a json object, and `content-type` header is not specified, the `content-type` will automatically default to `application/json;charset=utf-8`|
 | params          | object  | Key-value map to set the url search parameters. <br> E.g. Given `{product: 1, currency: ['USD', 'JPY']}`, this sets the url search parameter to `?product=1&currency=USD&currency=JPY`. <br> If you need arrays to be serialised differently, you will need to pass the values as a string literal instead of an array. |
