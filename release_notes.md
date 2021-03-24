@@ -12,6 +12,20 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+### 3.17.0
+*Released 24 Mar 2021*
+
+##### 🚀 New Features:
+
+* Web Studio: 
+  * Test Suites (for Jobs) - you can now schedule a job to run a suite of tests!
+  * More job scheduling options - you can now schedule jobs every 45 mins, every 2 weeks, every 30 days, etc...
+  
+##### 🐞 Fixes
+
+* Web Studio:
+  * Fixed issue where pressing the "x" to close the modal does nothing.
+
 ### 3.16.4
 *Released 18 Feb 2021*
 
