@@ -15,16 +15,23 @@
 ### 3.17.0
 *Released 24 Mar 2021*
 
+![Test Suites illustration](images/test-suite/test-suite-illustration.png)
+
+We're very excited to announce the Test Suites update! This should help you to organise and manage tests better.
+
 ##### 🚀 New Features:
 
 * Web Studio: 
-  * Test Suites (for Jobs) - you can now schedule a job to run a suite of tests!
-  * More job scheduling options - you can now schedule jobs every 45 mins, every 2 weeks, every 30 days, etc...
+  * Jobs:
+    * **Test Suites** - you can now schedule a job to run a suite of tests and get an aggregated report! [Read more on our blog here.](https://uilicious.com/blog/get-ready-to-suite-up/)
+    * More scheduling options - you can now schedule jobs every 45 mins, every 2 weeks, every 30 days, etc...
   
 ##### 🐞 Fixes
 
 * Web Studio:
+  * Fixed issue where the space disappears if the last project is deleted. 
   * Fixed issue where pressing the "x" to close the modal does nothing.
+  * (For UI-licious Enterprise edition) Share report button will be hidden if snippets is not enabled on the instance.
 
 ### 3.16.4
 *Released 18 Feb 2021*
