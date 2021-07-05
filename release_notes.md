@@ -4,7 +4,7 @@
 
 > For feedback and suggestions, drop us a line at [support@uilicious.com](mailto:support@uilicious.com).
 
-**How the version numbers mean:**
+**What the version numbers mean:**
 
 &lt;Major&gt;.&lt;Minor&gt;.&lt;Patch&gt;
 
@@ -12,7 +12,42 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
-### 3.16.3
+### 3.17.0
+*Released 5 Jul 2021*
+
+##### 🚀 New Features:
+
+* Support for testing on **Chromium-based Microsoft Edge**. 
+  * The new Edge browser will be referred to as "Edge (Chromium)" and legacy Edge browser will be referred to as "Edge (2019)" within the Studio.  
+  * If you are using the CLI to trigger test runs, you can set the `--browser` option to `edgechromium` to run tests on the new Edge browser. Setting the `--browser` option to `edge` will run tests on the legacy Edge browser, for backwards compatibility.
+* New Test Commands:
+  * Added `I.seePageTitle()` to validate the title of the page
+  * Added `I.getPageTitle()` command to get the title of the page
+  * Added `UI.getAttributes(target)` command to get all attributes of an element
+  * Added `UI.getHTML(target)`, `UI.getOuterHTML(target)` and `UI.getInnerHTML(target)` commands to get the html of an element
+  * Added commands to access local storage:
+    * `UI.LocalStorage.get(name)` - get a property from local storage
+    * `UI.LocalStorage.set(name, value)` - set a property in local storage
+    * `UI.LocalStorage.delete(name)` - delete a property in local storage
+    * `UI.LocalStorage.deleteAll(name)` - delete all properties in local storage
+
+##### 💪 Enhancement:
+
+* Test Engine:
+  * Improvements to selection commands (`I.select`, `I.selected`, `I.deselect`, and `I.deselected`):
+    * Improved smart targeting - previously, if both a `<select>` dropdown and a toggle field (either a checkbox or a radio button) matched the label, the engine would always prefer the dropdown even if the label matches the toggle field more closely.
+    * Blue interaction markers now also indicate where the selection command is targeting
+
+##### 🐞 Fixes
+
+* Test Engine:
+  * Fixed a bug where if `I.click` triggers an alert, the command will fail indicating the action is blocked by an alert, even though it is actually successful.
+
+### 3.16.5
+
+> todo
+
+### 3.16.4
 *Released 18 Feb 2021*
 
 ##### 🐞 Fixes
