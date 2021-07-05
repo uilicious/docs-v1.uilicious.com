@@ -2,14 +2,29 @@
 
 ## List of commands
 
+To get and assert attributes on an element:
+
 | Command | Description |
 |---------|-------------|
 | [`UI.getAttribute`](#uigetattribute) | Get the value of an attribute on an element. |
 | [`UI.getAttributes`](#uigetattributse) | Get the attributes names and values on an element as a map. |
 | [`UI.hasAttribute`](#uihasattribute) | Assert the presence or the expected value of an attribute on an element. |
 | [`UI.doesNotHaveAttribute`](#uidoesnothaveattribute) | Assert the absence of an attribute on an element, or that the value of an attribute is not equals to a given string. |
+
+To get and assert CSS classes on an element:
+
+| Command | Description |
+|---------|-------------|
 | [`UI.hasClass`](#uihasclass) | Assert the presence of a CSS class on an element. |
 | [`UI.doesNotHaveClass`](#uidoesnothaveclass) | Assert the absence of a CSS class on an element. |
+
+To get and assert HTML for an element:
+
+| Command | Description |
+|---------|-------------|
+| [`UI.getHTML`](#element-html-commands) | Get the outer HTML of an element |
+| [`UI.getOuterHTML`](#element-html-commands) | Get the outer HTML of an element |
+| [`UI.getInnerHTML`](#element-html-commands) | Get the inner HTML of an element |
 
 ## `UI.getAttribute`
 
@@ -213,3 +228,48 @@ UI.doesNotHaveClass(target, cssClass)
 |-----------|------|---------|
 | target | string | Expression to target an element. This can be a text, CSS selector, or XPATH selector. |
 | cssClass | string | CSS class that should not exist on the element. |
+
+---
+
+## Element HTML commands
+
+There are three commands for getting the HTML for an element. 
+These commands return a markup of an element as a string.
+
+### Usage
+
+```javascript
+// get the outer HTML of an element
+UI.getHTML(target)
+UI.getOuterHTML(target)
+
+// get the inner HTML of an element
+UI.getInnerHTML(target)
+```
+
+| Parameter | Type | Remarks |
+|-----------|------|---------|
+| target | string | Expression to target an element. This can be a text, CSS selector, or XPATH selector. |
+
+### Example(s)
+
+Let's use this example button for reference:
+```javascript
+<button id="sign-up-button">
+  <b>Create</b> an account
+</button>
+```
+
+We can read the outer and inner HTML of the button in our test script like this:
+```javascript
+
+var outerHTML = I.getHTML("sign-up-button")
+// outerHTML includes the html of the element and its contents:
+// <button id="sign-up-button"><b>Create</b> an account</button>
+
+var innerHTML = I.getInnerHTML("sign-up-button")
+// innerHTML includes on the html of the element's contents:
+// <b>Create</b> an account
+
+```
+
