@@ -48,6 +48,7 @@
 	* [Validate page status](scripting/http_status_code_assertion.md)
 	* [Alerts](scripting/alerts.md)
 	* [Cookies](scripting/cookies.md)
+	* [Local Storage](scripting/local_storage_command.md)
 	* [Utility](scripting/utility.md)
 
 * Integrations
