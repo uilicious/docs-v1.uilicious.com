@@ -14,14 +14,14 @@
 | Command | Description |
 |---------|-------------|
 | [`I.amAt`](navigation.md#iamAt) | Assert that the browser is at a specific URL |
-| [`UI.isStatusCode`](#uiisstatuscode) | Asserts that the status code for the current page is a specific status code. |
-| [`UI.isNotStatusCode`](#uiisnotstatuscode) | Asserts that the status code for the current page is __NOT__ a specific status code. |
-| [`UI.is200`](#uiis200) | Asserts that the status code for the current page is 200 (OK). |
-| [`UI.isNot200`](#uisinot200) | Asserts that the status code for the current page is __NOT__ 200 (OK). |
-| [`UI.is404`](#usis404) | Asserts that the status code for the current page is 404 (Not Found). |
-| [`UI.isNot404`](#uiisnot404) | Asserts that the status code for the current page is __NOT__ 404 (Not Found). |
-| [`UI.is500`](#uiis500) | Asserts that the status code for the current page is 500 (Internal Server Error). |
-| [`UI.isNot500`](#uiisnot500) | Asserts that the status code for the current page is __NOT__ 500 (Internal Server Error). |
+| [`UI.isStatusCode`](http_status_code_assertion.md#uiisstatuscode) | Asserts that the status code for the current page is a specific status code. |
+| [`UI.isNotStatusCode`](http_status_code_assertion.md#uiisnotstatuscode) | Asserts that the status code for the current page is __NOT__ a specific status code. |
+| [`UI.is200`](http_status_code_assertion.md#uiis200) | Asserts that the status code for the current page is 200 (OK). |
+| [`UI.isNot200`](http_status_code_assertion.md#uisinot200) | Asserts that the status code for the current page is __NOT__ 200 (OK). |
+| [`UI.is404`](http_status_code_assertion.md#usis404) | Asserts that the status code for the current page is 404 (Not Found). |
+| [`UI.isNot404`](http_status_code_assertion.md#uiisnot404) | Asserts that the status code for the current page is __NOT__ 404 (Not Found). |
+| [`UI.is500`](http_status_code_assertion.md#uiis500) | Asserts that the status code for the current page is 500 (Internal Server Error). |
+| [`UI.isNot500`](http_status_code_assertion.md#uiisnot500) | Asserts that the status code for the current page is __NOT__ 500 (Internal Server Error). |
 
 ## Form input commands
 
@@ -81,6 +81,7 @@
 | [`I.see`](assertion.md#isee) | Assert that an text or element is visible |
 | [`I.dontSee`](assertion.md#idontSee) | Assert that an text or element is NOT visible |
 | [`I.count`](assertion.md#icount) | Assert the number of occurances for a text or element |
+| [`I.seePageTitle`](assertion.md#iseepagetitle) | Assert the title of the current page |
 
 ## Page content extraction commands
 
@@ -89,16 +90,33 @@
 | [`I.getCount`](extract.md#igetcount) | Get the number of occurances of a text or element |
 | [`I.getText`](extract.md#igettext) | Get text content from an element |
 | [`I.getValue`](extract.md#igetvalue) | Get value from an input element |
+| [`I.getPageTitle`](extract.md#igetpagetitle) | Get the title of the current page |
 
-# Element attribute extraction and assertion
+## Read and Validate Page Elements
+
+**Element attribute**
 
 | Command | Description |
 |---------|-------------|
-| [`UI.getAttribute`](element_attributes.md#uigetattribute) | Get the value of an attribute on an element. |
-| [`UI.hasAttribute`](element_attributes.md#uihasattribute) | Assert the presence or the expected value of an attribute on an element. |
-| [`UI.doesNotHaveAttribute`](element_attributes.md#uidoesnothaveattribute) | Assert the absence of an attribute on an element, or that the value of an attribute is not equals a given string. |
-| [`UI.hasClass`](element_attributes.md#uihasclass) | Assert the presence of a CSS class on an element. |
-| [`UI.doesNotHaveClass`](element_attributes.md#uidoesnothaveclass) | Assert the absence of a CSS class on an element. |
+| [`UI.getAttribute`](element_commands.md#uigetattribute) | Get an attribute on an element. |
+| [`UI.getAttributes`](element_commands.md#uigetattributes) | Get all attributes on an element. |
+| [`UI.hasAttribute`](element_commands.md#uihasattribute) | Assert the presence or the expected value of an attribute on an element. |
+| [`UI.doesNotHaveAttribute`](element_commands.md#uidoesnothaveattribute) | Assert the absence of an attribute on an element, or that the value of an attribute is not equals a given string. |
+
+**Element class**
+
+| Command | Description |
+|---------|-------------|
+| [`UI.hasClass`](element_commands.md#uihasclass) | Assert the presence of a CSS class on an element. |
+| [`UI.doesNotHaveClass`](element_commands.md#uidoesnothaveclass) | Assert the absence of a CSS class on an element. |
+
+**Element HTML**
+
+| Command | Description |
+|---------|-------------|
+| [`UI.getHTML`](element_commands.md) | Get the outer HTML of an element. Alias for `UI.getOuterHTML`.  |
+| [`UI.getOuterHTML`](element_commands.md) | Get the outer HTML of an element. |
+| [`UI.getInnerHTML`](element_commands.md) | Get the inner HTML of an element. |
 
 ## Alert commands
 

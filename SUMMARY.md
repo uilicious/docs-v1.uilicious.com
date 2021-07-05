@@ -7,7 +7,7 @@
 ---
 
 * Getting Started
-    * [Introduction](README.md)
+    * [What is UI-licious](README.md)
 	* [Basics](scripting/basic_commands.md)
 		* [Page navigation](scripting/navigation.md)
 		* [Form actions](scripting/form_input.md)
@@ -42,9 +42,10 @@
 
 * Miscellaneous 
 	* [Extract page content](scripting/extract.md)
-	* [Get and assert element attributes](scripting/element_attributes.md)
+	* [Get and assert element attributes](scripting/element_commands.md)
 	* [Executing Javascript](scripting/executing-javascript.md)
 	* [Executing HTTP requests](scripting/ui_http_commands.md)
+	* [Validate page status](scripting/http_status_code_assertion.md)
 	* [Alerts](scripting/alerts.md)
 	* [Cookies](scripting/cookies.md)
 	* [Utility](scripting/utility.md)
