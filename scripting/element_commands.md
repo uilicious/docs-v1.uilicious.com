@@ -7,7 +7,7 @@ To get and assert attributes on an element:
 | Command | Description |
 |---------|-------------|
 | [`UI.getAttribute`](#uigetattribute) | Get the value of an attribute on an element. |
-| [`UI.getAttributes`](#uigetattributse) | Get the attributes names and values on an element as a map. |
+| [`UI.getAttributes`](#uigetattributes) | Get the attributes names and values on an element as a map. |
 | [`UI.hasAttribute`](#uihasattribute) | Assert the presence or the expected value of an attribute on an element. |
 | [`UI.doesNotHaveAttribute`](#uidoesnothaveattribute) | Assert the absence of an attribute on an element, or that the value of an attribute is not equals to a given string. |
 
