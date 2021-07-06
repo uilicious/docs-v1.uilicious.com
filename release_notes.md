@@ -13,7 +13,7 @@
 * Patch: Contains enhancements and bug fixes only
 
 ## 3.17.0
-*Released 5 Jul 2021*
+*Released 6 Jul 2021*
 
 **🚀 New Features**
 
