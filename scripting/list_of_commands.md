@@ -205,9 +205,9 @@
 
 | Command | Description|
 |---------|------------|
-| [`UI.LocalStorage.get`](local_storage_commands.md) | Get the value of property from local storage |
-| [`UI.LocalStorage.set`](local_storage_commands.md) | Set a property in local storage |
+| [`UI.LocalStorage.get`](local_storage_commands.md#uilocalstorageget) | Get the value of property from local storage |
+| [`UI.LocalStorage.set`](local_storage_commands.md#uilocalstorageset) | Set a property in local storage |
 | [`UI.LocalStorage.isSet`](local_storage_commands.md) | - coming soon - |
 | [`UI.LocalStorage.isEqual`](local_storage_commands.md) | - coming soon - |
-| [`UI.LocalStorage.delete`](local_storage_commands.md) | Delete a property in local storage |
-| [`UI.LocalStorage.deleteAll`](local_storage_commands.md) | Delete all properties in local storage |
+| [`UI.LocalStorage.delete`](local_storage_commands.md#uilocalstoragedelete) | Delete a property in local storage |
+| [`UI.LocalStorage.deleteAll`](local_storage_commands.md#uilocalstoragedeleteall) | Delete all properties in local storage |

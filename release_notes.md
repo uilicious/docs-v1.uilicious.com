@@ -21,11 +21,11 @@
   * The new Edge browser will be referred to as "Edge (Chromium)" and legacy Edge browser will be referred to as "Edge (2019)" within the Studio.  
   * If you are using the CLI to trigger test runs, you can set the `--browser` option to `edgechromium` to run tests on the new Edge browser. Setting the `--browser` option to `edge` will run tests on the legacy Edge browser, for backwards compatibility.
 * New Test Commands:
-  * Added `I.seePageTitle()` to validate the title of the page
-  * Added `I.getPageTitle()` command to get the title of the page
-  * Added `UI.getAttributes(target)` command to get all attributes of an element
-  * Added `UI.getHTML(target)`, `UI.getOuterHTML(target)` and `UI.getInnerHTML(target)` commands to get the html of an element
-  * Added commands to access local storage:
+  * Added [`I.seePageTitle()`](scripting/assertion.md#iseepagetitle) to validate the title of the page
+  * Added [`I.getPageTitle()`](scripting/extract.md#igetpagetitle) command to get the title of the page
+  * Added [`UI.getAttributes(target)`](scripting/element_commands.md#uigetattributes) command to get all attributes of an element
+  * Added [commands](scripting/element_commands.md#element-html-commands) to get the html of an element: `UI.getHTML(target)`, `UI.getOuterHTML(target)` and `UI.getInnerHTML(target)`
+  * Added [commands](scripting/local_storage_commands.md) to access local storage:
     * `UI.LocalStorage.get(name)` - get a property from local storage
     * `UI.LocalStorage.set(name, value)` - set a property in local storage
     * `UI.LocalStorage.delete(name)` - delete a property in local storage

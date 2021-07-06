@@ -268,7 +268,7 @@ var outerHTML = I.getHTML("sign-up-button")
 // <button id="sign-up-button"><b>Create</b> an account</button>
 
 var innerHTML = I.getInnerHTML("sign-up-button")
-// innerHTML includes on the html of the element's contents:
+// innerHTML includes the html of the element's contents only:
 // <b>Create</b> an account
 
 ```

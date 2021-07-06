@@ -1,22 +1,24 @@
 # Local Storage Commands
 
-These commands allow you to access properties in local storage.
+These commands allow you to access properties in local storage for the [origin](https://developer.mozilla.org/en-US/docs/Glossary/Origin) of the current page.
+
+This document assumes you already have some knowledge about [local storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
 
 ## List of commands
 | Command | Description|
 |---------|------------|
-| [`UI.LocalStorage.get`](#) | Get the value of a property from local storage|
-| [`UI.LocalStorage.set`](#) | Set a property in local storage |
+| [`UI.LocalStorage.get`](#uilocalstorageget) | Get the value of a property from local storage|
+| [`UI.LocalStorage.set`](#uilocalstorageset) | Set a property in local storage |
 | [`UI.LocalStorage.isSet`](#) | - coming soon - |
 | [`UI.LocalStorage.isEqual`](#) | - coming soon - |
-| [`UI.LocalStorage.delete`](#) | Delete a property in local storage |
-| [`UI.LocalStorage.deleteAll`](#) | Delete all properties in local storage |
+| [`UI.LocalStorage.delete`](#uilocalstoragedelete) | Delete a property in local storage |
+| [`UI.LocalStorage.deleteAll`](#uilocalstoragedeleteall) | Delete all properties in local storage |
 
 --- 
 
 ## `UI.LocalStorage.get`
 
-Get the value of a property from local storage.
+Get the value of a property from local storage for the [origin](https://developer.mozilla.org/en-US/docs/Glossary/Origin) of the current page.
 
 Returns `null` if the property does not exist.
 
@@ -43,7 +45,7 @@ var cart = UI.LocalStorage.get("cart")
 
 ## `UI.LocalStorage.set`
 
-Set a property in local storage.
+Set a property in local storage for the [origin](https://developer.mozilla.org/en-US/docs/Glossary/Origin) of the current page.
 
 If the property already exists in local storage, the value is overriden.
 
@@ -69,7 +71,7 @@ UI.LocalStorage.set("theme", {"dark_mode": true})
 
 ## `UI.LocalStorage.delete`
 
-Delete a property in local storage.
+Delete a property in local storage for the [origin](https://developer.mozilla.org/en-US/docs/Glossary/Origin) of the current page.
 
 ### Usage
 
@@ -92,7 +94,7 @@ UI.LocalStorage.delete("cart")
 
 ## `UI.LocalStorage.deleteAll`
 
-Delete all properties in local storage.
+Delete all properties in local storage for the [origin](https://developer.mozilla.org/en-US/docs/Glossary/Origin) of the current page.
 
 ### Usage
 
