@@ -14,6 +14,7 @@ These commands allow you to extract parts of the page, which you may then use as
 | [`I.getCount`](#igetcount) |  Get the number of occurances of a text or element |
 | [`I.getText`](#igettext) |  Get the text content of an element |
 | [`I.getValue`](#igetvalue) |  Get the value from an input element |
+| [`I.getPageTitle`](#igetpagetitle) |  Get the title of the page |
 
 ---
 ## `I.getCount`
@@ -114,3 +115,23 @@ I.type(" from the other side")
 var foo = I.getValue("Search") // `foo` would be "Hello from the other side"
 ```
 In this example, we first fill "Hello" to the "Search" field, and continue typing " from the other side" into the field which is currently in focus. You can get the value of the "Search" field using `I.getValue` and store the value into a variable for later use.
+
+---
+
+## `I.getPageTitle`
+
+Get the title of the current page.
+
+### Usage
+```javascript
+I.getPageTitle()
+```
+
+### Example(s)
+
+```javascript
+I.goTo("https://www.wikipedia.org/")
+var pageTitle = I.getPageTitle() // The returned value will be "Wikipedia"
+```
+
+This example test navigates to the `https://www.wikipedia.org/` and reads the current title of the page to the `pageTitle` variable.

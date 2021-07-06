@@ -11,6 +11,7 @@ If the assertion fail, the command results in an error.
 | [`I.see`](#isee) |  Assert that an text or element is visible |
 | [`I.dontSee`](#idontsee) |  Assert that an text or element is NOT visible |
 | [`I.count`](#icount) |  Assert the number of occurances for a text or element |
+| [`I.seePageTitle](#iseepagetitle) | Assert the title of the current page |
 
 ---
 
@@ -87,5 +88,28 @@ I.count(".product", 20);
 ```
 Asserts that there's 20 occurances of the element with the "product" CSS class.
 
+--- 
 
+## `I.seePageTitle`
 
+Assert the title of the current page
+
+### Usage
+```javascript
+I.seePageTitle(title)
+```
+
+**Parameters**
+
+| Parameter | Type | Remarks|
+|-----------|------|--------|
+| title | string | The expected page title |
+
+### Example(s)
+
+```javascript
+I.goTo("https://www.wikipedia.org/")
+I.seePageTitle("Wikipedia")
+```
+
+This example test navigates to the `https://www.wikipedia.org/` and checks if the page title is "Wikipedia". The test will pass if the page title is exactly "Wikipedia".
