@@ -12,6 +12,35 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+## 2021.10.1
+*Released 5 Oct 2021*
+
+**🚀 New Features**
+
+* Web Studio
+  * Changes to user quota count. Now, only **Collaborator** users count towards the quota. **Collaborator** users are users that are allowed to edit resources (projects, tests, jobs) in the space, therefore it includes the the Owner, Admin, and Editor roles.
+
+**💪 Enhancement**
+
+* Test Engine:
+  * Load **README** file by default. If a **README** file exists in the project it will automatically load it after accessing the project.
+
+**🐞 Fixes**
+
+* Test Engine:
+  * Fixed broken dropdown menu UI
+* Web Studio:
+  * Fixed sorting in members list
+
+## 2021.7.2
+*Released 23 Jul 2021*
+
+**🚀 New Features**
+
+* Test Engine:
+  * Added **Bulk Edit** feature for jobs
+    * **Bulk Edit** button will appear once user have selected 2 or more jobs. With this feature, it allows user to edit the browser, resolution, schedule and notification section all of the selected jobs at once.
+
 ## 3.18.0
 *Released 6 Jul 2021*
 
