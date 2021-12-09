@@ -12,6 +12,22 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+## 3.19.0
+*Released 6 December 2021*
+
+**🚀 New Features**
+
+* New Window resize command
+  * This allows users to change the browser resolution in the middle of the test using the command `UI.resize`
+    * `UI.resize(<width>, <height>)` - to resize window
+    * `UI.resize(<width>, <height>, {target: "viewport"})`
+  * Also added some basic properties for the new command
+    * `UI.outerWidth`, `UI.outerHeight` - get the current width and height of the window
+    * `UI.innerWidth`, `UI.innerHeight` - get the current width and height of the viewport
+
+**🐞 Fixes**
+  * Fixed an issue where I.select doesn't work on VueJS dropdowns
+
 ## 3.18.0
 *Released 6 Jul 2021*
 
