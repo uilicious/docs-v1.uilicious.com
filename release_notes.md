@@ -12,7 +12,7 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
-## 3.19.0
+## 3.21.0
 *Released 6 December 2021*
 
 **🚀 New Features**
