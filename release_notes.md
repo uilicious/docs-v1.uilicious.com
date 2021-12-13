@@ -12,7 +12,7 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
-## 2021.10.1
+## 3.20.0
 *Released 5 Oct 2021*
 
 **🚀 New Features**
@@ -32,7 +32,7 @@
 * Web Studio:
   * Fixed sorting in members list
 
-## 2021.7.2
+## 3.19.0
 *Released 23 Jul 2021*
 
 **🚀 New Features**
