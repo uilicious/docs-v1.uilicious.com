@@ -49,6 +49,7 @@
 	* [Alerts](scripting/alerts.md)
 	* [Cookies](scripting/cookies.md)
 	* [Local Storage](scripting/local_storage_commands.md)
+	* [Window Resize](scripting/window_resize.md)
 	* [Utility](scripting/utility.md)
 
 * Integrations
