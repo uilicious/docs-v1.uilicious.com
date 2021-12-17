@@ -8,8 +8,8 @@ These commands are used to set browser resolution when users want to change brow
 
 | Command | Description|
 |---------|------------|
-| [`UI.resize`] | Resize the browser to the desired width and height |
-| [`UI.resize(<width>, <height>, {target: "viewport"})`] | Resize the browser with a specific target |
+| `UI.resize` | Resize the browser to the desired width and height |
+| `UI.resize(<width>, <height>, {target: "viewport"})` | Resize the browser with a specific target |
 
 ---
 
@@ -38,10 +38,10 @@ This will resize the browser resolution to 1920 x 1080
 
 | Command | Description|
 |---------|------------|
-| [`UI.outerWidth`] | Collects and stores the current `outer width` size of the browser |
-| [`UI.outerHeight`] | Collects and stores the current `outer height` size of the browser |
-| [`UI.innerWidth`] | Collects and stores the current `inner width` size of the browser |
-| [`UI.innerHeight`] | Collects and stores the current `inner height` size of the browser |
+| `UI.outerWidth` | Collects and stores the current `outer width` size of the browser |
+| `UI.outerHeight` | Collects and stores the current `outer height` size of the browser |
+| `UI.innerWidth` | Collects and stores the current `inner width` size of the browser |
+| `UI.innerHeight` | Collects and stores the current `inner height` size of the browser |
 
 
 ### Usage
