@@ -22,24 +22,26 @@
 
 **💪 Enhancement**
 
-* Test Engine:
+* Web Studio:
   * Load **README** file by default. If a **README** file exists in the project it will automatically load it after accessing the project.
 
 **🐞 Fixes**
 
-* Test Engine:
-  * Fixed broken dropdown menu UI
 * Web Studio:
   * Fixed sorting in members list
+  * Fixed broken dropdown menu UI 
 
 ## 3.19.0
 *Released 23 Jul 2021*
 
 **🚀 New Features**
 
-* Test Engine:
-  * Added **Bulk Edit** feature for jobs
-    * **Bulk Edit** button will appear once user have selected 2 or more jobs. With this feature, it allows user to edit the browser, resolution, schedule and notification section all of the selected jobs at once.
+* Web Studio:
+  * Added **Bulk Enable / Disable** feature for jobs
+    * **Bulk Enable** button should be displayed if any selected job's status is set to disabled by default.
+    * **Bulk Disable** button should be displayed if any selected job's status is set to enabled by default given that no enabled job is selected.
+  * Added **Bulk Delete** feature for jobs
+    * **Bulk Disable** button should be displayed if 2 or more jobs has been selected
 
 ## 3.18.0
 *Released 6 Jul 2021*
