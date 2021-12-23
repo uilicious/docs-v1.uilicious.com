@@ -12,6 +12,13 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+## 3.21.1
+*Released 22 December 2021*
+
+**🐞 Fixes**
+  * Fixed an issue where old users will not appear on Space's Member lists
+  * Fixed the issue with Timezones. System Timezone should now match with the time for the selected region
+  
 ## 3.21.0
 *Released 6 December 2021*
 
