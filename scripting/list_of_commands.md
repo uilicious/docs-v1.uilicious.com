@@ -211,3 +211,9 @@
 | [`UI.LocalStorage.isEqual`](local_storage_commands.md) | - coming soon - |
 | [`UI.LocalStorage.delete`](local_storage_commands.md#uilocalstoragedelete) | Delete a property in local storage |
 | [`UI.LocalStorage.deleteAll`](local_storage_commands.md#uilocalstoragedeleteall) | Delete all properties in local storage |
+
+## Window Resize
+
+| Command | Description |
+|---------|-------------|
+| [`UI.resize`](window_resize.md#uiresize) |  Resize the resolution to a specific width and height. |
