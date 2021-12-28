@@ -16,24 +16,31 @@
 *Released 22 December 2021*
 
 **🐞 Fixes**
-  * Fixed an issue where old users will not appear on Space's Member lists
-  * Fixed the issue with Timezones. System Timezone should now match with the time for the selected region
+
+  * Web Studio:
+    * Fixed an issue where some users are missing in Space's Member lists
   
+  * Test Engine:
+    * Fixed the issue with Timezones. System Timezone should now match with the time for the selected region
+
 ## 3.21.0
 *Released 6 December 2021*
 
 **🚀 New Features**
 
-* New Window resize command
-  * This allows users to change the browser resolution in the middle of the test using the command `UI.resize`
-    * `UI.resize(<width>, <height>)` - to resize window
-    * `UI.resize(<width>, <height>, {target: "viewport"})`
-  * Also added some basic properties for the new command
-    * `UI.outerWidth`, `UI.outerHeight` - get the current width and height of the window
-    * `UI.innerWidth`, `UI.innerHeight` - get the current width and height of the viewport
+* Test Engine
+  * New Window resize command
+    * `UI.resize` allows you to change the browser resolution in the middle of the test.
+      * `UI.resize(<width>, <height>)` - to resize window
+      * `UI.resize(<width>, <height>, {target: "viewport"})`
+    * Also added some basic properties for the new command
+      * `UI.outerWidth`, `UI.outerHeight` - get the current width and height of the window
+      * `UI.innerWidth`, `UI.innerHeight` - get the current width and height of the viewport
 
 **🐞 Fixes**
-  * Fixed an issue where I.select doesn't work on VueJS dropdowns
+
+* Test Engine
+  * Fixed an issue where I.select doesn't work on some VueJS dropdowns
 
 ## 3.18.0
 *Released 6 Jul 2021*
@@ -43,6 +50,7 @@
 * Support for testing on **Chromium-based Microsoft Edge**. 
   * The new Edge browser will be referred to as "Edge (Chromium)" and legacy Edge browser will be referred to as "Edge (2019)" within the Studio.  
   * If you are using the CLI to trigger test runs, you can set the `--browser` option to `edgechromium` to run tests on the new Edge browser. Setting the `--browser` option to `edge` will run tests on the legacy Edge browser, for backwards compatibility.
+
 * New Test Commands:
   * Added [`I.seePageTitle()`](scripting/assertion.md#iseepagetitle) to validate the title of the page
   * Added [`I.getPageTitle()`](scripting/extract.md#igetpagetitle) command to get the title of the page
