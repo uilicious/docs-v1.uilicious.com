@@ -12,6 +12,36 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+## 3.20.0
+*Released 5 Oct 2021*
+
+**🚀 New Features**
+
+* Web Studio
+  * Changes to user quota count. Now, only **Collaborator** users count towards the quota. **Collaborator** users are users that are allowed to edit resources (projects, tests, jobs) in the space, therefore it includes the the Owner, Admin, and Editor roles.
+
+**💪 Enhancement**
+
+* Web Studio:
+  * Load **README** file by default. If a **README** file exists in the project it will automatically load it after accessing the project.
+
+**🐞 Fixes**
+
+* Web Studio:
+  * Fixed sorting in members list
+  * Fixed broken dropdown menu UI 
+
+## 3.19.0
+*Released 23 Jul 2021*
+
+**🚀 New Features**
+
+* Web Studio:
+  * Added **Bulk Enable / Disable** feature in Monitoring tab
+    * This allows you to enable or disable multiple jobs all at the same time.
+  * Added **Bulk Delete** feature in Monitoring tab
+    * This allows you to delete multiple jobs
+
 ## 3.18.0
 *Released 6 Jul 2021*
 
