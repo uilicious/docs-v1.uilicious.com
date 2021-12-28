@@ -1,63 +1,73 @@
-# Window Resize command
-
-These commands are used to set browser resolution when users want to change browser resolution in the middle of the test or hardcoded browser resize
+# Window resize commands
 
 ## List of commands
 
-### Input commands
+These commands allow you to set the resolution of the browser.
 
 | Command | Description|
 |---------|------------|
-| `UI.resize` | Resize the browser to the desired width and height |
-| `UI.resize(<width>, <height>, {target: "viewport"})` | Resize the browser with a specific target |
+| [`UI.resize`](#uiresize) | Resize the resolution to a specific width and height. |
+
+## Read-only properties
+
+The properies allow you to query the current resolution of the browser.
+
+| Property | Description | 
+|----------|-------------|
+| `UI.outerWidth`  | The width of the browser window, including the broswer's UI, such as the menubar and addressbar, etc. |
+| `UI.outerHeight` | The height of the browser window, including the broswer's UI, such as the menubar and addressbar, etc. |
+| `UI.innerWidth`  | The width of the browser **viewport**. |
+| `UI.innerHeight` | The height of the browser **viewport**. |
 
 ---
 
 ## `UI.resize`
 
-Ability to resize browser resolution while the test is running.
+Resize the resolution to a specific width and height.
 
-This works for all available browsers.
+By default the command will resize the **entire browser window**, including the browser's UI, such as the menu bar, address bar, etc.
+
+To resize the **viewport** (the browser window excluding the browser's UI such as the menu bar and the address bar, etc), you can specify `target` as `"viewport"` in options.
 
 ### Usage
 ```javascript
-UI.resize(<width>, <height>)
+// You can pass in width and height together in a string formatted as "<width>x<height>"
+UI.resize(resolution) 
+UI.resize(resolution, options)
+
+// Alternatively you can pass width and height as two seperate numbers
+UI.resize(width, height)
+UI.resize(width, height, options)
 ```
+
+#### Parameters
+
+| Parameter | Type | Remarks |
+|-----------|------|---------|
+| resolution | string | A string representation of the resolution to resize to, following the format "&lt;width>x&lt;height>", e.g. "1920x800". |
+| width | number |  The width to resize the resolution to. |
+| height | number |  The height to resize the resolution to. |
+| options | object |  Additional options, see `options` parameters below. |
+
+**`options`**
+| Parameter | Type | Remarks |
+|-----------|------|---------|
+| target | string | Set to "viewport" to resize the viewport. <br> Set to "window" to resize the entire window. |
 
 ### Example(s)
 
-#### Resize browser
+#### Resize browser window
 
 ```javascript
 UI.resize("1920x1080")
-UI.resize("1920","1080")
+UI.resize(1920, 1080)
 ```
-This will resize the browser resolution to 1920 x 1080
+This will resize the resolution of the entire browser window to width of 1920 pixels, and height of 1080 pixels.
 
-### Checking browser resolution size using resize properties
+#### Resize browser window viewport
 
-| Command | Description|
-|---------|------------|
-| `UI.outerWidth` | Collects and stores the current `outer width` size of the browser |
-| `UI.outerHeight` | Collects and stores the current `outer height` size of the browser |
-| `UI.innerWidth` | Collects and stores the current `inner width` size of the browser |
-| `UI.innerHeight` | Collects and stores the current `inner height` size of the browser |
-
-
-### Usage
 ```javascript
-if(UI.outerWidth !== 1920){
-	 TEST.log.fail("Incorrect outerWidth. Expected 1920, but got " + UI.outerWidth)
-	 }
-else{
-	TEST.log.pass("Correct outerWidth. Outer Width is " + UI.outerWidth)
-}
-//CHECK OUTER HEIGHT
-if(UI.outerHeight !== 1080){
-	 TEST.log.fail("Incorrect outerHeight. Expected 1080, but got " + UI.outerHeight)
-	 }
-else{
-	TEST.log.pass("Correct outerHeight. Outer Height is " + UI.outerHeight)
-}
+UI.resize("1920x1080", {target: "viewport"})
+UI.resize(1920, 1080, {target: "viewport"})
 ```
-The command above will collect the browser's outer width using the `UI.outerWidth` and `UI.outerHeight` commands and displays it on the result screen when the test is running
+This will resize the resolution of the viewport to width of 1920 pixels, and height of 1080 pixels.
