@@ -38,10 +38,9 @@
 
 * Web Studio:
   * Added **Bulk Enable / Disable** feature for jobs
-    * **Bulk Enable** button should be displayed if any selected job's status is set to disabled by default.
-    * **Bulk Disable** button should be displayed if any selected job's status is set to enabled by default given that no enabled job is selected.
+    * This allows you to enable or disable multiple jobs all at the same time.
   * Added **Bulk Delete** feature for jobs
-    * **Bulk Disable** button should be displayed if 2 or more jobs has been selected
+    * This allows you to delete multiple jobs
 
 ## 3.18.0
 *Released 6 Jul 2021*
