@@ -49,7 +49,8 @@ UI.resize(width, height, options)
 | height | number |  The height to resize the resolution to. |
 | options | object |  Additional options, see `options` parameters below. |
 
-**`options`**
+**Additional `options`**
+
 | Parameter | Type | Remarks |
 |-----------|------|---------|
 | target | string | Set to "viewport" to resize the viewport. <br> Set to "window" to resize the entire window. |
