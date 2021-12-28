@@ -37,9 +37,9 @@
 **🚀 New Features**
 
 * Web Studio:
-  * Added **Bulk Enable / Disable** feature for jobs
+  * Added **Bulk Enable / Disable** feature in Monitoring tab
     * This allows you to enable or disable multiple jobs all at the same time.
-  * Added **Bulk Delete** feature for jobs
+  * Added **Bulk Delete** feature in Monitoring tab
     * This allows you to delete multiple jobs
 
 ## 3.18.0
