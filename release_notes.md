@@ -12,6 +12,15 @@
 * Minor: Contains new features
 * Patch: Contains enhancements and bug fixes only
 
+## 3.21.2
+*Released 04 January 2021*
+
+**🐞 Fixes**
+
+  * Test Engine
+    * Improvements to page element visibility checks for all commands that target an element, e.g. `I.click`. 
+    * Fixed an issue in some edge cases where some elements cannot be detected because they are evaluated as invisible.
+
 ## 3.21.1
 *Released 22 December 2021*
 
