@@ -7,5 +7,5 @@ node_modules
 # Anchor to keep
 !_out/_anchor
 
-# Local Netlify folder
-# .netlify
+# 
+.*
