@@ -1,8 +1,8 @@
 <div class=".git-hide">
 The following is the git repo, used for https://docs.uilicious.com/
 
-For feedback on the documentation please do so at our [discord](https://discord.gg/DZCmSRFwq8)
-Issue tracking on github is not actively monitored, and its generally faster to contact us via our help channel / discord.
+For feedback on the documentation please do so at our [discord](https://discord.gg/DZCmSRFwq8).
+Github issue tracking is not actively monitored, and its generally faster to contact us via our help channel / discord.
 </div>
 
 # Welcome!
