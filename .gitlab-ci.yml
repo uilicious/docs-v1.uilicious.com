@@ -63,4 +63,5 @@ deploy_job:
   when: manual
   only: 
     - master
+    - main
   

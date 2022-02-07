@@ -6,6 +6,11 @@
     background: none;
 } */
 
+/** Block tonent to hide, as this is meant for "gitlab/github" readme **/
+.git-hide {
+    display: none;
+}
+
 /* ALGOLIA SEARCH */
 
 .searchbox {

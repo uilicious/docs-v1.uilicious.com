@@ -5,9 +5,16 @@
 Use it to test your web applications to make sure that your users aren't running into unexpected errors in critical user flows like when they are registering for an account or checking out their order.
 
 <!--### How does this work?-->
-
 <!--{% youtube src="https://www.youtube.com/watch?v=c_PBixIBiog" %}{% endyoutube %}-->
 
+<div class=".git-hide">
+### Git repo notes
+
+The following is the git repo, used for https://docs.uilicious.com/
+
+For feedback on the documentation please do so at our [discord](https://discord.gg/DZCmSRFwq8)
+Issue tracking on github is not actively monitored, and its generally faster to contact us via our help channel / discord.
+</div>
 
 ### Do I need to know how to code?
 
