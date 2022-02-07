@@ -63,7 +63,7 @@
 ---
 
 * UI-licious Cloud
-	* [IP Whitelisting](grid/ip_whitelisting.md)
+	* [IP List](grid/ip_list.md)
 	* [Timezone](grid/timezone.md)
 	* [Regions](todos.md)
 

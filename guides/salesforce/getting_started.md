@@ -15,23 +15,23 @@ Whenever you login to Salesforce from a new device, Salesforce will give you a 2
 
 There's a few ways resolve this in your test: 
 
-1. **IP whitelisting** - Recommended. This is the simplest solution and works permenantly.
-2. **Using Salesforce CLI** - This is a temporarily solution if IP whitelisting is not available.
+1. **IP Allow List** - Recommended. This is the simplest solution and works permenantly.
+2. **Using Salesforce CLI** - This is a temporarily solution if IP allow listing is not available.
 3. **Extracting the 2FA code from email** - Technically possible, but extremely tedious. We won't be discussing this method in this guide, but if you really want to know, you can email us at support@uilicious.com.
 
-### IP whitelisting
+### IP Allow Listing
 
-You can disable the 2FA challenge by whitelisting the IP addresses used by the UI-licious Testing Grid.
+You can disable the 2FA challenge by allow listing the IP addresses used by the UI-licious Testing Grid.
 
 You need to be a Salesforce administrator to do the following.
 
 1. Login to Salesforce
 2. Click on "Setup" 
 3. Under "Settings", click on "Security", then "Network Access"
-3. Add these IP addresses to whitelist the UI-licious cloud testing grid:
-[IP Whitelisting · UI-licious Documentation](https://docs.uilicious.com/grid/ip_whitelisting.html)
+3. Add these IP addresses to the allow list the UI-licious cloud testing grid:
+[IP List · UI-licious Documentation](https://docs.uilicious.com/grid/ip_list.html)
 
-![Salesforce Setup - Security - Network Access](/images/salesforce/salesforce-network-whitelisting.png)
+![Salesforce Setup - Security - Network Access](/images/salesforce/salesforce-network-allowlist.png)
 
 ### Using the Salesforce CLI
 
