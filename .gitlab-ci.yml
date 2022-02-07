@@ -20,8 +20,8 @@ cache:
 variables:
   OUTPUT_DIR: "_book/"
   # NETLIFY keys should be handled safely via CI/CD pipelines
-  # NETLIFY_AUTH_TOKEN: "***REMOVED***"
-  # NETLIFY_SITE_ID: "***REMOVED***"
+  # NETLIFY_AUTH_TOKEN: ""
+  # NETLIFY_SITE_ID: ""
 
 # define stages
 stages:
