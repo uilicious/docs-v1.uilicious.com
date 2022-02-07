@@ -1,4 +1,4 @@
-<div class=".git-hide">
+<div class="git-hide">
 The following is the git repo, used for https://docs.uilicious.com/
 
 For feedback on the documentation please do so at our [discord](https://discord.gg/DZCmSRFwq8).
