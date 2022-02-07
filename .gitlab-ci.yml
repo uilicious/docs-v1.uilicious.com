@@ -48,7 +48,7 @@ build_job:
 preview_job:
   stage: preview
   script:
-    - echo "{ \"siteId\": \"$NETLIFY_SITE_ID\" }" > .netlify/state.json
+    - 'echo "{ \"siteId\": \"$NETLIFY_SITE_ID\" }" > .netlify/state.json'
     - node_modules/.bin/netlify deploy --dir=_book --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID
   dependencies:
     - build_job
@@ -58,7 +58,7 @@ preview_job:
 deploy_job:
   stage: deploy
   script:
-    - echo "{ \"siteId\": \"$NETLIFY_SITE_ID\" }" > .netlify/state.json
+    - 'echo "{ \"siteId\": \"$NETLIFY_SITE_ID\" }" > .netlify/state.json'
     - node_modules/.bin/netlify deploy --dir=_book --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID --prod
   dependencies:
     - build_job
