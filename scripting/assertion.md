@@ -11,7 +11,7 @@ If the assertion fail, the command results in an error.
 | [`I.see`](#isee) |  Assert that an text or element is visible |
 | [`I.dontSee`](#idontsee) |  Assert that an text or element is NOT visible |
 | [`I.count`](#icount) |  Assert the number of occurances for a text or element |
-| [`I.seePageTitle](#iseepagetitle) | Assert the title of the current page |
+| [`I.seePageTitle`](#iseepagetitle) | Assert the title of the current page |
 
 ---
 
