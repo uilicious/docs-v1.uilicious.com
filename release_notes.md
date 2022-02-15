@@ -13,7 +13,7 @@
 * Patch: Contains enhancements and bug fixes only
 
 ## 3.21.2
-*Released 04 January 2021*
+*Released 04 January 2022*
 
 **🐞 Fixes**
 
