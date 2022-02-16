@@ -14,7 +14,6 @@ function clickNext(n){
 
 // click on the "Next" button 10 times;
 clickNext(10);
-
 ```
 
 ### Using conditionals with assertion commands
@@ -40,3 +39,20 @@ if(I.see$(".promo-banner")){
 This test performs a check to see if the element with the "promo-banner" class appears, and then clicks on the "Close" button to dismiss it.
 
 Note that in both examples, we use `I.see$` instead of `I.see`. Adding the $ behind `I.see` will suppress the error that will normally be thrown if the element is not visible on the page. This works on any command. 
+
+### Assertions of various levels
+
+And shown in the above, you can run uilicious commands, while logging the step, without logging its past / fail result.
+
+| Assertion Syntax        | Logging Level                                                                          |
+|-------------------------|----------------------------------------------------------------------------------------|
+| I._assertion_$$( _ )    | does not log to uilicious results steps                                                |
+| I._assertion_$( _ )     | logs to uilicious results steps, at info level (neither pass nor fail)                 |
+| I. _assertion_ ( _ )    | logs to uilicious results steps, with pass / fail. Continues testing even if it fails. |
+| I.must._assertion_( _ ) | logs to uilicious results steps, with pass / fail. Halts testing if it fails.          |
+
+One of the things that Uilicious does differently, is that by default the assertions do not halt the test on failure. This is to help provide complete reports for really common "false negative" use cases - mis-spelled or mis-labeled words. Allowing a more complete picture of the failure for over night test runs.
+
+If however you wish to perform a hard assertion, that must abort when failure occurs. You can use the I.must._assertion_ varient, like `I.must.see("account")`.
+
+Alternatively if you would like to use an assertion without logging you can use the `$$` varient, like `I.see$$("account")`
